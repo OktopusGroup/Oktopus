@@ -1,0 +1,38 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,300,700';
+
+/* Base styles */
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  line-height: 1.5;
+  height: 100%;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  min-height: 100%;
+  background-color: #f6f8fc;
+  color: #777;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration:underline;
+  color: #450073;
+  font-weight: bold;
+}
+
+a:hover {
+  color: rgba(69, 0, 115, .75);
+}
