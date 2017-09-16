@@ -5,8 +5,7 @@
 
 /* NPM */
 import React from 'react';
-import { Link, Route } from 'react-router-dom';
-import Signup from 'src/components/signup';
+import { Link } from 'react-router-dom';
 import Helmet from 'react-helmet';
 
 /* Oktopus */
