@@ -75,6 +75,7 @@
     "zopfli-webpack-plugin": "^0.1.0"
   },
   "dependencies": {
+    "animate.css": "^3.5.2",
     "apollo-local-query": "^0.3.0",
     "apollo-server-koa": "^1.1.2",
     "boxen": "^1.2.1",
@@ -92,6 +93,7 @@
     "microseconds": "^0.1.0",
     "prop-types": "^15.5.10",
     "react": "^16.0.0-rc.2",
+    "react-animated-css": "^1.0.1",
     "react-apollo": "^1.4.15",
     "react-dom": "^16.0.0-rc.2",
     "react-helmet": "^5.2.0",

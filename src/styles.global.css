@@ -1,10 +1,9 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:400,300,700';
+@import '~animate.css';
 
 /* Base styles */
 
-*,
-*:after,
-*:before {
+*, *:after, *:before {
   box-sizing: border-box;
 }
 
@@ -28,7 +27,7 @@ button {
 }
 
 a {
-  text-decoration:underline;
+  text-decoration: underline;
   color: #450073;
   font-weight: bold;
 }

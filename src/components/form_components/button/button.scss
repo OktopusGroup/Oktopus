@@ -1,0 +1,45 @@
+  .btn {
+  display: block;
+  border: 0;
+  font-size: 18px;
+  font-weight: bold;
+  height: 3.5rem;
+  width: 18rem;
+  line-height: 2.5rem;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+  color: white;
+  background-image: linear-gradient(284deg, #f8a36f, #f56868);
+  border-radius: 100px;
+  transition: background 0.2s;
+  box-shadow: 0 2px 2px 0 #d7dade;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  &:focus {
+    outline: 0;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 6px 0 rgba(25, 74, 179, 0.15);
+    -webkit-transition: all 0.5s ease 0s, transform 400ms;
+    transition: all 0.5s ease 0s, transform 400ms;
+  &:active {
+    -webkit-transition: all 0s linear 0.4s, transform 40ms;
+    transition: all 0s linear 0.4s, transform 40ms;
+    transform: translateY(-2px);
+    transition: box-shadow 0s linear 0s;
+    box-shadow: 0 0 0 0 rgba(25, 74, 179, 0.5);
+    }
+  }
+}
+}
+.closeX {
+  margin: auto;
+  background-image: url(images/closeX.svg);
+  padding: 3px 12px;
+    &:hover {
+    background-image: url(images/closeX-hover.svg);
+    transform: translateY(-5px);
+    -webkit-transition: all 0.5s ease 0s, transform 400ms;
+    transition: all 0.5s ease 0s, transform 400ms;
+    }
+  }

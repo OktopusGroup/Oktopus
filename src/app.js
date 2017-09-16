@@ -15,6 +15,7 @@ import Login from 'src/components/login';
 
 // Global styles
 import './styles.global.css';
+import './components/form_components/button/button.scss';
 
 // --------------------
 

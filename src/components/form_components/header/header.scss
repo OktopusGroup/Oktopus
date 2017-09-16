@@ -1,0 +1,23 @@
+.body {
+  height: 45px;
+  align-items: center;
+  padding-left: 28px;
+  background: #fff;
+  img {
+    height: 25px;
+    padding: 10px 0;
+  }
+}
+
+.headerRight{
+  float: right;
+  padding-right: 20px;
+  p {
+    margin: 12px 0;
+  }
+  a {
+    font-size: 15px;
+    font-weight: 600;
+    color: #450073;
+  }
+}
