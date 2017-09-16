@@ -2,8 +2,7 @@
 
 // --------------------
 // IMPORTS
-import { Link, Route } from 'react-router-dom';
-import Login from 'src/components/login';
+import { Link } from 'react-router-dom';
 import Helmet from 'react-helmet';
 
 /* NPM */
@@ -19,7 +18,6 @@ import logo from './logo.svg';
 
 // Styles
 import css from './signup.scss';
-import '../form_components/button/button.scss';
 
 // --------------------
 
@@ -46,7 +44,7 @@ class Signup extends React.PureComponent {
             <Animated animationIn="bounceInDown">
               <div className={css.login_form}>
                 <div className={css.closeX}>
-                  <span className={css.box_title}>Login</span>
+                  <span className={css.box_title}>Sign Up</span>
                   <div className={css.login_fields}>
                     <div className={css.field}>
                       <input type="text" id="userName" className={css.input} required />
@@ -69,8 +67,7 @@ class Signup extends React.PureComponent {
                 </div>
               </div>
             </Animated>
-            <span className={css.login_subtext}>Already have an account? <Link href="/login">Login</Link></span>
-            <Route exact path="/Login" component={Login} />
+            <span className={css.login_subtext}>Already have an account? <Link to="/login">Login</Link></span>
           </div>
         </div>
       </div>

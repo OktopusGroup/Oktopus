@@ -61,8 +61,7 @@ class Login extends React.PureComponent {
               </div>
             </Animated>
             <Animated animationIn="bounceInUp" animationInDelay={0.2}>
-              <span className={css.login_subtext}>Don&rsquo;t have an account yet? <Link to="/Signup">Sign Up</Link></span>
-              <Route exact path="/Signup" component={Signup} />
+              <span className={css.login_subtext}>Don&rsquo;t have an account yet? <Link to="/signup">Sign Up</Link></span>
             </Animated>
           </div>
         </div>
