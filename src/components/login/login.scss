@@ -84,20 +84,25 @@
 }
 
 .forgot {
+  font-size: 14px;
   z-index: 1;
+  font-weight: 400;
   position: absolute;
-  padding: 0 0 0 75%;
+  left: 175px;
   bottom: 5px;
   text-decoration: none;
-  color: $greyd1;
+  color: $greyd2;
+  &:hover {
+    color: $purple;
+    text-decoration: underline;
+    font-weight: bold;
+  }
 }
 
 .input {
-  display: block;
   width: 100%;
   font-size: 100%;
   border: 0;
-  padding: 0;
   background-color: transparent;
   height: 2rem;
   line-height: 2rem;
@@ -105,7 +110,6 @@
   color: $purple;
   transition: all 0.2s ease-in;
   border-radius: 0;
-  text-align: left;
   &:focus {
     outline: 0;
     border-color: $sky-blue;
@@ -113,7 +117,7 @@
 }
 
 .inputError {
-  text-align: right;
+  text-align: left;
   display: block;
   width: 100%;
   font-size: 100%;
