@@ -1,5 +1,3 @@
-@import '../form_components/button/button.scss';
-@import '../variables.scss';
 
 /* Container */
 .wrapper {
@@ -28,10 +26,11 @@
   display: block;
   grid-area: login_box;
   height: auto;
-  background-color: $white;
+  background-color: #fff;
+  width: 100%;
   box-shadow: none;
   margin: 2rem 0;
-	border: solid 1px $offwhite;
+	border: solid 1px #f6f8fc
 }
 
 .login_form {
@@ -39,7 +38,7 @@
   background-color: #ffffff;
   border: solid 1px #f6f8fc;
   height: 0;
-  padding: 2.5em 3em 2.5em;
+  padding: 3em;
   border-radius: 8px;
   box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.05);
 }
@@ -47,7 +46,7 @@
 .box_title {
   font-size: 35px;
   font-weight: bold;
-	color: $purple;
+	color: #450073;
   text-align: center;
   margin: 0 auto 20px;
   display: block;
@@ -69,27 +68,14 @@
 }
 
 .label {
-  display: block;
-  text-align: right;
-  z-index: 5;
   position: absolute;
   height: 2rem;
-  width: 3rem;
   line-height: 2rem;
   bottom: 0;
-  color: $greyd2;
+  color: #aaa9aa;
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   padding-right: 100px;
   vertical-align: top;
-}
-
-.forgot {
-  z-index: 1;
-  position: absolute;
-  padding: 0 0 0 75%;
-  bottom: 5px;
-  text-decoration: none;
-  color: $greyd1;
 }
 
 .input {
@@ -102,50 +88,59 @@
   height: 2rem;
   line-height: 2rem;
   border-bottom: 1px solid #eee;
-  color: $purple;
+  color: #450073;
   transition: all 0.2s ease-in;
   border-radius: 0;
   text-align: left;
-  &:focus {
-    outline: 0;
-    border-color: $sky-blue;
-  }
+  /* Fixes label positioning issue in mobile browsers and safari*/
 }
 
-.inputError {
-  text-align: right;
-  display: block;
-  width: 100%;
-  font-size: 100%;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  height: 2rem;
-  line-height: 2rem;
-  border-bottom: 1px solid #eee;
-  color: $purple;
-  border-radius: 0;
-  &:focus {
+.input:focus {
   outline: 0;
-  border-color: $red;
-  }
+  border-color: #1c96fb;
 }
-
 /* Using a faux pattern to see if input has text from http://stackoverflow.com/questions/16952526/detect-if-an-input-has-text-in-it-using-css */
 .input:focus+.label,
 input:valid+.label {
-  transform: translateY(-75%);
+  transform: translateY(-100%);
   font-size: 0.75rem;
-  color: $sky-blue;
+  color: #1c96fb;
 }
-
-.inputError:focus+.label,
-  input:valid+.label {
-  transform: translateY(80%);
-  font-size: 0.75rem;
-  color: $red;
+/* Button */
+.btn {
+  display: block;
+  border: 0;
+  font-size: 18px;
+  font-weight: bold;
+  height: 3.5rem;
+  width: 18rem;
+  line-height: 2.5rem;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+  color: white;
+  background-image: linear-gradient(284deg, #f8a36f, #f56868);
+  border-radius: 100px;
+  transition: background 0.2s;
+  box-shadow: 0 2px 2px 0 #d7dade;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  &:focus {
+    outline: 0;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 6px 0 rgba(25, 74, 179, 0.15);
+    -webkit-transition: all 0.5s ease 0s, transform 400ms;
+    transition: all 0.5s ease 0s, transform 400ms;
+  &:active {
+    -webkit-transition: all 0s linear 0.4s, transform 40ms;
+    transition: all 0s linear 0.4s, transform 40ms;
+    transform: translateY(-2px);
+    transition: box-shadow 0s linear 0s;
+    box-shadow: 0 0 0 0 rgba(25, 74, 179, 0.5);
+    }
+  }
 }
-
+}
 @media (min-width: 550px) {
   .logo_onpage {
     margin: 5em auto 5em auto;
@@ -153,12 +148,18 @@ input:valid+.label {
     width: 200px;
   }
   .login_box .login_form {
-    max-width: 330px;
+    max-width: 380px;
     margin: auto;
     box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.05);
   }
   .box_title {
     font-size: 30px;
+  }
+  .btn {
+    width: 180px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
   }
   .login_subtext {
     margin: 30px auto;

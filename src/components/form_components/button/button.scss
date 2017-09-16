@@ -1,4 +1,7 @@
-  .btn {
+@import '../../variables.scss';
+
+.btn_default {
+  outline: 0;
   display: block;
   border: 0;
   font-size: 18px;
@@ -8,15 +11,13 @@
   line-height: 2.5rem;
   padding: 0 1.5rem;
   margin: 0 auto;
-  color: white;
-  background-image: linear-gradient(284deg, #f8a36f, #f56868);
+  color: $white;
+  background-image: $peach-gradient;
   border-radius: 100px;
   transition: background 0.2s;
-  box-shadow: 0 2px 2px 0 #d7dade;
+  box-shadow: 0 2px 2px 0 $greyd1;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  &:focus {
-    outline: 0;
   &:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 6px 0 rgba(25, 74, 179, 0.15);
@@ -25,21 +26,38 @@
   &:active {
     -webkit-transition: all 0s linear 0.4s, transform 40ms;
     transition: all 0s linear 0.4s, transform 40ms;
-    transform: translateY(-2px);
+    transform: translateY(-3px);
     transition: box-shadow 0s linear 0s;
     box-shadow: 0 0 0 0 rgba(25, 74, 179, 0.5);
     }
   }
 }
-}
 .closeX {
-  margin: auto;
-  background-image: url(images/closeX.svg);
+  position: relative;
+  margin: 0 0 0 100%;
   padding: 3px 12px;
+  outline: 0;
+  z-index: 2000;
+  background-image: url(images/closeX.svg);
+  background-repeat: no-repeat;
+  transition: all 0.3s ease;
     &:hover {
     background-image: url(images/closeX-hover.svg);
-    transform: translateY(-5px);
     -webkit-transition: all 0.5s ease 0s, transform 400ms;
-    transition: all 0.5s ease 0s, transform 400ms;
+    transition: all 0.3s ease 0s, transform 400ms;
+    &:active {
+    background-image: url(images/closeX.svg);
+    -webkit-transition: all 0s linear 0.4s, transform 40ms;
+    transition: all 0s linear 0.4s, transform 40ms;
+
     }
+    }
+}
+@media (min-width: 550px) {
+.btn_default {
+  width: 180px;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
   }
+}
