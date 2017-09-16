@@ -36,7 +36,7 @@ class Login extends React.PureComponent {
           }]} />
 
         <div className={css.wrapper}>
-          <Animated animationIn="bounceInDown" animationInDelay=".2">
+          <Animated animationIn="bounceInDown" animationInDelay={0.2}>
             <img src={logo} className={css.logo_onpage} alt="Oktopus" />
           </Animated>
           <div className={css.login_box}>
@@ -52,13 +52,13 @@ class Login extends React.PureComponent {
                   <div className={css.field}>
                     <input type="password" id="fieldPassword" className={css.inputError} required />
                     <label htmlFor="fieldPassword" className={css.label}>Password</label>
-                    <span className={css.forgot}><Link to="/ResetPW">Forgot?</Link></span>
+                    <span><Link to="/ResetPW" className={css.forgot}>Forgot?</Link></span>
                   </div>
                   <button className={css.btn_default}>Login</button>
                 </div>
               </div>
             </Animated>
-            <Animated animationIn="bounceInUp" animationInDelay=".2">
+            <Animated animationIn="bounceInUp" animationInDelay={0.2}>
               <span className={css.login_subtext}>Don&rsquo;t have an account yet? <Link to="/Signup">Sign Up</Link></span>
               <Route exact path="/Signup" component={Signup} />
             </Animated>
