@@ -2,15 +2,17 @@
 
 // --------------------
 // IMPORTS
+
+/* NPM */
+import React from 'react';
 import { Link, Route } from 'react-router-dom';
 import Signup from 'src/components/signup';
 import Helmet from 'react-helmet';
 
-/* NPM */
-import React from 'react';
-import { Animated } from 'react-animated-css';
-
 /* Oktopus */
+
+// Helper components
+import Animated from 'src/components/helpers/animated';
 
 // Images
 import logo from './logo.svg';
