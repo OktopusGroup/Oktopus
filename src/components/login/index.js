@@ -7,6 +7,11 @@ import Helmet from 'react-helmet';
 
 /* NPM */
 import React from 'react';
+<<<<<<< HEAD
+=======
+import { Link } from 'react-router-dom';
+import Helmet from 'react-helmet';
+>>>>>>> 869a85baef49de80be0d4c7079ef822ed04c079b
 
 /* Oktopus */
 
