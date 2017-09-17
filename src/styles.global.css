@@ -35,3 +35,8 @@ a {
 a:hover {
   color: rgba(69, 0, 115, .75);
 }
+
+a:active {
+  color: $greyd2;
+  text-decoration: none;
+}

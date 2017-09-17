@@ -70,11 +70,11 @@
 
 .label {
   display: block;
-  text-align: right;
+  text-align: left;
   z-index: 5;
   position: absolute;
   height: 2rem;
-  width: 3rem;
+  width: 80%;
   line-height: 2rem;
   bottom: 0;
   color: $greyd2;
@@ -88,7 +88,7 @@
   z-index: 1;
   font-weight: 400;
   position: absolute;
-  left: 175px;
+  left: 82%;
   bottom: 5px;
   text-decoration: none;
   color: $greyd2;
@@ -96,7 +96,11 @@
     color: $purple;
     text-decoration: underline;
     font-weight: bold;
+  &:active {
+    color: $greyd2;
+    text-decoration: none;
   }
+}
 }
 
 .input {
@@ -164,8 +168,11 @@ input:valid+.label {
   .box_title {
     font-size: 30px;
   }
+  .forgot {
+    position: absolute;
+    left: 180px;
+  }
   .login_subtext {
     margin: 30px auto;
   }
-
 }

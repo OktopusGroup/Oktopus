@@ -2,12 +2,11 @@
 
 // --------------------
 // IMPORTS
+import { Link } from 'react-router-dom';
+import Helmet from 'react-helmet';
 
 /* NPM */
 import React from 'react';
-import { Link, Route } from 'react-router-dom';
-import Signup from 'src/components/signup';
-import Helmet from 'react-helmet';
 
 /* Oktopus */
 
@@ -48,11 +47,11 @@ class Login extends React.PureComponent {
                 <span className={css.box_title}>Login</span>
                 <div className={css.login_fields}>
                   <div className={css.field}>
-                    <input type="text" id="fieldUser" className={css.input} required />
-                    <label htmlFor="fieldUser" className={css.label}>Username</label>
+                    <input type="text" id="fieldEmail" className={css.input} required />
+                    <label htmlFor="fieldEmail" className={css.label}>Email</label>
                   </div>
                   <div className={css.field}>
-                    <input type="password" id="fieldPassword" className={css.inputError} required />
+                    <input type="password" id="fieldPassword" className={css.input} required />
                     <label htmlFor="fieldPassword" className={css.label}>Password</label>
                     <span><Link to="/ResetPW" className={css.forgot}>Forgot?</Link></span>
                   </div>
