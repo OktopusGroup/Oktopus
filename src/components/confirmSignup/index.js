@@ -51,7 +51,7 @@ class ConfirmSignup extends React.PureComponent {
                     <span className={css.guide_text}>useremail@email.com</span>
                   </div>
                   <span className={css.login_subtext}>Complete sign up by
-                   clicking the link in your email.</span>
+                   clicking<br />the link in your email.</span>
                   <button className={css.btn_default}>Okay</button>
                 </div>
               </div>
