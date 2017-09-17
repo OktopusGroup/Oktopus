@@ -35,21 +35,21 @@
 .closeX {
   position: relative;
   margin: 0 0 0 92%;
-  padding: 3px 14px;
+  padding: 3px 25px;
   bottom: 15px;
   outline: 0;
   z-index: 2000;
   background-image: url(images/closeX.svg);
   background-repeat: no-repeat;
-  transition: all 0.3s ease;
+  transition: all 0.1s ease;
     &:hover {
     background-image: url(images/closeX-hover.svg);
-    -webkit-transition: all 0.5s ease 0s, transform 400ms;
-    transition: all 0.3s ease 0s, transform 400ms;
+    -webkit-transition: all 0.1s ease 0s, transform 400ms;
+    transition: all 0.1s ease 0s, transform 400ms;
     &:active {
     background-image: url(images/closeX.svg);
     -webkit-transition: all 0s linear 0.4s, transform 40ms;
-    transition: all 0s linear 0.4s, transform 40ms;
+    transition: all 0s linear 0.1s, transform 40ms;
     }
     }
 }

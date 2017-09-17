@@ -14,7 +14,7 @@ import React from 'react';
 import Animated from 'src/components/helpers/animated';
 
 // Images
-import logo from './logo.svg';
+import logo from '../form_components/images/logo.svg';
 
 // Styles
 import '../../styles.global.css';
@@ -34,7 +34,7 @@ class Signup extends React.PureComponent {
           title="Oktopus"
           meta={[{
             name: 'Creative sharing networks',
-            content: 'Sign Up to Oktopus',
+            content: 'Password Reset',
           }]} />
 
         <div className={css.wrapper}>
@@ -49,7 +49,7 @@ class Signup extends React.PureComponent {
                 <div className={css.login_fields}>
                   <div className={css.field}>
                     <div className={css.field}>
-                      <input type="text" id="fieldEmail" className={css.input} required />
+                      <input type="text" id="fieldEmail" className={css.inputError} required />
                       <label htmlFor="fieldEmail" className={css.label}>Email</label>
                     </div>
                     <input type="text" id="fieldFirstName" className={css.input} required />
@@ -67,6 +67,7 @@ class Signup extends React.PureComponent {
                     <input type="password" id="fieldPasswordValidation" className={css.input} required />
                     <label htmlFor="fieldPasswordValidation" className={css.label}>Password again</label>
                   </div>
+                  {/* How do I add a Link to a button without generating an anchor on the text? */}
                   <button className={css.btn_default}>Sign Up</button>
                 </div>
               </div>

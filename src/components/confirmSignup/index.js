@@ -1,4 +1,4 @@
-// Login box
+// Confirm Signup 'Email Sent' Notification Box
 
 // --------------------
 // IMPORTS
@@ -18,10 +18,10 @@ import logo from '../form_components/images/logo.svg';
 
 // Styles
 import '../../styles.global.css';
-import css from './login.scss';
+import css from './confirmSignup.scss';
 // --------------------
 
-class Login extends React.PureComponent {
+class ConfirmSignup extends React.PureComponent {
   submit = () => {
     /* intentionally empty for now -- the future home of our submit function */
   }
@@ -44,23 +44,18 @@ class Login extends React.PureComponent {
             <Animated animationIn="bounceInDown">
               <div className={css.login_form}>
                 <Link to="/Back" className={css.closeX} />
-                <span className={css.box_title}>Login</span>
+                <span className={css.box_title}>Confirm Email</span>
                 <div className={css.login_fields}>
                   <div className={css.field}>
-                    <input type="text" id="fieldEmail" className={css.inputError} required />
-                    <label htmlFor="fieldEmail" className={css.label}>Email</label>
+                    {/* add user submitted email data injection */}
+                    <span className={css.confirm}>useremail@email.com</span>
                   </div>
-                  <div className={css.field}>
-                    <input type="password" id="fieldPassword" className={css.input} required />
-                    <label htmlFor="fieldPassword" className={css.label}>Password</label>
-                    <span><Link to="/ResetPW" className={css.forgot}>Forgot?</Link></span>
-                  </div>
-                  <button className={css.btn_default}>Login</button>
+                  <button className={css.btn_default}>Okay</button>
                 </div>
               </div>
             </Animated>
             <Animated animationIn="bounceInUp" animationInDelay={0.2}>
-              <span className={css.login_subtext}>Don&rsquo;t have an account yet? <Link to="/signup">Sign Up</Link></span>
+              <span className={css.login_subtext}><Link to="/confirmSignup">Send it again</Link></span>
             </Animated>
           </div>
         </div>
@@ -69,4 +64,4 @@ class Login extends React.PureComponent {
   }
 }
 
-export default Login;
+export default ConfirmSignup;
