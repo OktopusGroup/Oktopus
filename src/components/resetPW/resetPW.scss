@@ -27,7 +27,7 @@
 .login_box .login_form {
   display: block;
   grid-area: login_box;
-  height: 263px;
+  height: 291px;
   background-color: $white;
   box-shadow: none;
   margin: 2rem 0;
@@ -38,7 +38,6 @@
   display: block;
   background-color: #ffffff;
   border: solid 1px #f6f8fc;
-  height: 0px;
   padding: 2.5em 3em 2.5em;
   border-radius: 8px;
   box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.05);
@@ -107,6 +106,7 @@
 }
 
 .input {
+  margin-top: 20px;
   width: 100%;
   font-size: 100%;
   border: 0;
