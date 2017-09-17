@@ -27,7 +27,7 @@
 .login_box .login_form {
   display: block;
   grid-area: login_box;
-  height: 291px;
+  height: 268px;
   background-color: $white;
   box-shadow: none;
   margin: 2rem 0;
@@ -44,13 +44,12 @@
 }
 
 .box_title {
-  position:absolute;
-  font-size: 35px;
-  padding-bottom: 10px;
+  position: relative;
+  font-size: 25px;
   font-weight: bold;
 	color: $purple;
   text-align: center;
-  margin: 0 auto 10px;
+  margin: 0 auto;
   display: block;
 }
 
@@ -65,7 +64,6 @@
 
 /* Form */
 .field {
-  padding-top: 58px;
   position: relative;
   margin-bottom: 2em;
 }
@@ -168,14 +166,11 @@ input:valid+.label {
     margin: auto;
     box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.05);
   }
-  .box_title {
-    font-size: 30px;
-  }
   .forgot {
     position: absolute;
     left: 180px;
   }
-.btn {
+  .btn {
     margin-bottom: 44px;
   }
   .login_subtext {
