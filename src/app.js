@@ -16,6 +16,8 @@ import Login from 'src/components/login';
 import Signup from 'src/components/signup';
 import ResetPW from 'src/components/resetPW';
 import ConfirmSignup from 'src/components/confirmSignup';
+import MySites from 'src/components/mySites';
+import Header from 'src/components/form_components/header';
 
 // Global styles
 import './styles.global.css';
@@ -32,6 +34,8 @@ export default () => (
       <Route path="/signup" component={Signup} />
       <Route path="/resetPW" component={ResetPW} />
       <Route path="/confirmSignup" component={ConfirmSignup} />
+      <Route path="/mySites" component={MySites} />
+      <Route path="/header" component={Header} />
       <Route component={Login} />
     </Switch>
   </div>

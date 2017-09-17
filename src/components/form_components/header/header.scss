@@ -1,23 +1,33 @@
-.body {
-  height: 45px;
-  align-items: center;
-  padding-left: 28px;
-  background: #fff;
-  img {
-    height: 25px;
-    padding: 10px 0;
-  }
+@import '../button/button.scss';
+@import '../../variables.scss';
+
+/* Container */
+.wrapper {
+  z-index: 1;
+  width: 100%;
+  height: 42px;
+  display: grid;
+  grid-template-areas:
+  "logo_header"
+  "header_links"
+  "account_box";
 }
 
-.headerRight{
-  float: right;
-  padding-right: 20px;
-  p {
-    margin: 12px 0;
-  }
-  a {
-    font-size: 15px;
-    font-weight: 600;
-    color: #450073;
-  }
+.logo_header {
+  grid-area: logo_header;
+  height: 30px;
+  margin: 6px 28px 6px 0;
+}
+
+.header_links {
+  grid-area: header_links;
+
+}
+
+.account_box {
+  grid-area: account_box;
+
+}
+
+@media (min-width: 550px) {
 }

@@ -2,16 +2,21 @@
 
 // --------------------
 // IMPORTS
-import { Link } from 'react-router-dom';
-import Helmet from 'react-helmet';
+//    import { Link } from 'react-router-dom';
 
 /* NPM */
 import React from 'react';
 
 /* Oktopus */
 
+/* Local */
+//    import header from '../form_components/header';
+
+// Styles
+
+
 // Helper components
-import Animated from 'src/components/helpers/animated';
+//    import Animated from 'src/components/helpers/animated';
 
 // Images
 
@@ -27,15 +32,14 @@ class MySites extends React.PureComponent {
 
   render() {
     return (
-      <div>
-        <Helmet
-          title="Oktopus"
-          meta={[{
-            name: 'Creative sharing networks',
-            content: 'My Sites',
-          }]} />
-  )
-}
 
+      <div className={css.wrapper}>
+        <div className={css.page_menu} />
+        <div className={css.new_site} />
+        <div className={css.site_cards} />
+      </div>
+    );
+  }
+}
 
 export default MySites;

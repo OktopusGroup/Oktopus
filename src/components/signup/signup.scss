@@ -3,8 +3,6 @@
 
 /* Container */
 .wrapper {
-  z-index: 1000;
-  z-index: 1;
   width: 100%;
   display: grid;
   grid-template-areas:
@@ -49,12 +47,11 @@
   font-weight: bold;
 	color: $purple;
   text-align: center;
-  margin: 0 auto;
+  margin: 0 auto 20px;
   display: block;
 }
 
 .login_subtext {
-  z-index: -1000;
   grid-area: login_subtext;
   display: block;
   margin: 20px auto;
