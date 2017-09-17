@@ -28,8 +28,12 @@ class Header extends React.PureComponent {
 
       <div className={css.wrapper}>
         <img src={logo} className={css.logo_header} alt="Oktopus" />
-        <div className={css.header_links} />
-        <div className={css.account_box} />
+        <div className={css.header_links}>
+          <a href="/examples" className={css.header_item}>examples</a>
+          <a href="/features" className={css.header_item}>features</a>
+          <a href="/pricing" className={css.header_item}>pricing</a>
+        </div>
+        <Link to="/accountPage" className={css.profile_img} />
       </div>
     );
   }
