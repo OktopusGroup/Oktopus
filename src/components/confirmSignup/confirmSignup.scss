@@ -27,7 +27,7 @@
 .login_box .login_form {
   display: block;
   grid-area: login_box;
-  height: 263px;
+  height: 341px;
   background-color: $white;
   box-shadow: none;
   margin: 2rem 0;
@@ -44,7 +44,8 @@
   box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.05);
 }
 
-.confirm {
+.guide_text {
+  margin-top: 60px;
   display: block;
   text-align: center;
   color: $sky-blue;
@@ -59,7 +60,7 @@
   font-weight: bold;
 	color: $purple;
   text-align: center;
-  margin: 0 auto 10px;
+  margin: 0 auto;
   display: block;
 }
 
@@ -70,99 +71,6 @@
   margin: 20px auto;
   font-size: 16px;
   text-align: center;
-}
-
-/* Form */
-.field {
-  padding-top: 58px;
-  position: relative;
-  margin-bottom: 2em;
-}
-
-.label {
-  display: block;
-  text-align: left;
-  z-index: 5;
-  position: absolute;
-  height: 2rem;
-  width: 80%;
-  line-height: 2rem;
-  bottom: 0;
-  color: $greyd2;
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  padding-right: 100px;
-  vertical-align: top;
-}
-
-.forgot {
-  font-size: 14px;
-  z-index: 1;
-  font-weight: 400;
-  position: absolute;
-  left: 82%;
-  bottom: 5px;
-  text-decoration: none;
-  color: $greyd2;
-  &:hover {
-    color: $purple;
-    text-decoration: underline;
-    font-weight: bold;
-  &:active {
-    color: $greyd2;
-    text-decoration: none;
-  }
-}
-}
-
-.input {
-  width: 100%;
-  font-size: 100%;
-  border: 0;
-  background-color: transparent;
-  height: 2rem;
-  line-height: 2rem;
-  border-bottom: 1px solid #eee;
-  color: $purple;
-  transition: all 0.2s ease-in;
-  border-radius: 0;
-  &:focus {
-    outline: 0;
-    border-color: $sky-blue;
-  }
-}
-
-.inputError {
-  text-align: left;
-  display: block;
-  width: 100%;
-  font-size: 100%;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  height: 2rem;
-  line-height: 2rem;
-  border-bottom: 1px solid #eee;
-  color: $purple;
-  border-radius: 0;
-  &:focus {
-  outline: 0;
-  border-color: $red;
-  }
-}
-
-/* Using a faux pattern to see if input has text from http://stackoverflow.com/questions/16952526/detect-if-an-input-has-text-in-it-using-css */
-.input:focus+.label,
-input:valid+.label {
-  transform: translateY(-75%);
-  font-size: 0.75rem;
-  color: $sky-blue;
-}
-
-.inputError:focus+.label,
-  input:valid+.label {
-  transform: translateY(80%);
-  font-size: 0.75rem;
-  color: $red;
 }
 
 @media (min-width: 550px) {
@@ -178,10 +86,6 @@ input:valid+.label {
   }
   .box_title {
     font-size: 30px;
-  }
-  .forgot {
-    position: absolute;
-    left: 180px;
   }
   .login_subtext {
     margin: 30px auto;

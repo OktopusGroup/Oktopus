@@ -47,9 +47,11 @@ class ConfirmSignup extends React.PureComponent {
                 <span className={css.box_title}>Confirm Email</span>
                 <div className={css.login_fields}>
                   <div className={css.field}>
-                    {/* add user submitted email data injection */}
-                    <span className={css.confirm}>useremail@email.com</span>
+                    {/* need to add user submitted email data injector */}
+                    <span className={css.guide_text}>useremail@email.com</span>
                   </div>
+                  <span className={css.login_subtext}>Complete sign up by
+                   clicking the link in your email.</span>
                   <button className={css.btn_default}>Okay</button>
                 </div>
               </div>
