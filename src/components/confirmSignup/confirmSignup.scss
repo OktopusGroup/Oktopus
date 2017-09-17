@@ -45,7 +45,7 @@
 }
 
 .guide_text {
-  margin-top: 60px;
+  margin-top: 18px;
   display: block;
   text-align: center;
   color: $sky-blue;
@@ -54,9 +54,8 @@
 }
 
 .box_title {
-  position:absolute;
+  position:relative;
   font-size: 35px;
-  padding-bottom: 10px;
   font-weight: bold;
 	color: $purple;
   text-align: center;
