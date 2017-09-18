@@ -46,6 +46,7 @@ class MySites extends React.PureComponent {
               <Link to="/newsite" className={css.btn_blue}>New Site</Link>
             </div>
           </div>
+          </div>
           <div className={css.card_wrapper}>
             <SiteCard />
             <SiteCard />
@@ -54,7 +55,7 @@ class MySites extends React.PureComponent {
             <SiteCard />
           </div>
         </div>
-      </div>
+
     );
   }
 }
