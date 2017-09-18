@@ -10,25 +10,25 @@
   height: 340px;
   text-decoration: none;
 }
-  .card__preview {
-    border-top-right-radius: 4px;
-    border-top-left-radius: 4px;
-    transform: translate(0%, 0%);
-    background-color: $greyd1;
-    height: 260px;
-    width: auto;
-  }
-  .card__title {
-    text-decoration: none;
-    color: $black;
-    font-size: 18px;
-    margin: 0 15px;
-    text-align: left;
-  }
-  .card__subtitle {
-    text-decoration: none;
-    color: $greyd2;
-    font-size: 14px;
-    margin: 0 15px;
-    text-align: left;
+.card__preview {
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  transform: translate(0%, 0%);
+  background-color: $greyd1;
+  height: 260px;
+  width: auto;
+}
+.card__title {
+  text-decoration: none;
+  color: $black;
+  font-size: 18px;
+  margin: 0 15px;
+  text-align: left;
+}
+.card__subtitle {
+  text-decoration: none;
+  color: $greyd2;
+  font-size: 14px;
+  margin: 0 15px;
+  text-align: left;
 }
