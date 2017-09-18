@@ -1,3 +1,4 @@
+// Site Card Component
 // ----------------------
 // IMPORTS
 
@@ -25,11 +26,12 @@ class SiteCard extends React.PureComponent {
   render() {
     return (
 
-      <div className={css.site_card}>
+      <Link to="/projectName" className={css.site_card}>
         <div className={css.card__preview} />
-        <Link to="/project1" className={css.card__title}>Title</Link>
-        <Link to="/domainSettings" className={css.card__subtitle}>Domain Settings</Link>
-      </div>
+        <p className={css.card__title}>Project Name</p>
+        <div><Link to="/domainSettings" className={css.card__subtitle}>Domain Settings</Link>
+        </div>
+      </Link>
     );
   }
 }

@@ -9,6 +9,13 @@
   width: auto;
   height: 340px;
   text-decoration: none;
+  transition: all 0.5s ease;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 6px 0 rgba(25, 74, 179, 0.15);
+    -webkit-transition: all 0.5s ease 0s, transform 400ms;
+    transition: all 0.5s ease 0s, transform 400ms;
+  }
 }
 .card__preview {
   border-top-right-radius: 4px;
@@ -22,13 +29,17 @@
   text-decoration: none;
   color: $black;
   font-size: 18px;
-  margin: 0 15px;
+  margin: 0 0 0 15px;
   text-align: left;
 }
 .card__subtitle {
-  text-decoration: none;
   color: $greyd2;
   font-size: 14px;
-  margin: 0 15px;
+  margin: 0 0 0 15px;
   text-align: left;
+  width: min-content;
+  &:active {
+    font-weight: bold;
+    color: $greyd3;
+  }
 }
