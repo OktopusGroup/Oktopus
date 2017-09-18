@@ -13,20 +13,18 @@
 }
 
 .logo_header {
-  grid-area: logo_header;
-  position: fixed;
-  left: 28px;
+  visibility: hidden;
   margin: 6px auto;
   height: 30px;
 }
 
 /* Header links should condense to a hamburger menu on mobile */
 .header_links {
+  visibility: hidden;
   grid-area: header_links;
   position: fixed;
   left: 0;
   right: 0;
-  visibility: hidden;
   padding: 8px 0;
   text-align: center;
 }
@@ -37,40 +35,33 @@
   font-weight: 400;
 }
 
-.profile_img {
-  grid-area: profile_img;
-  position: fixed;
+.signup {
+  font-size: 13px;
+  position: absolute;
   right: 28px;
-  margin-top: 4px;
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  border: 1px solid $greyd2;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  transition: all 0.2s ease;
-  &:hover {
-    box-shadow: 0 4px 8px 0 rgba(25, 74, 179, 0.15);
-  }
+  padding: 12px 0;
+  text-decoration: none;
 }
 
-@media (min-width: 550px) {
-  .wrapper {
-    grid-template-areas:
-    "logo_header   header_links   user_name   profile_img";
-  }
 
+@media (min-width: 550px) {
   .header_links {
     visibility: visible;
   }
 
   .header_item {
-  padding: 0 12px;
+    padding: 0 12px;
+  }
+  .logo_header {
+    visibility: visible;
+    position: fixed;
+    left: 28px;
+    right: auto;
   }
 }
 @media (min-width: 600px) {
   .header_item {
-  padding: 0 20px;
+    padding: 0 20px;
   }
+
 }

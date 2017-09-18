@@ -3,7 +3,7 @@
 
 /* Container */
 .wrapper {
-  width: 100%;
+  width: auto;
   display: grid;
   grid-template-areas:
   "page_menu"
@@ -13,7 +13,13 @@
 
 .page_menu {
   grid-area: page_menu;
-
+  height: 117px;
+  width: auto;
+  padding: 75px 0;
+  .menu_line {
+    border-bottom: 1px solid $greyd2;
+    width: 80%;
+  }
 }
 
 .new_site {
@@ -23,7 +29,6 @@
 .site_cards {
   grid-area: siteCards;
 }
-
 
 @media (min-width: 550px) {
 }

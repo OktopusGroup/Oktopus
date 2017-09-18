@@ -7,7 +7,8 @@
 /* NPM */
 import React from 'react';
 
-/* Oktopus */
+/* Oktopus Components */
+import HeaderLoggedIn from '../form_components/headerLoggedIn';
 
 /* Local */
 //    import header from '../form_components/header';
@@ -32,11 +33,17 @@ class MySites extends React.PureComponent {
 
   render() {
     return (
+      <div>
 
-      <div className={css.wrapper}>
-        <div className={css.page_menu} />
-        <div className={css.new_site} />
-        <div className={css.site_cards} />
+        <HeaderLoggedIn />
+
+        <div className={css.wrapper}>
+          <div className={css.page_menu}>
+            <div className={css.menu_line} />
+          </div>
+          <div className={css.new_site} />
+          <div className={css.site_cards} />
+        </div>
       </div>
     );
   }

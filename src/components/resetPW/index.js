@@ -8,10 +8,11 @@ import Helmet from 'react-helmet';
 /* NPM */
 import React from 'react';
 
-/* Oktopus */
-
 // Helper components
 import Animated from 'src/components/helpers/animated';
+
+/* Oktopus Components */
+import HeaderLoggedOut from '../form_components/headerLoggedOut';
 
 // Images
 import logo from '../form_components/images/logo.svg';
@@ -35,6 +36,8 @@ class ResetPW extends React.PureComponent {
             name: 'Creative sharing networks',
             content: 'Login to Oktopus',
           }]} />
+
+        <HeaderLoggedOut />
 
         <div className={css.wrapper}>
           <Animated animationIn="bounceInDown" animationInDelay={0.2}>

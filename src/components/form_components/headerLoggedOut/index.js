@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 // Components
 
 // Styles
-import css from './header.scss';
+import css from './header_LoggedOut.scss';
 
 // Images
 import logo from '../images/logo.svg';
@@ -18,7 +18,7 @@ import logo from '../images/logo.svg';
 
 // Create component for button
 
-class Header extends React.PureComponent {
+class HeaderLoggedOut extends React.PureComponent {
   submit = () => {
     /* intentionally empty for now -- the future home of our submit function */
   }
@@ -33,10 +33,10 @@ class Header extends React.PureComponent {
           <a href="/features" className={css.header_item}>features</a>
           <a href="/pricing" className={css.header_item}>pricing</a>
         </div>
-        <Link to="/accountPage" className={css.profile_img} />
+        <Link to="/login" className={css.signup}>Login / Sign Up</Link>
       </div>
     );
   }
 }
 
-export default Header;
+export default HeaderLoggedOut;
