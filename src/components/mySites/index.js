@@ -9,9 +9,9 @@ import React from 'react';
 
 /* Oktopus Components */
 import HeaderLoggedIn from '../form_components/headerLoggedIn';
+import SiteCard from '../form_components/siteCard';
 
 /* Local */
-//    import header from '../form_components/header';
 
 // Styles
 
@@ -38,13 +38,21 @@ class MySites extends React.PureComponent {
         <HeaderLoggedIn />
 
         <div className={css.wrapper}>
-          <div className={css.page_menu}>
+          <div className={css.page_selector}>
             <span className={css.menu_item_Active}>My Sites</span>
             <Link to="/accountSettings" className={css.menu_item}>Account Settings</Link>
             <div className={css.menu_line} />
+            <div className={css.new_site}>
+              <Link to="/newsite" className={css.btn_blue}>New Site</Link>
+            </div>
           </div>
-          <div className={css.new_site} />
-          <div className={css.site_cards} />
+          <div className={css.card_wrapper}>
+            <SiteCard />
+            <SiteCard />
+            <SiteCard />
+            <SiteCard />
+            <SiteCard />
+          </div>
         </div>
       </div>
     );

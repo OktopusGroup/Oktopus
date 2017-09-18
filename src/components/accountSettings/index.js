@@ -38,7 +38,7 @@ class AccountSettings extends React.PureComponent {
         <HeaderLoggedIn />
 
         <div className={css.wrapper}>
-          <div className={css.page_menu}>
+          <div className={css.page_selector}>
             <Link to="/mySites" className={css.menu_item}>My Sites</Link>
             <span className={css.menu_item_Active}>Account Settings</span>
             <div className={css.menu_item_Active__underline} />

@@ -39,5 +39,4 @@ a:hover {
 a:active {
   font-weight: 400;
   color: $greyd2;
-  text-decoration: none;
 }
