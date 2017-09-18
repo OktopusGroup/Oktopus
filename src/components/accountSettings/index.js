@@ -1,4 +1,4 @@
-// MySites Page
+// Account Settings Page
 
 // --------------------
 // IMPORTS
@@ -23,10 +23,10 @@ import HeaderLoggedIn from '../form_components/headerLoggedIn';
 
 // Styles
 import '../../styles.global.css';
-import css from './mySites.scss';
+import css from './accountSettings.scss';
 // --------------------
 
-class MySites extends React.PureComponent {
+class AccountSettings extends React.PureComponent {
   submit = () => {
     /* intentionally empty for now -- the future home of our submit function */
   }
@@ -39,16 +39,15 @@ class MySites extends React.PureComponent {
 
         <div className={css.wrapper}>
           <div className={css.page_menu}>
-            <span className={css.menu_item_Active}>My Sites</span>
-            <Link to="/accountSettings" className={css.menu_item}>Account Settings</Link>
+            <Link to="/mySites" className={css.menu_item}>My Sites</Link>
+            <span className={css.menu_item_Active}>Account Settings</span>
+            <div className={css.menu_item_Active__underline} />
             <div className={css.menu_line} />
           </div>
-          <div className={css.new_site} />
-          <div className={css.site_cards} />
         </div>
       </div>
     );
   }
 }
 
-export default MySites;
+export default AccountSettings;

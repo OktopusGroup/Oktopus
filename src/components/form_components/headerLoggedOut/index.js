@@ -27,7 +27,7 @@ class HeaderLoggedOut extends React.PureComponent {
     return (
 
       <div className={css.wrapper}>
-        <img src={logo} className={css.logo_header} alt="Oktopus" />
+        <a href="/Home"><img src={logo} className={css.logo_header} alt="Oktopus" /></a>
         <div className={css.header_links}>
           <a href="/examples" className={css.header_item}>examples</a>
           <a href="/features" className={css.header_item}>features</a>

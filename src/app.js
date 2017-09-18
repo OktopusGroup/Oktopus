@@ -18,7 +18,9 @@ import Signup from 'src/components/signup';
 import ResetPW from 'src/components/resetPW';
 import ConfirmSignup from 'src/components/confirmSignup';
 import MySites from 'src/components/mySites';
-import Header from 'src/components/form_components/header';
+import AccountSettings from 'src/components/accountSettings';
+import HeaderLoggedIn from 'src/components/form_components/headerLoggedIn';
+import HeaderLoggedOut from 'src/components/form_components/headerLoggedOut';
 
 // Global styles
 import './styles.global.css';
@@ -31,12 +33,14 @@ export default () => (
   <div>
     <Helmet title="Oktopus" />
     <Switch>
+      <Route path="/header" component={HeaderLoggedIn} />
+      <Route path="/header" component={HeaderLoggedOut} />
       <Route path="/login" component={Login} />
       <Route path="/signup" component={Signup} />
       <Route path="/resetPW" component={ResetPW} />
       <Route path="/confirmSignup" component={ConfirmSignup} />
       <Route path="/mySites" component={MySites} />
-      <Route path="/header" component={Header} />
+      <Route path="/accountSettings" component={AccountSettings} />
       <Route component={Login} />
     </Switch>
   </div>

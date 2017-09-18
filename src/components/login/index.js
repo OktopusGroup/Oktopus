@@ -56,7 +56,7 @@ class Login extends React.PureComponent {
                   <div className={css.field}>
                     <input type="password" id="fieldPassword" className={css.input} required />
                     <label htmlFor="fieldPassword" className={css.label}>Password</label>
-                    <span><Link to="/ResetPW" className={css.forgot}>Forgot?</Link></span>
+                    <span><Link to="/resetPW" className={css.forgot}>Forgot?</Link></span>
                   </div>
                   <button className={css.btn_default}>Login</button>
                 </div>

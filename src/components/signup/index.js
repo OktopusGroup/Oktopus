@@ -47,7 +47,7 @@ class Signup extends React.PureComponent {
           <div className={css.login_box}>
             <Animated animationIn="bounceInDown">
               <div className={css.login_form}>
-                <Link to="/Back" className={css.closeX} />
+                <Link to="/back" className={css.closeX} />
                 <span className={css.box_title}>Sign Up</span>
                 <div className={css.login_fields}>
                   <div className={css.field}>
