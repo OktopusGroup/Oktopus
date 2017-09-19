@@ -1,20 +1,21 @@
 @import '../form_components/button/button.scss';
 @import '../variables.scss';
+@import '../form_components/form/form.scss';
 
 /* Container */
 .wrapper {
+    padding-bottom: 40px;
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
     grid-template-areas:
-    "page_menu"
+    "page_selector"
     "new_site"
-    "site_card";
 }
 
 .page_selector {
     text-align: center;
-    grid-area: page_menu;
+    grid-area: page_selector;
     padding: 25px 0 100px 0;
     height: 100px;
     width: auto;
@@ -48,34 +49,60 @@
     height: 20px;
 }
 
-.new_site {
+.profile_img {
+    grid-area: profile_img;
+    margin: 60px auto 50px;
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
+    background-color: $purple; 
+}
+
+.section_wrapper {
+    margin: 80px auto 0 auto;
+    padding: 0 28px 0px;
+    width: 100%;
+    max-width: 540px;
+}
+
+.edit_button {
     width: auto;
     margin: 35px 0 90px 0;
 }
 
-.site_card {
-    position: relative;
-    left: 0;
-    margin: 59px 28px;
-    display: inline;
-    height: 320px;
-    width: 320px;
-    border-radius: 4px;
-    background-color: $greyd1;
+.btn_blue {
+    margin: 0 auto;        
+}
 
+/* 
+.section_social_networks and the related button in /Button NEEDS AN ACTIVE STATE WITH A CHECKMARK .SVG. 
+Should I make this into a component? 
+How should I add the SVG to the state? 
+*/
+.section_social_login {
+    grid-area: social_networks;
+    height: auto;
+    margin: 0px auto;
+    padding-bottom: 60px;
+}
+.section_title {
+    text-align: left;
+    width: 100%;
+    color: $black;
+    font-size: 20px;
+    margin: 80px 0px 30px;
+}
+
+.section_line {
+    margin: 0 auto;
+    border-bottom: 1px solid $greyd1;
+    height: 1px;
+    margin: 13px auto 24px 0px;
 }
 
 @media (min-width: 550px) {
-  .wrapper {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-areas:
-      "page_menu page_menu page_menu"
-      "new_site"
-      "site_card  site_card  site_card";
-}
-  .page_menu {
-      padding: 25px 0 100px 0;
-  }
+    .btn_blue {
+        position: relative;
+        margin: 0 0;
+    }
 }

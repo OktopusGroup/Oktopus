@@ -24,7 +24,7 @@
 .header_links {
   visibility: hidden;
   grid-area: header_links;
-  position: fixed;
+  position: absolute;
   left: 0;
   right: 0;
   padding: 8px 0;
@@ -62,7 +62,7 @@
   }
   .logo_header {
     visibility: visible;
-    position: fixed;
+    position: absolute;
     left: 28px;
     right: auto;
   }

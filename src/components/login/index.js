@@ -48,18 +48,16 @@ class Login extends React.PureComponent {
               <div className={css.login_form}>
                 <Link to="/Back" className={css.closeX} />
                 <span className={css.box_title}>Login</span>
-                <div className={css.login_fields}>
-                  <div className={css.field}>
-                    <input type="text" id="fieldEmail" className={css.inputError} required />
-                    <label htmlFor="fieldEmail" className={css.label}>Email</label>
-                  </div>
-                  <div className={css.field}>
-                    <input type="password" id="fieldPassword" className={css.input} required />
-                    <label htmlFor="fieldPassword" className={css.label}>Password</label>
-                    <span><Link to="/resetPW" className={css.forgot}>Forgot?</Link></span>
-                  </div>
-                  <button className={css.btn_default}>Login</button>
+                <div className={css.field}>
+                  <input type="text" id="fieldEmail" className={css.input} required />
+                  <label htmlFor="fieldEmail" className={css.label}>Email</label>
                 </div>
+                <div className={css.field}>
+                  <input type="password" id="fieldPassword" className={css.input} required />
+                  <label htmlFor="fieldPassword" className={css.label}>Password</label>
+                  <span><Link to="/resetPW" className={css.forgot}>Forgot?</Link></span>
+                </div>
+                <button className={css.btn_default}>Login</button>
               </div>
             </Animated>
             <Animated animationIn="bounceInUp" animationInDelay={0.2}>

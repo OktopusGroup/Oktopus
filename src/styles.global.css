@@ -1,5 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,700';
 @import '~animate.css';
+@import '~./components/variables.scss';
 
 /* Base styles */
 
@@ -14,6 +15,7 @@ html {
 }
 
 body {
+  padding-bottom: 150px;
   position: relative;
   margin: 0;
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
@@ -28,7 +30,7 @@ button {
 
 a {
   text-decoration: underline;
-  color: #450073;
+  color: $purple;
   font-weight: bold;
 }
 
@@ -38,5 +40,5 @@ a:hover {
 
 a:active {
   font-weight: 400;
-  color: $greyd2;
+  color: #AAA9AA;
 }

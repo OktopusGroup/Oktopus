@@ -7,13 +7,13 @@
     margin: 0 auto;
     display: grid;
     grid-template-areas:
-    "page_menu"
+    "page_selector"
     "new_site"
 }
 
 .page_selector {
     text-align: center;
-    grid-area: page_menu;
+    grid-area: page_selector;
     padding: 25px 0 100px 0;
     height: 100px;
     width: auto;
@@ -53,9 +53,11 @@
 }
 
 .card_wrapper {
-  display: grid;
-  padding: 30px 28px;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 340px));
-  grid-auto-rows: minmax(150px, auto);
-  grid-gap: 60px;
+    margin: 30px auto;
+    max-width: 1200px;
+    display: grid;
+    padding: 30px 28px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 340px));
+    grid-auto-rows: minmax(150px, auto);
+    grid-gap: 60px;
 }

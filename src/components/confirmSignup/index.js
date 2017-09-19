@@ -57,7 +57,7 @@ class ConfirmSignup extends React.PureComponent {
               </div>
             </Animated>
             <Animated animationIn="bounceInUp" animationInDelay={0.2}>
-              <span className={css.login_subtext}><Link to="/confirmSignup">Send it again</Link></span>
+              <span className={css.login_subtext}><Link to="/resendConfirmation">Send it again</Link></span>
             </Animated>
           </div>
         </div>
