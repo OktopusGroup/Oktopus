@@ -6,7 +6,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 /* Local */
-// Components
 
 // Styles
 import css from './header_LoggedIn.scss';

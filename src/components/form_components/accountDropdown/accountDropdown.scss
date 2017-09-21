@@ -1,0 +1,58 @@
+@import '../button/button.scss';
+@import '../../variables.scss';
+
+.positioner {
+  position: absolute;
+  top: -20px;
+  right: 0px;
+}
+
+.dropdown_box {
+  position: absolute;
+  top: 50px;
+  right:40px;
+  padding: 50px 0 20px;
+	width: 228px;
+  height: 273px;
+}
+
+.dropdown_svg {
+  position: absolute;
+  top: 0px;
+  right:23px;
+  padding: 50px 0 20px;
+}
+  .dropdown_box__item {
+    margin: 0 auto;
+    font-weight: 400;
+    padding: 5px;
+    font-size: 15px;
+    text-align: center;
+    color: $greyd2;
+    background-image: transparent;
+    width: 228px;
+    height: 34px;
+    display: block;
+    &:hover {
+      color: $white;
+      background-image: $peach-gradient;
+      transform: translateY(-2px);
+      box-shadow: 0 3px 4px 0 rgba(25, 74, 179, 0.15);
+      -webkit-transition: all 0.3s ease 0s, transform 400ms;
+      transition: all 0.3s ease 0s, transform 400ms;
+      width: 223px;
+      height: 34px;
+      object-fit: contain;
+    }
+    &:active {
+      color: $greyd1;
+      -webkit-transition: all 0s linear 0.4s, transform 400ms;
+      transition: all 0s linear 0.4s, transform 400ms;
+      transform: translateY(0px);
+      transition: box-shadow 0s linear 0s;
+      box-shadow: 0 0 0 0 rgba(25, 74, 179, 0.5);
+    }
+  }
+  .button_align {
+    margin-top: 25px;
+  }

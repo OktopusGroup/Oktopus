@@ -1,7 +1,6 @@
 // --------------------
 // IMPORTS
 
-
 /* NPM */
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
@@ -17,10 +16,11 @@ import Login from 'src/components/login';
 import Signup from 'src/components/signup';
 import ResetPW from 'src/components/resetPW';
 import ConfirmSignup from 'src/components/confirmSignup';
-import MySites from 'src/components/mySites';
-import AccountSettings from 'src/components/accountSettings';
 import HeaderLoggedIn from 'src/components/form_components/headerLoggedIn';
 import HeaderLoggedOut from 'src/components/form_components/headerLoggedOut';
+import MySites from 'src/components/mySites';
+import AccountSettings from 'src/components/accountSettings';
+import AccountDropdown from 'src/components/form_components/accountDropdown';
 
 // Global styles
 import './styles.global.css';
@@ -41,6 +41,7 @@ export default () => (
       <Route path="/confirmSignup" component={ConfirmSignup} />
       <Route path="/mySites" component={MySites} />
       <Route path="/accountSettings" component={AccountSettings} />
+      <Route path="/accountDropdown" component={AccountDropdown} />
       <Route component={Login} />
     </Switch>
   </div>

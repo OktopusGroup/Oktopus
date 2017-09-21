@@ -25,20 +25,22 @@ body {
 }
 
 button {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   cursor: pointer;
 }
 
 a {
-  text-decoration: underline;
+  text-decoration: none;
   color: $purple;
   font-weight: bold;
 }
 
 a:hover {
   color: rgba(69, 0, 115, .75);
+  text-decoration: none;
 }
 
 a:active {
-  font-weight: 400;
+  font-weight: bold;
   color: #AAA9AA;
 }

@@ -10,7 +10,7 @@
   font-weight: bold;
   height: 3.5rem;
   width: 16rem;
-  line-height: 2.5rem;
+  line-height: 1.7rem;
   color: $white;
   background-image: $peach-gradient;
   border-radius: 100px;
@@ -33,6 +33,39 @@
   }
 }
 
+.btn_default_small {
+text-decoration: none;
+margin: 0 auto;
+outline: 0;
+display: block;
+border: 0;
+font-size: 14px;
+font-weight: bold;
+height: 30px;
+width: 140px;
+line-height: 13px;
+color: $white;
+background-image: $peach-gradient;
+border-radius: 100px;
+transition: background 0.2s;
+box-shadow: 0 2px 2px 0 $greyd1;
+-webkit-transition: all 0.5s ease;
+transition: all 0.5s ease;
+&:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 6px 0 rgba(25, 74, 179, 0.15);
+  -webkit-transition: all 0.5s ease 0s, transform 400ms;
+  transition: all 0.5s ease 0s, transform 400ms;
+&:active {
+  -webkit-transition: all 0s linear 0.4s, transform 40ms;
+  transition: all 0s linear 0.4s, transform 40ms;
+  transform: translateY(-3px);
+  transition: box-shadow 0s linear 0s;
+  box-shadow: 0 0 0 0 rgba(25, 74, 179, 0.5);
+  }
+}
+}
+
 .btn_blue {
   display: block;
   text-decoration: none;
@@ -44,7 +77,7 @@
   font-weight: bold;
   width: 180px;
   height: 40px;
-  line-height: 2.29rem;
+  line-height: 2.4rem;
   color: $sky-blue;
   background-color: $white;
   border-radius: 100px;
@@ -136,13 +169,19 @@
   .btn_blue {
     width: 145px;
     height: 30px;
-    line-height: 1.65rem;
+    line-height: 1.8rem;
     position: relative;
     margin-left: 0px;
   }
   .btn_default {
     width: 180px;
     height: 40px;
+    display: block;
+    margin: 0 auto;
+  }
+  .btn_default_small {
+    width: 140px;
+    height: 30px;
     display: block;
     margin: 0 auto;
   }

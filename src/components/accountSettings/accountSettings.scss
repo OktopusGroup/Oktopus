@@ -10,7 +10,7 @@
     display: grid;
     grid-template-areas:
     "page_selector"
-    "new_site"
+    "profile_img"
 }
 
 .page_selector {
@@ -60,8 +60,8 @@
 
 .section_wrapper {
     margin: 80px auto 0 auto;
-    padding: 0 28px 0px;
-    width: 100%;
+    padding: 0 28px;
+    width: auto;
     max-width: 540px;
 }
 
@@ -74,10 +74,9 @@
     margin: 0 auto;        
 }
 
+
 /* 
-.section_social_networks and the related button in /Button NEEDS AN ACTIVE STATE WITH A CHECKMARK .SVG. 
-Should I make this into a component? 
-How should I add the SVG to the state? 
+.section_social_networks currently unused
 */
 .section_social_login {
     grid-area: social_networks;
@@ -85,6 +84,8 @@ How should I add the SVG to the state?
     margin: 0px auto;
     padding-bottom: 60px;
 }
+
+
 .section_title {
     text-align: left;
     width: 100%;

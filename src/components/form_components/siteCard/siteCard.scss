@@ -27,13 +27,14 @@
 }
 .card__title {
   text-decoration: none;
-  color: $black;
+  font-weight: 400;
+  color: $greyd3;
   font-size: 18px;
   margin: 0 0 0 15px;
   text-align: left;
 }
 .card__subtitle {
-  font-weight: bold;
+  font-weight: 400;
   color: $greyd2;
   font-size: 14px;
   margin: 0 0 0 15px;
