@@ -1,0 +1,133 @@
+@import '../../button/button.scss';
+@import '../../../variables.scss';
+
+/* Modal for adding a new site */
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+	opacity: 0.75;
+  background-color: $greyd2;
+}
+
+.modal_box {
+  background-color: $white;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+  height: auto;
+  grid-column-gap: 2em;
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-row-gap: 3em;
+  grid-template-areas:
+  "title"
+  "box_discover"
+  "box_connect";
+}
+
+.closeX {
+  position: absolute;
+  top: 25px;
+  right: 10px;
+}
+
+
+.title {
+  text-align: center;
+  grid-area: title;
+  font-size: 25px;
+	font-weight: bold;
+	color: $purple;
+  margin: 60px auto 0px auto;
+}
+
+.box_image {
+  margin: 60px auto 0;
+}
+
+.box_discover {
+  margin: 0 auto;
+  text-align: center;
+  grid-area: box_discover;
+  border: 1px solid $greyd1;
+  background-color: $offwhite;
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.10);
+  width: 354px;
+  height: 450px;
+}
+
+.box_connect {
+  margin: 20px auto;
+  text-align: center;
+  grid-area: box_connect;
+  border: 1px solid $greyd1;
+  background-color: $white;
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.10);
+  width: 354px;
+  height: 450px;
+}
+
+.box-image {
+  margin: 60px auto 27px auto;
+}
+
+.description {
+  margin: 15 auto 30px auto;
+}
+
+.bottom_text_top {
+  font-size: 13px;
+  margin: 40px auto 4px auto;
+}
+
+.logo.turfmob {
+  margin: 0 auto;
+}
+
+.bottom_text_bottom {
+  font-size: 13px;
+  margin: 0px auto 0 auto;
+}
+
+
+@media (min-width: 550px) {
+
+  .modal_box {
+    position: relative;
+    height: 800px;
+    grid-gap: 20em;
+    grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+
+  }
+   .title {
+    position: relative;
+    width: 100%;
+    margin: 50px auto;
+    text-align: center
+  }
+
+  .box_discover {
+    position: absolute;
+    left: 20px;
+    grid-column: 12;
+  }
+
+  .box_connect {
+    position: absolute;
+    margin: 0 0;
+    right: 20px;
+    grid-column: 4;
+  }
+  
+  .closeX {
+    top: 25px;
+    right: 10px;
+  }
+
+}

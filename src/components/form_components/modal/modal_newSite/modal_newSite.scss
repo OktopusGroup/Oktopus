@@ -1,0 +1,10 @@
+@import '../../button/button.scss';
+@import '../../../variables.scss';
+
+/* Modal for adding a new site */
+.modal_box {
+  margin: 205px 80px 0 0;
+  padding: 50px 252px 158px 252px;
+  display: grid;
+  grid-template-columns: 3fr;
+}
