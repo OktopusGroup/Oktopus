@@ -24,6 +24,7 @@ import ModalAddDomain from 'src/components/form_components/modal/modal_addDomain
 import ModalInputDomain from 'src/components/form_components/modal/modal_addDomain__inputDomain';
 import ModalInputTitle from 'src/components/form_components/modal/modal_newSite__inputTitle';
 import ModalNewSite from 'src/components/form_components/modal/modal_newSite';
+import PageStyleEditor from 'src/components/form_components/page_styleEditor';
 import MySites from 'src/components/mySites';
 import AccountSettings from 'src/components/accountSettings';
 import AccountDropdown from 'src/components/form_components/accountDropdown';
@@ -52,6 +53,7 @@ export default () => (
       <Route path="/newsite" component={ModalNewSite} />
       <Route path="/inputDomain" component={ModalInputDomain} />
       <Route path="/inputTitle" component={ModalInputTitle} />
+      <Route path="/styleEditor" component={PageStyleEditor} />
       <Route component={Login} />
     </Switch>
   </div>

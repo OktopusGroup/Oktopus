@@ -52,10 +52,6 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  transition: all 0.2s ease;
-  &:hover {
-    box-shadow: 0 4px 8px 0 rgba(25, 74, 179, 0.15);
-  }
 }
 
 @media (min-width: 550px) {
