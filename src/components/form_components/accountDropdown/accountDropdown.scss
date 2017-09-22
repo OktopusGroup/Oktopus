@@ -2,14 +2,14 @@
 @import '../../variables.scss';
 
 .positioner {
-  z-index: 1000;
+  z-index: 5000;
   position: absolute;
   top: -17px;
   right: -23px;
 }
 
 .dropdown_box {
-  z-index: 1000;
+  z-index: 5000;
   position: absolute;
   top: 50px;
   right:40px;
@@ -19,13 +19,14 @@
 }
 
 .dropdown_svg {
-  z-index: 1000;
+  z-index: 5000;
   position: absolute;
   top: 0px;
   right:23px;
   padding: 50px 0 20px;
 }
   .dropdown_box__item {
+    z-index: 5000;
     margin: 0 auto;
     font-weight: 400;
     padding: 5px;
