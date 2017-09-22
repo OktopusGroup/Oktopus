@@ -22,6 +22,7 @@ import HeaderLoggedIn from 'src/components/form_components/headerLoggedIn';
 import HeaderLoggedOut from 'src/components/form_components/headerLoggedOut';
 import ModalAddDomain from 'src/components/form_components/modal/modal_addDomain';
 import ModalInputDomain from 'src/components/form_components/modal/modal_addDomain__inputDomain';
+import ModalInputTitle from 'src/components/form_components/modal/modal_newSite__inputTitle';
 import ModalNewSite from 'src/components/form_components/modal/modal_newSite';
 import MySites from 'src/components/mySites';
 import AccountSettings from 'src/components/accountSettings';
@@ -50,6 +51,7 @@ export default () => (
       <Route path="/addDomain" component={ModalAddDomain} />
       <Route path="/newsite" component={ModalNewSite} />
       <Route path="/inputDomain" component={ModalInputDomain} />
+      <Route path="/inputTitle" component={ModalInputTitle} />
       <Route component={Login} />
     </Switch>
   </div>

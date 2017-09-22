@@ -11,14 +11,14 @@ import { Link } from 'react-router-dom';
 import Animated from 'src/components/helpers/animated';
 
 // Styles
-import css from './modal_addDomain__inputDomain.scss';
+import css from './modal_newSite__inputTitle.scss';
 import '../../../../styles.global.css';
 // Images
 // ----------------------
 
 // Create component for button
 
-class ModalInputDomain extends React.PureComponent {
+class ModalInputTitle extends React.PureComponent {
   submit = () => {
     /* intentionally empty for now -- the future home of our submit function */
   }
@@ -30,14 +30,14 @@ class ModalInputDomain extends React.PureComponent {
           <div className={css.modal_box}>
             <div className={css.wrapper}>
               <Link to="/Back" className={css.closeX} />
-              <p className={css.title}>Input your custom domain</p>
-              <p className={css.subtitle}>(you must already own the domain)</p>
+              <p className={css.title}>Add a New Site</p>
+              <p className={css.subtitle}>Choose a title for your community</p>
 
               <div className={css.field}>
                 <input type="text" id="fieldUrl" className={css.input} required />
-                <label htmlFor="fieldUrl" className={css.label}>http://</label>
+                <label htmlFor="fieldUrl" className={css.label}>new site name</label>
               </div>
-              <button className={css.btn_blue_large}>Connect</button>
+              <button className={css.btn_blue_large}>Add</button>
             </div>
           </div>
         </Animated>
@@ -46,4 +46,4 @@ class ModalInputDomain extends React.PureComponent {
   }
 }
 
-export default ModalInputDomain;
+export default ModalInputTitle;
