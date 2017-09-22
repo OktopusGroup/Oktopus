@@ -26,13 +26,11 @@ class ModalAddDomain extends React.PureComponent {
   render() {
     return (
       <div className={css.background}>
-        <div className={css.wrapper}>
 
-          <div className={css.modal_box}>
-            <Link to="/Back" className={css.closeX} />
-
-            <p className={css.title}>Add a custom domain</p>
-
+        <div className={css.modal_box}>
+          <Link to="/Back" className={css.closeX} />
+          <p className={css.title}>Add a custom domain</p>
+          <div className={css.boxes}>
             <div className={css.box_discover}>
               <img src={discover} className={css.box_image} alt="discover new domains" />
               <p className={css.description}>Find your perfect domain</p>
