@@ -91,23 +91,23 @@ class AccountSettings extends React.PureComponent {
               <div className={css.section__checkboxes}>
                 <label className={css.description} htmlFor="checkbox_1">web notifications</label>
                 
-                <input id="checkbox_1_1" name="checkbox_1_1" className={css.checkbox_new} type="checkbox" value="1" />
-                <label className={css.choice} htmlFor="checkbox_1_1">new direct messages</label>
-                <input id="checkbox_1_2" name="checkbox_1_2" className={css.checkbox_new} type="checkbox" value="1" />
-                <label className={css.choice} htmlFor="checkbox_1_2">new user signups</label>
-                <input id="checkbox_1_3" name="checkbox_1_3" className={css.checkbox_new} type="checkbox" value="1" />
-                <label className={css.choice} htmlFor="checkbox_1_3">new uploads</label>
+                <input id="checkbox_1_1" name="checkbox_1_1" className={css.checkbox_custom} type="checkbox" value="1" />
+                <label className={css.checkbox_custom_label} htmlFor="checkbox_1_1">new direct messages</label>
+                <input id="checkbox_1_2" name="checkbox_1_2" className={css.checkbox_custom} type="checkbox" value="1" />
+                <label className={css.checkbox_custom_label} htmlFor="checkbox_1_2">new user signups</label>
+                <input id="checkbox_1_3" name="checkbox_1_3" className={css.checkbox_custom} type="checkbox" value="1" />
+                <label className={css.checkbox_custom_label} htmlFor="checkbox_1_3">new uploads</label>
               </div>
 
               <div className={css.section__checkboxes}>
                 <label className={css.description} htmlFor="checkbox_2">email notifications</label>
                 
-                <input id="checkbox_2_1" name="checkbox_2_1" className={css.checkbox_new} type="checkbox" value="1" />
-                <label className={css.choice} htmlFor="checkbox_2_1">new direct messages</label>
-                <input id="checkbox_2_2" name="checkbox_2_2" className={css.checkbox_new} type="checkbox" value="1" />
-                <label className={css.choice} htmlFor="checkbox_2_2">new user signups</label>
-                <input id="checkbox_2_3" name="checkbox_2_3" className={css.checkbox_new} type="checkbox" value="1" />
-                <label className={css.choice} htmlFor="checkbox_2_3">new uploads</label>
+                <input id="checkbox_2_1" name="checkbox_2_1" className={css.checkbox_custom} type="checkbox" value="1" />
+                <label className={css.checkbox_custom_label} htmlFor="checkbox_2_1">new direct messages</label>
+                <input id="checkbox_2_2" name="checkbox_2_2" className={css.checkbox_custom} type="checkbox" value="1" />
+                <label className={css.checkbox_custom_label} htmlFor="checkbox_2_2">new user signups</label>
+                <input id="checkbox_2_3" name="checkbox_2_3" className={css.checkbox_custom} type="checkbox" value="1" />
+                <label className={css.checkbox_custom_label} htmlFor="checkbox_2_3">new uploads</label>
               </div>
             </div>
 
