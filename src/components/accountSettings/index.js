@@ -34,6 +34,7 @@ class AccountSettings extends React.PureComponent {
       <div>
 
         <HeaderLoggedIn />
+        {/* Page selector box */} 
         <div className={css.wrapper}>
           <div className={css.page_selector}>
             <Link to="/mySites" className={css.menu_item}>My Sites</Link>
@@ -45,71 +46,72 @@ class AccountSettings extends React.PureComponent {
             </div>
           </div>
         </div>
-        <div className={css.profile_img} />
-        <div className={css.section__account_info}>
-          <div className={css.section_wrapper}>
+        {/* Page contents */} 
+        <div className={css.content_container}>
 
-            <p className={css.section_title}>Account Info</p>
+          <div className={css.profile_img} />
+          <div className={css.section__account_info}>
+            <div className={css.section_wrapper}>
 
-            <div className={css.field}>
-              <input type="text" id="fieldName" className={css.input} required />
-              <label htmlFor="fieldName" className={css.label}>first name</label>
-            </div>
 
-            <div className={css.field}>
-              <input type="text" id="fieldFirstName" className={[css.input]} required />
-              <label htmlFor="fieldFirstName" className={css.label}>last name</label>
-            </div>
-
-            <div className={css.field}>
-              <input type="text" id="fieldEmail" className={css.input} required />
-              <label htmlFor="fieldEmail" className={css.label}>email address</label>
-            </div>
-          </div>
-
-          <div className={css.section_wrapper}>
-            <div className={css.section__password}>
-              <p className={css.section_title}>Password</p>
+              <p className={css.section_title}>Account Info</p>
 
               <div className={css.field}>
-                <input type="password" id="fieldPassword" className={css.input} required />
-                <label htmlFor="fieldPassword" className={css.label}>password</label>
+                <input type="text" id="fieldName" className={css.input} required />
+                <label htmlFor="fieldName" className={css.label}>first name</label>
               </div>
 
               <div className={css.field}>
-                <input type="password" id="fieldPasswordValidation" className={css.input} required />
-                <label htmlFor="fieldPasswordValidation" className={css.label}>Password again</label>
+                <input type="text" id="fieldFirstName" className={[css.input]} required />
+                <label htmlFor="fieldFirstName" className={css.label}>last name</label>
+              </div>
+
+              <div className={css.field}>
+                <input type="text" id="fieldEmail" className={css.input} required />
+                <label htmlFor="fieldEmail" className={css.label}>email address</label>
               </div>
             </div>
-          </div>
 
-          <div className={css.section_wrapper}>
-            <p className={css.section_title}>Notifications</p>
-            <div className={css.section__checkboxes}>
-              <label className={css.description} htmlFor="checkbox_1">web notifications</label>
-              
-              <input id="checkbox_1_1" name="checkbox_1_1" className={css.checkbox_new} type="checkbox" value="1" />
-              <label className={css.choice} htmlFor="checkbox_1_1">new direct messages</label>
-              <input id="checkbox_1_2" name="checkbox_1_2" className={css.checkbox_new} type="checkbox" value="1" />
-              <label className={css.choice} htmlFor="checkbox_1_2">new user signups</label>
-              <input id="checkbox_1_3" name="checkbox_1_3" className={css.checkbox_new} type="checkbox" value="1" />
-              <label className={css.choice} htmlFor="checkbox_1_3">new uploads</label>
+            <div className={css.section_wrapper}>
+              <div className={css.section__password}>
+                <p className={css.section_title}>Password</p>
+
+                <div className={css.field}>
+                  <input type="password" id="fieldPassword" className={css.input} required />
+                  <label htmlFor="fieldPassword" className={css.label}>password</label>
+                </div>
+
+                <div className={css.field}>
+                  <input type="password" id="fieldPasswordValidation" className={css.input} required />
+                  <label htmlFor="fieldPasswordValidation" className={css.label}>Password again</label>
+                </div>
+              </div>
+
+              <p className={css.section_title}>Notifications</p>
+              <div className={css.section__checkboxes}>
+                <label className={css.description} htmlFor="checkbox_1">web notifications</label>
+                
+                <input id="checkbox_1_1" name="checkbox_1_1" className={css.checkbox_new} type="checkbox" value="1" />
+                <label className={css.choice} htmlFor="checkbox_1_1">new direct messages</label>
+                <input id="checkbox_1_2" name="checkbox_1_2" className={css.checkbox_new} type="checkbox" value="1" />
+                <label className={css.choice} htmlFor="checkbox_1_2">new user signups</label>
+                <input id="checkbox_1_3" name="checkbox_1_3" className={css.checkbox_new} type="checkbox" value="1" />
+                <label className={css.choice} htmlFor="checkbox_1_3">new uploads</label>
+              </div>
+
+              <div className={css.section__checkboxes}>
+                <label className={css.description} htmlFor="checkbox_2">email notifications</label>
+                
+                <input id="checkbox_2_1" name="checkbox_2_1" className={css.checkbox_new} type="checkbox" value="1" />
+                <label className={css.choice} htmlFor="checkbox_2_1">new direct messages</label>
+                <input id="checkbox_2_2" name="checkbox_2_2" className={css.checkbox_new} type="checkbox" value="1" />
+                <label className={css.choice} htmlFor="checkbox_2_2">new user signups</label>
+                <input id="checkbox_2_3" name="checkbox_2_3" className={css.checkbox_new} type="checkbox" value="1" />
+                <label className={css.choice} htmlFor="checkbox_2_3">new uploads</label>
+              </div>
             </div>
 
-            <div className={css.section__checkboxes}>
-              <label className={css.description} htmlFor="checkbox_2">email notifications</label>
-              
-              <input id="checkbox_2_1" name="checkbox_2_1" className={css.checkbox_new} type="checkbox" value="1" />
-              <label className={css.choice} htmlFor="checkbox_2_1">new direct messages</label>
-              <input id="checkbox_2_2" name="checkbox_2_2" className={css.checkbox_new} type="checkbox" value="1" />
-              <label className={css.choice} htmlFor="checkbox_2_2">new user signups</label>
-              <input id="checkbox_2_3" name="checkbox_2_3" className={css.checkbox_new} type="checkbox" value="1" />
-              <label className={css.choice} htmlFor="checkbox_2_3">new uploads</label>
-            </div>
-          </div>
-
-
-          {/*  SOCIAL LOGIN SECTION UNUSED FOR NOW
+            {/*  SOCIAL LOGIN SECTION UNUSED FOR NOW
                     <div className={css.section__social_login}>
                       <div className={css.section_wrapper}>
                         <div className={css.section_social_login}>
@@ -122,7 +124,7 @@ class AccountSettings extends React.PureComponent {
                       </div>
                     </div>
                         */}
-                        
+          </div>
         </div>
       </div>
     );
