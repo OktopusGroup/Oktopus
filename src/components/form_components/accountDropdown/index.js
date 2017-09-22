@@ -72,7 +72,7 @@ class AccountDropdown extends React.PureComponent {
       <Animated
         animateOnMount={menu.showAccountMenu}
         isVisible={menu.showAccountMenu}
-        className={css.speed}>
+        className={css.animation}>
         <div
           className={css.positioner}
           onMouseEnter={this.show}
