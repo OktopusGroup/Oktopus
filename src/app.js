@@ -12,6 +12,8 @@ import config from 'kit/config';
 
 /* Oktopus */
 
+// Reducers
+import menuReducer from 'src/reducers/menu';
 
 // Components
 import Login from 'src/components/login';
@@ -30,11 +32,15 @@ import AccountSettings from 'src/components/accountSettings';
 import AccountDropdown from 'src/components/form_components/accountDropdown';
 
 // Global styles
+import 'src/components/variables.scss';
 import './styles.global.css';
-import '../src/components/variables.scss';
+
 // --------------------
 
 config.enableGraphQLServer();
+
+// Add reducers
+config.addReducer('menu', menuReducer);
 
 export default () => (
   <div>

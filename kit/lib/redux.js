@@ -15,6 +15,7 @@ immutability, to prevent weird side effects.
 /* NPM */
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import thunkMiddleware from 'redux-thunk';
+import createDebounce from 'redux-debounced';
 import Immutable from 'seamless-immutable';
 
 /* Local */
@@ -75,6 +76,7 @@ export default function createNewStore(apolloClient) {
     compose(
       applyMiddleware(
         apolloClient.middleware(),
+        createDebounce(),
         thunkMiddleware,
       ),
       // Enable Redux Devtools on the browser, for easy state debugging

@@ -34,9 +34,7 @@ class MySites extends React.PureComponent {
   render() {
     return (
       <div>
-
         <HeaderLoggedIn />
-
         <div className={css.wrapper}>
           <div className={css.page_selector}>
             <span className={css.menu_item_Active}>My Sites</span>
