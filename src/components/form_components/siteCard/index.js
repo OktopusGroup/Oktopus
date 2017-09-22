@@ -29,7 +29,7 @@ class SiteCard extends React.PureComponent {
       <Link to="/projectName" className={css.site_card}>
         <div className={css.card__preview} />
         <p className={css.card__title}>Project Name</p>
-        <div><Link to="/domainSettings" className={css.card__subtitle}>Domain Settings</Link>
+        <div><Link to="/inputdomain" className={css.card__subtitle}>Domain Settings</Link>
         </div>
       </Link>
     );

@@ -1,6 +1,7 @@
 // --------------------
 // IMPORTS
 
+
 /* NPM */
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
@@ -11,6 +12,7 @@ import config from 'kit/config';
 
 /* Oktopus */
 
+
 // Components
 import Login from 'src/components/login';
 import Signup from 'src/components/signup';
@@ -19,6 +21,7 @@ import ConfirmSignup from 'src/components/confirmSignup';
 import HeaderLoggedIn from 'src/components/form_components/headerLoggedIn';
 import HeaderLoggedOut from 'src/components/form_components/headerLoggedOut';
 import ModalAddDomain from 'src/components/form_components/modal/modal_addDomain';
+import ModalInputDomain from 'src/components/form_components/modal/modal_addDomain__inputDomain';
 import ModalNewSite from 'src/components/form_components/modal/modal_newSite';
 import MySites from 'src/components/mySites';
 import AccountSettings from 'src/components/accountSettings';
@@ -26,7 +29,7 @@ import AccountDropdown from 'src/components/form_components/accountDropdown';
 
 // Global styles
 import './styles.global.css';
-
+import '../src/components/variables.scss';
 // --------------------
 
 config.enableGraphQLServer();
@@ -46,6 +49,7 @@ export default () => (
       <Route path="/accountDropdown" component={AccountDropdown} />
       <Route path="/addDomain" component={ModalAddDomain} />
       <Route path="/newsite" component={ModalNewSite} />
+      <Route path="/inputDomain" component={ModalInputDomain} />
       <Route component={Login} />
     </Switch>
   </div>

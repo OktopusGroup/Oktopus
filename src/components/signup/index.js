@@ -70,7 +70,7 @@ class Signup extends React.PureComponent {
                   <label htmlFor="fieldPasswordValidation" className={css.label}>Password again</label>
                 </div>
                 {/* How do I add a Link to a button without generating an anchor on the text? */}
-                <Link to="signupConfirmation"><button className={css.btn_default}>Sign Up</button></Link>
+                <Link to="/confirmSignup"><button className={css.btn_default}>Sign Up</button></Link>
               </div>
             </Animated>
             <Animated animationIn="bounceInUp" animationInDelay={0.2}>
