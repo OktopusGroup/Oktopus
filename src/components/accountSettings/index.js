@@ -3,7 +3,6 @@
 // --------------------
 // IMPORTS
 import { Link } from 'react-router-dom';
-import cn from 'classnames';
 
 /* NPM */
 import React from 'react';
