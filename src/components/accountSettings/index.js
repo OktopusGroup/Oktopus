@@ -74,7 +74,7 @@ class AccountSettings extends React.PureComponent {
 
             <div className={css.section_wrapper}>
               <div className={css.section__password}>
-                <p className={css.section_title}>Password</p>
+                <p className={css.section_title}>Change Password</p>
 
                 <div className={css.field}>
                   <input type="password" id="fieldPassword" className={css.input} required />
@@ -83,11 +83,16 @@ class AccountSettings extends React.PureComponent {
 
                 <div className={css.field}>
                   <input type="password" id="fieldPasswordValidation" className={css.input} required />
+                  <label htmlFor="fieldPasswordValidation" className={css.label}>New password</label>
+                </div>
+
+                <div className={css.field}>
+                  <input type="password" id="fieldPasswordValidation" className={css.input} required />
                   <label htmlFor="fieldPasswordValidation" className={css.label}>Password again</label>
                 </div>
               </div>
 
-              <p className={css.section_title}>Notifications</p>
+              <p className={css.section_title}>Notification Settings</p>
               <div className={css.section__checkboxes}>
                 <label className={css.description} htmlFor="checkbox_1">web notifications</label>
                 
