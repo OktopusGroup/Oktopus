@@ -17,7 +17,6 @@ import Animated from 'src/components/helpers/animated';
 
 // Styles
 import css from './accountDropdown.scss';
-import '../../../styles.global.css';
 
 // Images
 import dropdownBox from '../images/dropdown_box.svg';
@@ -70,7 +69,10 @@ class AccountDropdown extends React.PureComponent {
     const { menu } = this.props;
     if (typeof menu.showAccountMenu === 'undefined') return null;
     return (
-      <Animated animateOnMount={menu.showAccountMenu} isVisible={menu.showAccountMenu}>
+      <Animated
+        animateOnMount={menu.showAccountMenu}
+        isVisible={menu.showAccountMenu}
+        className={css.speed}>
         <div
           className={css.positioner}
           onMouseEnter={this.show}
