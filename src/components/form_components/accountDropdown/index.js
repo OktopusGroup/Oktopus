@@ -70,7 +70,7 @@ class AccountDropdown extends React.PureComponent {
     const { menu } = this.props;
     if (typeof menu.showAccountMenu === 'undefined') return null;
     return (
-      <Animated animateOnMount isVisible={menu.showAccountMenu}>
+      <Animated animateOnMount={menu.showAccountMenu} isVisible={menu.showAccountMenu}>
         <div
           className={css.positioner}
           onMouseEnter={this.show}
