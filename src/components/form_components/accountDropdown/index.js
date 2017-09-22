@@ -60,7 +60,7 @@ class AccountDropdown extends React.PureComponent {
       type: 'HIDE_ACCOUNT_MENU',
       meta: {
         debounce: {
-          time: 500,
+          time: 1,
         },
       },
     });

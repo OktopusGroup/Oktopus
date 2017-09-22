@@ -10,7 +10,7 @@ import cn from 'classnames';
 
 // Styles
 import css from './page_styleEditor.scss';
-import '../../../styles.global.css';
+
 // Images
 
 // ----------------------

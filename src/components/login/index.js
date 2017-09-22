@@ -18,7 +18,6 @@ import HeaderLoggedOut from '../form_components/headerLoggedOut';
 import logo from '../form_components/images/logo.svg';
 
 // Styles
-import '../../styles.global.css';
 import css from './login.scss';
 // --------------------
 

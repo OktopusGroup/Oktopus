@@ -12,7 +12,6 @@ import Animated from 'src/components/helpers/animated';
 
 // Styles
 import css from './modal_addDomain__inputDomain.scss';
-import '../../../../styles.global.css';
 // Images
 // ----------------------
 

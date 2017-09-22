@@ -17,7 +17,6 @@ import Animated from 'src/components/helpers/animated';
 import logo from '../form_components/images/logo.svg';
 
 // Styles
-import '../../styles.global.css';
 import css from './confirmSignup.scss';
 // --------------------
 

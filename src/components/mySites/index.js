@@ -22,7 +22,6 @@ import SiteCard from '../form_components/siteCard';
 // Images
 
 // Styles
-import '../../styles.global.css';
 import css from './mySites.scss';
 // --------------------
 
