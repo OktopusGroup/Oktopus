@@ -17,7 +17,7 @@
 .logo_header {
   z-index: 500;
   visibility: hidden;
-  margin: 6px auto;
+  margin: 15px auto;
   height: 30px;
 }
 
@@ -28,6 +28,7 @@
   position: absolute;
   left: 0;
   right: 0;
+  margin: 10px auto;
   padding: 8px 0;
   text-align: center;
 }
@@ -42,7 +43,8 @@
 }
 
 .signup {
-  font-size: 13px;
+  margin: 7px auto;
+  font-size: 15px;
   position: absolute;
   right: 28px;
   padding: 12px 0;

@@ -48,7 +48,9 @@ class HeaderLoggedIn extends React.PureComponent {
   render() {
     return (
       <div className={css.wrapper}>
-        <Link to="/home"><img src={logo} className={css.logo_header} alt="Oktopus" /></Link>
+        <div>
+          <a href="/Home"><img src={logo} className={css.logo_header} alt="Oktopus" /></a>
+        </div>
         <div
           className={css.profile_img}
           onMouseEnter={this.showAccountDropdown}
