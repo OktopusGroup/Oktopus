@@ -1,6 +1,6 @@
 // Signup box
 
-// --------------------
+// -----------------------------------------------------------------------------
 // IMPORTS
 import { Link } from 'react-router-dom';
 import Helmet from 'react-helmet';
@@ -9,18 +9,18 @@ import Helmet from 'react-helmet';
 import React from 'react';
 
 // Helper components
-import Animated from 'src/components/helpers/animated';
+import Animated from 'components/helpers/animated';
 
 /* Oktopus Components */
-import HeaderLoggedOut from '../form_components/headerLoggedOut';
+import HeaderLoggedOut from 'components/header/loggedOut';
 
 // Images
-import logo from '../form_components/images/logo.svg';
+import logo from 'images/logo.svg';
 
 // Styles
 import css from './signup.scss';
 
-// --------------------
+// -----------------------------------------------------------------------------
 
 class Signup extends React.PureComponent {
   submit = () => {
@@ -69,7 +69,7 @@ class Signup extends React.PureComponent {
                   <label htmlFor="fieldPasswordValidation" className={css.label}>Password again</label>
                 </div>
                 {/* How do I add a Link to a button without generating an anchor on the text? */}
-                <Link to="/confirmSignup"><button className={css.btn_default}>Sign Up</button></Link>
+                <Link to="/signup/confirm"><button className={css.btn_default}>Sign Up</button></Link>
               </div>
             </Animated>
             <Animated animationIn="bounceInUp" animationInDelay={0.2}>

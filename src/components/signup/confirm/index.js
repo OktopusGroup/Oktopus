@@ -1,4 +1,4 @@
-// Login box
+// Confirm Signup 'Email Sent' Notification Box
 
 // -----------------------------------------------------------------------------
 // IMPORTS
@@ -8,21 +8,20 @@ import Helmet from 'react-helmet';
 /* NPM */
 import React from 'react';
 
+/* Oktopus */
+
 // Helper components
 import Animated from 'components/helpers/animated';
-
-// Components
-import HeaderLoggedOut from 'components/header/loggedOut';
 
 // Images
 import logo from 'images/logo.svg';
 
 // Styles
-import css from './login.scss';
+import css from './confirm.scss';
 
 // -----------------------------------------------------------------------------
 
-class Login extends React.PureComponent {
+class ConfirmSignup extends React.PureComponent {
   submit = () => {
     /* intentionally empty for now -- the future home of our submit function */
   }
@@ -37,8 +36,6 @@ class Login extends React.PureComponent {
             content: 'Login to Oktopus',
           }]} />
 
-        <HeaderLoggedOut />
-
         <div className={css.wrapper}>
           <Animated animationIn="bounceInDown" animationInDelay={0.2}>
             <img src={logo} className={css.logo_onpage} alt="Oktopus" />
@@ -47,21 +44,20 @@ class Login extends React.PureComponent {
             <Animated animationIn="bounceInDown">
               <div className={css.login_form}>
                 <Link to="/todo" className={css.closeX} />
-                <span className={css.box_title}>Login</span>
-                <div className={css.field}>
-                  <input type="text" id="fieldEmail" className={css.input} required />
-                  <label htmlFor="fieldEmail" className={css.label}>Email</label>
+                <span className={css.box_title}>Confirm Email</span>
+                <div className={css.login_fields}>
+                  <div className={css.field}>
+                    {/* need to add user submitted email data injector */}
+                    <span className={css.guide_text}>useremail@email.com</span>
+                  </div>
+                  <span className={css.login_subtext}>Complete sign up by
+                   clicking<br />the link in your email.</span>
+                  <button className={css.btn_default}>Okay</button>
                 </div>
-                <div className={css.field}>
-                  <input type="password" id="fieldPassword" className={css.input} required />
-                  <label htmlFor="fieldPassword" className={css.label}>Password</label>
-                  <span><Link to="/login/reset" className={css.forgot}>Forgot?</Link></span>
-                </div>
-                <button className={css.btn_default}>Login</button>
               </div>
             </Animated>
             <Animated animationIn="bounceInUp" animationInDelay={0.2}>
-              <span className={css.login_subtext}>Don&rsquo;t have an account yet? <Link to="/signup">Sign Up</Link></span>
+              <span className={css.login_subtext}><Link to="/login/reset">Send it again</Link></span>
             </Animated>
           </div>
         </div>
@@ -70,4 +66,4 @@ class Login extends React.PureComponent {
   }
 }
 
-export default Login;
+export default ConfirmSignup;

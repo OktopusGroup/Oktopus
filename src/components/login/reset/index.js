@@ -1,4 +1,4 @@
-// Login box
+// Reset Password Box
 
 // -----------------------------------------------------------------------------
 // IMPORTS
@@ -11,18 +11,18 @@ import React from 'react';
 // Helper components
 import Animated from 'components/helpers/animated';
 
-// Components
+/* Oktopus Components */
 import HeaderLoggedOut from 'components/header/loggedOut';
 
 // Images
 import logo from 'images/logo.svg';
 
 // Styles
-import css from './login.scss';
+import css from './reset.scss';
 
 // -----------------------------------------------------------------------------
 
-class Login extends React.PureComponent {
+class ResetPW extends React.PureComponent {
   submit = () => {
     /* intentionally empty for now -- the future home of our submit function */
   }
@@ -47,21 +47,18 @@ class Login extends React.PureComponent {
             <Animated animationIn="bounceInDown">
               <div className={css.login_form}>
                 <Link to="/todo" className={css.closeX} />
-                <span className={css.box_title}>Login</span>
-                <div className={css.field}>
-                  <input type="text" id="fieldEmail" className={css.input} required />
-                  <label htmlFor="fieldEmail" className={css.label}>Email</label>
+                <span className={css.box_title}>Reset Password</span>
+                <div className={css.login_fields}>
+                  <div className={css.field}>
+                    <input type="text" id="fieldEmail" className={css.input} required />
+                    <label htmlFor="fieldEmail" className={css.label}>Input email</label>
+                  </div>
+                  <button className={css.btn_default}>Send Reset</button>
                 </div>
-                <div className={css.field}>
-                  <input type="password" id="fieldPassword" className={css.input} required />
-                  <label htmlFor="fieldPassword" className={css.label}>Password</label>
-                  <span><Link to="/login/reset" className={css.forgot}>Forgot?</Link></span>
-                </div>
-                <button className={css.btn_default}>Login</button>
               </div>
             </Animated>
             <Animated animationIn="bounceInUp" animationInDelay={0.2}>
-              <span className={css.login_subtext}>Don&rsquo;t have an account yet? <Link to="/signup">Sign Up</Link></span>
+              <span className={css.login_subtext}>Changed your mind? <Link to="/login">Go Back</Link></span>
             </Animated>
           </div>
         </div>
@@ -70,4 +67,4 @@ class Login extends React.PureComponent {
   }
 }
 
-export default Login;
+export default ResetPW;

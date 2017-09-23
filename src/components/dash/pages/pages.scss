@@ -1,0 +1,63 @@
+@import '~variables.scss';
+@import '~components/form/button/button.scss';
+
+/* Container */
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+    "page_selector"
+    "new_site"
+}
+
+.page_selector {
+    text-align: center;
+    grid-area: page_selector;
+    padding: 25px 0 100px 0;
+    height: 100px;
+    width: auto;
+    margin: 0 28px;
+}
+.menu_item {
+    margin: 0 30px;
+    padding: 0 0 18px 0;
+    text-decoration: none;
+    color: $greyd2;
+    &:hover {
+      font-weight: bold;
+      color: $greyd3;
+    }
+}
+
+.menu_item_Active {
+    margin: 0 30px;
+    text-align: center;
+    color: $sky-blue;
+    font-weight: bold;
+    padding: 0 0 18px 0;
+    border-bottom: 2px solid $sky-blue;
+}
+
+.menu_line {
+    display: block;
+    margin: 0 auto;
+    border-bottom: 1px solid $greyd1;
+    max-width: 1200px;
+    height: 20px;
+}
+
+.new_site {
+    width: auto;
+    margin: 35px 0 90px 0;
+}
+
+.card_wrapper {
+    margin: 30px auto;
+    max-width: 1200px;
+    display: grid;
+    padding: 30px 28px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 340px));
+    grid-auto-rows: minmax(150px, auto);
+    grid-gap: 60px;
+}

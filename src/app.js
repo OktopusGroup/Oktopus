@@ -13,27 +13,27 @@ import config from 'kit/config';
 /* Oktopus */
 
 // Reducers
-import menuReducer from 'src/reducers/menu';
+import menuReducer from 'reducers/menu';
 
 // Components
-import Login from 'src/components/login';
-import Signup from 'src/components/signup';
-import ResetPW from 'src/components/resetPW';
-import ConfirmSignup from 'src/components/confirmSignup';
-import HeaderLoggedIn from 'src/components/form_components/headerLoggedIn';
-import HeaderLoggedOut from 'src/components/form_components/headerLoggedOut';
-import ModalAddDomain from 'src/components/form_components/modal/modal_addDomain';
-import ModalInputDomain from 'src/components/form_components/modal/modal_addDomain__inputDomain';
-import ModalInputTitle from 'src/components/form_components/modal/modal_newSite__inputTitle';
-import ModalNewSite from 'src/components/form_components/modal/modal_newSite';
-import PageStyleEditor from 'src/components/form_components/page_styleEditor';
-import MySites from 'src/components/mySites';
-import AccountSettings from 'src/components/accountSettings';
-import AccountDropdown from 'src/components/form_components/accountDropdown';
-import Pages from 'src/components/pages';
+import Login from 'components/login';
+import Signup from 'components/signup';
+import ResetPW from 'components/login/reset';
+import ConfirmSignup from 'components/signup/confirm';
+import HeaderLoggedIn from 'components/header/loggedIn';
+import HeaderLoggedOut from 'components/header/loggedOut';
+import ModalAddDomain from 'components/dash/modal/domain/add';
+import ModalInputDomain from 'components/dash/modal/domain/input';
+import ModalInputTitle from 'components/dash/modal/site/new/inputTitle';
+import ModalNewSite from 'components/dash/modal/site/new';
+import PageStyleEditor from 'components/dash/pages/styleEditor';
+import MySites from 'components/dash/sites';
+import AccountSettings from 'components/dash/account/settings';
+import AccountDropdown from 'components/dash/account/dropdown';
+import Pages from 'components/dash/pages';
+import Test from 'components/test';
 
 // Global styles
-import 'src/components/variables.scss';
 import './styles.global.css';
 
 // --------------------
@@ -43,27 +43,35 @@ config.enableGraphQLServer();
 // Add reducers
 config.addReducer('menu', menuReducer);
 
+const routes = [
+  /* Test routes */
+  ['/test', Test],
+  ['/test/header/loggedIn', HeaderLoggedIn],
+  ['/test/header/loggedOut', HeaderLoggedOut],
+  ['/test/dash/account/dropdown', AccountDropdown],
+
+  /* Real routes */
+  ['/login', Login],
+  ['/login/reset', ResetPW],
+  ['/signup', Signup],
+  ['/signup/confirm', ConfirmSignup],
+  ['/dash/sites', MySites],
+  ['/dash/account/settings', AccountSettings],
+  ['/dash/domain/add', ModalAddDomain],
+  ['/dash/domain/input', ModalInputDomain],
+  ['/dash/domain/inputTitle', ModalInputTitle],
+  ['/dash/site/new', ModalNewSite],
+  ['/dash/pages', Pages],
+  ['/dash/pages/styleEditor', PageStyleEditor],
+];
+
 export default () => (
   <div>
     <Helmet title="Oktopus" />
     <Switch>
-      <Route path="/header" component={HeaderLoggedIn} />
-      <Route path="/header" component={HeaderLoggedOut} />
-      <Route path="/login" component={Login} />
-      <Route path="/signup" component={Signup} />
-      <Route path="/resetPW" component={ResetPW} />
-      <Route path="/confirmSignup" component={ConfirmSignup} />
-      <Route path="/mySites" component={MySites} />
-      <Route path="/accountSettings" component={AccountSettings} />
-      <Route path="/accountDropdown" component={AccountDropdown} />
-      <Route path="/addDomain" component={ModalAddDomain} />
-      <Route path="/newsite" component={ModalNewSite} />
-      <Route path="/inputDomain" component={ModalInputDomain} />
-      <Route path="/inputTitle" component={ModalInputTitle} />
-      <Route path="/styleEditor" component={PageStyleEditor} />
-      <Route path="/pages" component={Pages} />
-      
-
+      {routes.map(route => (
+        <Route key={route[0]} exact path={route[0]} component={route[1]} />
+      ))}
       <Route component={Login} />
     </Switch>
   </div>

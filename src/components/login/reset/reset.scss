@@ -25,7 +25,7 @@
 .login_box .login_form {
   display: block;
   grid-area: login_box;
-  height: auto;
+  height: 276px;
   background-color: $white;
   box-shadow: none;
   margin: 2rem 0;
@@ -36,22 +36,22 @@
   display: block;
   background-color: #ffffff;
   border: solid 1px #f6f8fc;
-  height: 0;
   padding: 2.5em 3em 2.5em;
   border-radius: 8px;
   box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.05);
 }
 
 .box_title {
-  font-size: 35px;
+  font-size: 25px;
   font-weight: bold;
 	color: $purple;
   text-align: center;
-  margin: 0 auto 20px;
+  margin: 0 auto 10px;
   display: block;
 }
 
 .login_subtext {
+  z-index: -1000;
   grid-area: login_subtext;
   display: block;
   margin: 20px auto;
@@ -71,7 +71,7 @@
   z-index: 5;
   position: absolute;
   height: 2rem;
-  width: 100%;
+  width: 85%;
   line-height: 2rem;
   bottom: 0;
   color: $greyd2;
@@ -101,6 +101,7 @@
 }
 
 .input {
+  margin-top: 20px;
   width: 100%;
   font-size: 100%;
   border: 0;
@@ -162,16 +163,13 @@ input:valid+.label {
     margin: auto;
     box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.05);
   }
-  .box_title {
-    font-size: 30px;
-  }
   .forgot {
     position: absolute;
     left: 180px;
   }
   .btn {
-      margin-bottom: 44px;
-    }
+    margin-bottom: 44px;
+  }
   .login_subtext {
     margin: 30px auto;
   }

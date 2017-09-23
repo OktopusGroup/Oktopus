@@ -29,7 +29,7 @@ import { ApolloProvider } from 'react-apollo';
 // the ReactQL starter kit for the first time, `src/app.js` is where
 // you can start editing to add your own code.  Note:  This first is imported
 // first, since it sets up our app's settings
-import App from 'src/app';
+import App from 'app';
 
 // Grab the shared Apollo Client
 import { browserClient } from 'kit/lib/apollo';
@@ -84,11 +84,11 @@ const Root = (() => {
 
     // Start our 'listener' at the root component, so that any changes that
     // occur in the hierarchy can be captured
-    module.hot.accept('src/app', () => {
+    module.hot.accept('app', () => {
       // Refresh the entry point of our app, to get the changes.
 
       // eslint-disable-next-line
-      require('src/app').default;
+      require('app').default;
 
       // Re-render the hierarchy
       doRender();
