@@ -6,9 +6,10 @@
   text-align: center;
   background-color: $white;
   width: 100%;
-  height: 42px;
+  height: 60px;
   display: grid;
   box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.15);
+  border-bottom: solid 1px $greyd1;
   grid-template-areas:
      "logo_header   header_links  profile_img";
 }
@@ -19,7 +20,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  margin: 6px auto;
+  margin: 15px auto;
   height: 30px;
 }
 

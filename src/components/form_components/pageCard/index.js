@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 // Components
 
 // Styles
-import css from './siteCard.scss';
+import css from './pageCard.scss';
 
 // Images
 
@@ -18,7 +18,7 @@ import css from './siteCard.scss';
 
 // Create component for button
 
-class SiteCard extends React.PureComponent {
+class PageCard extends React.PureComponent {
   submit = () => {
     /* intentionally empty for now -- the future home of our submit function */
   }
@@ -26,13 +26,11 @@ class SiteCard extends React.PureComponent {
   render() {
     return (
 
-      <Link to="/projectName" className={css.site_card}>
-        <div className={css.card__preview} />
-        <p className={css.card__title}>Project Name</p>
-        <div><Link to="/inputDomain" className={css.card__subtitle}>Domain Settings</Link>
-        </div>
+      <Link to="/liveEditor_login" className={css.page_card}>
+        <div className={css.page__preview} />
+        <p className={css.page__title}>Page Name</p>
       </Link>
     );
   }
 }
-export default SiteCard;
+export default PageCard;

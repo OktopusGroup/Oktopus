@@ -30,6 +30,7 @@ import PageStyleEditor from 'src/components/form_components/page_styleEditor';
 import MySites from 'src/components/mySites';
 import AccountSettings from 'src/components/accountSettings';
 import AccountDropdown from 'src/components/form_components/accountDropdown';
+import Pages from 'src/components/pages';
 
 // Global styles
 import 'src/components/variables.scss';
@@ -60,6 +61,9 @@ export default () => (
       <Route path="/inputDomain" component={ModalInputDomain} />
       <Route path="/inputTitle" component={ModalInputTitle} />
       <Route path="/styleEditor" component={PageStyleEditor} />
+      <Route path="/pages" component={Pages} />
+      
+
       <Route component={Login} />
     </Switch>
   </div>
