@@ -1,0 +1,42 @@
+@import '~variables.scss';
+@import '~components/form/button/button.scss';
+@import '~components/form/form.scss';
+
+/* Top Editor Box for the 'Pages' page */
+
+.wrapper {
+  background-color: $white;
+  border-bottom: solid 1px $greyd1;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+.editor_button_bar {
+  background-color: $white;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  height: 60px;
+  border-bottom: solid 1px $greyd1;
+}
+
+.editor_button__container {
+  display: grid;
+  padding: 0 28px;
+  margin: 0 auto;
+  grid-template-areas:
+  "btn_left btn_right";
+}
+
+.btn_left {
+  justify-self: start;
+  grid-area: btn_left;
+  margin: 15px 0;
+}
+
+.btn_right {
+  justify-self: end;
+  grid-area: btn_right;
+  margin: 15px 0;
+}

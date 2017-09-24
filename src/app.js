@@ -31,7 +31,12 @@ import MySites from 'components/dash/sites';
 import AccountSettings from 'components/dash/account/settings';
 import AccountDropdown from 'components/dash/account/dropdown';
 import Pages from 'components/dash/pages';
+import EditorFrame from 'components/editor';
+import EditorButtonBar from 'components/editor/buttonBar';
+import EditorHeader from 'components/editor/header';
+import EditorLogin from 'components/editor/login';
 import Test from 'components/test';
+
 
 // Global styles
 import './styles.global.css';
@@ -49,6 +54,11 @@ const routes = [
   ['/test/header/loggedIn', HeaderLoggedIn],
   ['/test/header/loggedOut', HeaderLoggedOut],
   ['/test/dash/account/dropdown', AccountDropdown],
+  ['/test/editor/buttonBar', EditorButtonBar],
+  ['/test/editor/header', EditorHeader],
+  ['/test/editor/login', EditorLogin],
+  ['/test/editor', EditorFrame],
+
 
   /* Real routes */
   ['/login', Login],
