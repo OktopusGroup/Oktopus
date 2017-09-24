@@ -38,7 +38,7 @@ class ModalNewSite extends React.PureComponent {
             <div className={css.box_sharing}>
               <img src={share} className={css.box_image} alt="create a freelancer platform" />
               <p className={css.description}>Content and file sharing community</p>
-              <button className={css.btn_blue_large}>Begin</button>
+              <Link to="/dash/site/new/inputTitle" className={css.btn_blue_large}>Begin</Link>
             </div>
 
             <div className={css.box_hiring}>

@@ -61,6 +61,7 @@ const routes = [
   ['/dash/domain/input', ModalInputDomain],
   ['/dash/domain/inputTitle', ModalInputTitle],
   ['/dash/site/new', ModalNewSite],
+  ['/dash/site/new/inputTitle', ModalInputTitle],
   ['/dash/pages', Pages],
   ['/dash/pages/styleEditor', PageStyleEditor],
 ];

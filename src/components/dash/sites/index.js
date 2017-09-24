@@ -33,7 +33,7 @@ class MySites extends React.PureComponent {
             <Link to="/dash/account/settings" className={css.menu_item}>Account Settings</Link>
             <div className={css.menu_line} />
             <div className={css.new_site}>
-              <Link to="/dash/sites/new" className={css.btn_blue}>New Site</Link>
+              <Link to="/dash/site/new" className={css.btn_blue}>New Site</Link>
             </div>
           </div>
         </div>

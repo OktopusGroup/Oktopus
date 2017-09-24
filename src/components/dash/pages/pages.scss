@@ -2,6 +2,21 @@
 @import '~components/form/button/button.scss';
 
 /* Container */
+.title_wrapper {
+}
+
+.title {
+    text-align: center;
+    margin: 40px auto 40px;
+    font-weight: bold;
+    font-size: 20px;
+    color: $greyd2;
+    font-weight: bold;
+    padding: 0 0 10px 0;
+    border-bottom: 2px solid $sky-blue;
+    width: 230px;
+}
+
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;

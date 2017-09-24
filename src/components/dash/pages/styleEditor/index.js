@@ -26,7 +26,7 @@ class PageStyleEditor extends React.PureComponent {
       <div className={css.wrapper}>
         <div className={css.editor_button_bar}>
           <div className={css.editor_button__container}>
-            <Link to="/todo" className={cn(css.btn_blue_small, css.btn_left)}>Back to Sites</Link>
+            <Link to="/dash/sites" className={cn(css.btn_blue_small, css.btn_left)}>Back to Sites</Link>
             {/* Change to "Show Editor" state when closed */}
             <button className={cn(css.btn_blue_small, css.btn_right)}>Hide Editor</button>
           </div>

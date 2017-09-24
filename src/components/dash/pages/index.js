@@ -28,7 +28,9 @@ class Pages extends React.PureComponent {
       <div>
         <HeaderLoggedIn />
         <PageStyleEditor />
-
+        <div className={css.title_wrapper}>
+          <div className={css.title}>Choose a page to edit</div>
+        </div>
         <div className={css.card_wrapper}>
           <PageCard />
           <PageCard />
