@@ -39,3 +39,9 @@
   grid-area: btn_right;
   margin: 15px 0;
 }
+
+@media (min-width: 1200px) {
+.btn_right {
+    margin-right: 65px;
+  }
+}

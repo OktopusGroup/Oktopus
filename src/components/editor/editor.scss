@@ -4,24 +4,6 @@
 
 /* Top Editor Box for the 'Pages' page */
 
-.workspace {
-  grid-area: workspace;
-  min-height: 100vh;
-}
-
-.sidebar {
-  grid-area: sidebar;
-  position: absolute;
-  right: 0;  
-  height: auto;
-  width: 100%;
-  z-index: 5;
-  background-color: #f8a36f;
-  text-align: center;
-  float: right;
-  max-height: 200px;
-}
-
 .wrapper_editor {
   width: 100%;
   margin: 0 auto;
@@ -33,16 +15,69 @@
     "footer";
 }
 
+.sidebar_title {
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 1px solid $greyd2;
+  padding-bottom: 2px;
+
+}
+
+.workspace {
+  grid-area: workspace;
+  min-height: 100vh;
+}
+
+.sidebar {
+  list-style-type: none;
+  grid-area: sidebar;
+  position: absolute;
+  right: 0;  
+  height: auto;
+  width: 100%;
+  z-index: 5;
+  background-color: $white;
+  border-left: 1px solid $greyd1;
+  text-align: center;
+  float: right;
+  max-height: 200px;
+}
+
+.grey_box {
+  width: 270px;
+  height: 45px;
+  background-color: $offwhite;
+  margin: 35px auto;
+  padding: 8px 0 0 15px;
+  text-align: left;
+}
+
+.list_item {
+  font-weight: bold;
+  font-size: 18px;
+  color: $greyd3;
+  text-align: right;
+}
+
+.align_checkbox {
+  position: relative;
+  text-align: right;
+
+}
+
 @media (min-width: 1200px) {
+  .wrapper {
+    grid-template-columns: 2fr 4fr;
+    grid-template-areas:
+     "workspace_header     workspace_header     sidebar"
+     "workspace             workspace           sidebar"
+     "footer                 footer              footer"
+   }
+ }
+
   .sidebar {
-   min-height: 100vh;
+   min-height: 100%;
    width: 330px;
   }
-  .wrapper {
-   grid-template-columns: 2fr 4fr;
-   grid-template-areas:
-    "workspace_header     workspace_header     sidebar"
-    "workspace             workspace           sidebar"
-    "footer                 footer              footer"
-  }
-}
+
