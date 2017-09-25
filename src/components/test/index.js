@@ -13,7 +13,11 @@ export default () => (
     <Link to="/mySites"><img src="https://media.giphy.com/media/13xHqoOQOdFu5a/giphy.gif" alt="Link me" /></Link>
     <hr />
     <h2>Arrow button</h2>
-    <ArrowButton direction="up">Up button</ArrowButton>
-    <ArrowButton direction="left">Left button</ArrowButton>
+    <ArrowButton direction="up">Up</ArrowButton>
+    <ArrowButton direction="down">Down</ArrowButton>
+    <ArrowButton direction="left">Left</ArrowButton>
+    <ArrowButton direction="right">Right</ArrowButton>
+    <ArrowButton>Default</ArrowButton>
+    <ArrowButton arrowClassName={css.arrowStyles}>Styled</ArrowButton>
   </div>
 );

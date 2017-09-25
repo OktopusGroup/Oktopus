@@ -37,13 +37,13 @@
   }
 
 .align_arrow {
-    margin: 4px 10xp 0 10px;
-    &:hover {
-        background-color: $white;
-    }
+  margin: 4px 10xp 0 10px;
+  &:hover {
+      background-color: $white;
+  }
 }
 
 .align_text {
-    line-height: 5px;
+  margin-left: 5px;
+  line-height: 5px;
 }
-
