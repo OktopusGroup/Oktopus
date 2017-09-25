@@ -18,6 +18,6 @@ export default () => (
     <ArrowButton direction="left">Left</ArrowButton>
     <ArrowButton direction="right">Right</ArrowButton>
     <ArrowButton>Default</ArrowButton>
-    <ArrowButton arrowClassName={css.arrowStyles}>Styled</ArrowButton>
+    <ArrowButton className={css.arrowStyles}>Styled</ArrowButton>
   </div>
 );
