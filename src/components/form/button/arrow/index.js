@@ -10,6 +10,10 @@ import PropTypes from 'prop-types';
 // Images
 import up from './images/up.svg';
 import left from './images/left.svg';
+import down from './images/down.svg';
+import right from './images/right.svg';
+
+import css from './arrow.scss'
 
 // -----------------------------------------------------------------------------
 
@@ -17,12 +21,14 @@ import left from './images/left.svg';
 const images = {
   up,
   left,
+  down,
+  right,
 };
 
 const ArrowButton = props => (
-  <button {...props}>
-    <img src={images[props.direction]} alt={props.direction} />
-    {props.children}
+  <button className={css.arrow_button} {...props}>
+    <img className={css.align_arrow} src={images[props.direction]} alt={props.direction} />
+    <span className={css.align_text}>{props.children}</span>
   </button>
 );
 

@@ -10,6 +10,7 @@ import cn from 'classnames';
 
 // Styles
 import css from './styleEditor.scss';
+import ArrowButton from '../../../form/button/arrow';
 
 // -----------------------------------------------------------------------------
 
@@ -26,9 +27,9 @@ class PageStyleEditor extends React.PureComponent {
       <div className={css.wrapper}>
         <div className={css.editor_button_bar}>
           <div className={css.editor_button__container}>
-            <Link to="/dash/sites" className={cn(css.btn_blue_small, css.btn_left)}>Back to Sites</Link>
+            <Link to="/dash/sites"><ArrowButton direction="left" className={cn(css.btn_blue_small, css.btn_right)}>Sites</ArrowButton></Link>
             {/* Change to "Show Editor" state when closed */}
-            <button className={cn(css.btn_blue_small, css.btn_right)}>Hide Editor</button>
+            <ArrowButton direction="up" className={cn(css.btn_blue_small, css.btn_right)}>Hide Editor</ArrowButton>
           </div>
         </div>
         <div className={css.editor_box}>

@@ -1,5 +1,6 @@
 @import '~variables.scss';
 
+
 .btn_default {
   text-decoration: none;
   margin: 0 auto;
@@ -43,7 +44,7 @@ font-size: 14px;
 font-weight: bold;
 height: 30px;
 width: 140px;
-line-height: 1;
+line-height: 12px;
 color: $white;
 background-image: $peach-gradient;
 border-radius: 100px;
@@ -114,7 +115,7 @@ transition: all 0.5s ease;
   font-weight: bold;
   width: 110px;
   height: 30px;
-  line-height: 26px;
+  line-height: 27px;
   color: $sky-blue;
   background-color: $white;
   border-radius: 100px;

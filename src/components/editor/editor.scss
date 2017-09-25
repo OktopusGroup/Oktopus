@@ -4,39 +4,45 @@
 
 /* Top Editor Box for the 'Pages' page */
 
-.wrapper {
-  background-color: $white;
-  border-bottom: solid 1px $greyd1;
-  margin: 0 auto;
-  width: 100%;
+.workspace {
+  grid-area: workspace;
+  min-height: 100vh;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  position: absolute;
+  right: 0;  
   height: auto;
-}
-
-.editor_button_bar {
-  background-color: $white;
-  margin: 0 auto;
   width: 100%;
-  position: relative;
-  height: 60px;
-  border-bottom: solid 1px $greyd1;
+  z-index: 5;
+  background-color: #f8a36f;
+  text-align: center;
+  float: right;
+  max-height: 200px;
 }
 
-.editor_button__container {
-  display: grid;
-  padding: 0 28px;
+.wrapper_editor {
+  width: 100%;
   margin: 0 auto;
+  display: grid;
   grid-template-areas:
-  "btn_left btn_right";
+    "sidebar"
+    "workspace_header"
+    "workspace"
+    "footer";
 }
 
-.btn_left {
-  justify-self: start;
-  grid-area: btn_left;
-  margin: 15px 0;
-}
-
-.btn_right {
-  justify-self: end;
-  grid-area: btn_right;
-  margin: 15px 0;
+@media (min-width: 1200px) {
+  .sidebar {
+   min-height: 100vh;
+   width: 330px;
+  }
+  .wrapper {
+   grid-template-columns: 2fr 4fr;
+   grid-template-areas:
+    "workspace_header     workspace_header     sidebar"
+    "workspace             workspace           sidebar"
+    "footer                 footer              footer"
+  }
 }

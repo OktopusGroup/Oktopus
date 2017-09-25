@@ -4,8 +4,8 @@
 .positioner {
   z-index: 5000;
   position: absolute;
-  top: -17px;
-  right: -23px;
+  top: -12px;
+  right: -22px;
 }
 
 .dropdown_box {
@@ -40,7 +40,6 @@
     &:hover {
       color: $white;
       background-image: $peach-gradient;
-      transform: translateY(-2px);
       box-shadow: 0 3px 4px 0 rgba(25, 74, 179, 0.15);
       -webkit-transition: all 0.1s ease 0s, transform 100ms;
       transition: all 0.1s ease 0s, transform 100ms;
@@ -52,7 +51,6 @@
       color: $greyd1;
       -webkit-transition: all 0s linear 0.1s, transform 100ms;
       transition: all 0s linear 0.1s, transform 100ms;
-      transform: translateY(0px);
       transition: box-shadow 0s linear 0s;
       box-shadow: 0 0 0 0 rgba(25, 74, 179, 0.5);
     }

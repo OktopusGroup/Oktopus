@@ -35,10 +35,22 @@ class EditorFrame extends React.PureComponent {
 
         <HeaderLoggedIn />
         <EditorButtonBar />
+        <div className={css.wrapper_editor}>
 
-        <div className={css.wrapper}>
-          <div>nothing here</div>
+          <div className={css.sidebar}>
+            <h4>Add / Remove Features</h4>
+            <ul>
+              <li><a href="/#">Sort By   X</a></li>
+              <li><a href="/#">Categories   X</a></li>
+              <li><a href="/#">another feature   X</a></li>
+              <button>Choose Categories</button>
+            </ul>
+          </div>
+
+          <div className={css.workspace}>WORKSPACE</div>
+
         </div>
+
       </div>
     );
   }
