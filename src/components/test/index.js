@@ -1,11 +1,25 @@
+/* eslint-disable */
+
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 // Components to test
 import ArrowButton from 'components/form/button/arrow';
+import Grid from './grid';
 
 // Styles
 import css from './test.scss';
+
+// Grid cell
+const Cell = props => (
+  <div className={props.area} style={{ backgroundColor: props.color }} />
+);
+
+Cell.propTypes = {
+  area: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired,
+};
 
 export default () => (
   <div className={css.container}>
@@ -19,5 +33,12 @@ export default () => (
     <ArrowButton direction="right">Right</ArrowButton>
     <ArrowButton>Default</ArrowButton>
     <ArrowButton className={css.arrowStyles}>Styled</ArrowButton>
+    <hr />
+    <h2>Grid</h2>
+    <Grid
+      A={props => <Cell area={props.area} color="red" />}
+      B={props => <Cell area={props.area} color="blue" />}
+      C={props => <Cell area={props.area} color="orange" />}
+      D={props => <Cell area={props.area} color="silver" />} />
   </div>
 );
