@@ -35,18 +35,16 @@ class EditorFrame extends React.PureComponent {
             content: 'Visual Editor',
           }]} />
 
-        <div className={css.wrapper_editor}>
-          <div className={css.header}>   
-            <HeaderLoggedIn />
-          </div>
-          
-          <div className={css.buttonBar}>
-            <EditorButtonBar />
-          </div>
-          
-          <div className={css.sideBar}>
-            <EditorSidebar />
-          </div>
+        <div className={css.header}>   
+          <HeaderLoggedIn />
+        </div>
+
+        <div className={css.buttonBar}>
+          <EditorButtonBar />
+        </div>
+
+        <div className={css.sideBar}>
+          <EditorSidebar />
         </div>
       </div>
 

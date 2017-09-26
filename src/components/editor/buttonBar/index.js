@@ -29,7 +29,7 @@ class EditorButtonBar extends React.PureComponent {
             <div>
               <Link to="/dash/pages" className={cn(css.btn_blue_small, css.btn_left)}>Pages</Link>
             </div>
-            <Link to="/dash/pages" className={cn(css.btn_blue_small, css.btn_right)}>Settings</Link>
+            <Link to="/todo" className={cn(css.btn_blue_small, css.btn_right)}>Settings</Link>
           </div>
         </div>
       </div>

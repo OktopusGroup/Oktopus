@@ -28,20 +28,20 @@ class EditorSidebar extends React.PureComponent {
           <span className={css.sidebar_title}>Add / Remove Features</span>
           <div className={css.grey_box}>
             <span className={css.list_item} href="/#">Facebook</span>
-            {/* CHECK BOXES HOVER / ACTIVE STATES DON'T WORK CORRECTLY */}
-            <CheckBox />
+            
+            <div className={css.align_checkbox}><CheckBox /></div>
           </div>
           <div className={css.grey_box}>
-            <span className={css.list_item} href="/#">LinkedIn</span>
-            <CheckBox />
+            <span className={css.list_item} href="/#">LinkedIn<div className={css.align_checkbox}><CheckBox /></div></span>
+
           </div>
           <div className={css.grey_box}>
             <span className={css.list_item} href="/#">Twitter</span>
-            <CheckBox />
+            <div className={css.align_checkbox}><CheckBox /></div>
           </div>
           <div className={css.grey_box}>
             <span className={css.list_item} href="/#">Gmail</span>
-            <CheckBox />
+            <div className={css.align_checkbox}><CheckBox /></div>
           </div>
         </div>
       </div>

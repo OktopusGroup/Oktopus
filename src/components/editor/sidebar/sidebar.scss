@@ -3,12 +3,9 @@
 @import '~components/form/form.scss';
 
 /* HeaderEditor Component */
-  .wrapper {
-      padding: 100px 28px;
-  }
 
   .sidebar_title {
-    margin: 100px 0 30px;
+    margin: 100px 0 20px;
     font-size: 18px;
     font-weight: bold;
     border-bottom: 1px solid $greyd2;
@@ -16,7 +13,7 @@
   }
   
   .sidebar {
-    padding: 70px 0;
+    padding: 20px 0;
     list-style-type: none;
     grid-area: sidebar;
     position: absolute;
@@ -28,14 +25,13 @@
     border-left: 1px solid $greyd1;
     text-align: center;
     float: right;
-    max-height: 200px;
   }
   
   .grey_box {
     width: 270px;
     height: 45px;
     background-color: $offwhite;
-    margin: 35px auto;
+    margin: 10px auto;
     padding: 8px 0 0 15px;
     text-align: left;
   }
@@ -48,9 +44,8 @@
   }
   
   .align_checkbox {
-    position: relative;
+    position: absolute;
     text-align: right;
-  
   }
 
   @media (min-width: 1200px) {
@@ -58,5 +53,14 @@
     .sidebar {
      min-height: 100%;
      width: 330px;
+     padding: 70px 0;
     }  
+    .grey_box {
+        width: 270px;
+        height: 45px;
+        background-color: $offwhite;
+        margin: 25px auto;
+        padding: 8px 0 0 15px;
+        text-align: left;
+      }
 }
