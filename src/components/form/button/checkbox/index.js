@@ -24,7 +24,7 @@ class EditorCheckBox extends React.PureComponent {
 
       <div className={css.wrapper}>
         <div className={css.checkbox}>
-          <input checked className={css.checkbox_input} type="checkbox" />
+          <input defaultChecked className={css.checkbox_input} type="checkbox" />
           <svg className={css.checkbox_svg} viewBox="0 0 100 100">
             <polyline className={css.checkbox_polyline} points="83.1,31.5 39,75.5 16.9,53.5" />
           </svg>
