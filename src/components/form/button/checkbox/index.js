@@ -15,7 +15,7 @@ import css from './checkbox.scss';
 
 // Create component for button
 
-class EditorCheckBox extends React.PureComponent {
+class Checkbox extends React.PureComponent {
   static propTypes = {
     name: PropTypes.string,
     label: PropTypes.string,
@@ -34,23 +34,31 @@ class EditorCheckBox extends React.PureComponent {
     isChecked: null,
   }
 
+  onChangeHandler = ev => {
+    if (typeof this.props.onChange === 'function') {
+      // Pass the current 'checked' value to the upstream `onChange` handler
+      this.props.onChange(ev.currentTarget.checked);
+    }
+  }
+
   render() {
-    const { name, label, style, className, onChange, isChecked } = this.props;
+    const { name, label, style, className, isChecked } = this.props;
     const classes = cn(css.checkbox, className);
     return (
       <div className={classes} style={style}>
-        <input
-          type="checkbox"
-          name={name}
-          className={css.checkbox_input}
-          checked={isChecked}
-          onChange={onChange} />
         {/* Show the label if we have one */}
         { label && (
           <label
             htmlFor={name}
             className={css.checkbox_label}>{label}</label>
         )}
+        {/* The checkbox */}
+        <input
+          type="checkbox"
+          name={name}
+          className={css.checkbox_input}
+          checked={isChecked}
+          onChange={this.onChangeHandler} />
         <svg className={css.checkbox_svg} viewBox="0 0 100 100">
           <polyline className={css.checkbox_polyline} points="83.1,31.5 39,75.5 16.9,53.5" />
         </svg>
@@ -59,4 +67,4 @@ class EditorCheckBox extends React.PureComponent {
   }
 }
 
-export default EditorCheckBox;
+export default Checkbox;

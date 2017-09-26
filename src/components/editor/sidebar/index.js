@@ -6,9 +6,12 @@
 /* NPM */
 import React from 'react';
 import PropTypes from 'prop-types';
-import CheckBox from 'components/form/button/checkbox';
+import cn from 'classnames';
 
 /* Local */
+
+// Components
+import CheckBox from 'components/form/button/checkbox';
 
 // Styles
 import css from './sidebar.scss';
@@ -16,50 +19,82 @@ import css from './sidebar.scss';
 // -----------------------------------------------------------------------------
 
 // Sidebar item.
-const SidebarItem = props => (
-  <div className={css.grey_box}>
-    <CheckBox
-      onChange={props.onClick}
-      name={props.name}
-      label={props.label} />
-  </div>
-);
+class SidebarItem extends React.PureComponent {
+  // The properties that the <SidebarItem> component expects
+  static propTypes = {
+    name: PropTypes.string.isRequired,
+    label: PropTypes.string.isRequired,
+    onChange: PropTypes.func,
+  }
 
-SidebarItem.propTypes = {
-  name: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired,
-};
+  // Default property values
+  static defaultProps = {
+    onChange: null,
+  };
+
+  state = {
+    isChecked: false,
+  }
+
+  // The function that should be fired when the <CheckBox> changes
+  onChangeHandler = isChecked => {
+    // Update the local state to determine if the checkbox is checked
+    this.setState({ isChecked });
+
+    // If an `onChange` handler was passed to our <SideBarItem>, then fire
+    // that here too
+    if (typeof this.props.onChange === 'function') {
+      this.props.onChange();
+    }
+  }
+
+  // The function to render the component
+  render() {
+    const { name, label } = this.props;
+    const wrapperClasses = cn(
+      css.box,
+      {
+        [css.grey]: this.state.isChecked,
+      },
+    );
+
+    return (
+      <div className={wrapperClasses}>
+        <CheckBox
+          onChange={this.onChangeHandler}
+          name={name}
+          label={label} />
+      </div>
+    );
+  }
+}
 
 // Items
 const items = [
   {
     label: 'Facebook',
     name: 'facebook',
-    onClick() {
-      alert('Clicked Facebook');
-    },
   },
   {
     label: 'LinkedIn',
     name: 'linkedIn',
-    onClick() {
+    onChange() {
       alert('Clicked LinkedIn');
     },
   },
   {
     label: 'Twitter',
     name: 'twitter',
-    onClick() {
+    onChange() {
       alert('Clicked Twitter');
     },
   },
   {
     label: 'Gmail',
     name: 'gmail',
-    onClick() {
-      alert('Clicked Gmail');
-    },
+    // onChange() {
+    //   alert('Clicked Gmail');
+    // },
   },
 ];
 
@@ -79,7 +114,7 @@ class EditorSidebar extends React.PureComponent {
               key={item.name}
               name={item.name}
               label={item.label}
-              onClick={item.onClick} />
+              onChange={item.onChange} />
           ))}
         </div>
       </div>
