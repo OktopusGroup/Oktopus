@@ -16,28 +16,41 @@ import css from './sidebar.scss';
 // Sidebar item.
 const SidebarItem = props => (
   <div className={css.grey_box}>
-    <CheckBox key={props.title} />
+    <CheckBox onChange={props.onClick} />
     <span className={css.list_item}>{props.title}</span>
   </div>
 );
 
 SidebarItem.propTypes = {
   title: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
 };
 
 // Items
 const items = [
   {
     title: 'Facebook',
+    onClick() {
+      alert('Clicked Facebook');
+    }
   },
   {
     title: 'LinkedIn',
+    onClick() {
+      alert('Clicked LinkedIn');
+    }
   },
   {
     title: 'Twitter',
+    onClick() {
+      alert('Clicked Twitter');
+    }
   },
   {
     title: 'Gmail',
+    onClick() {
+      alert('Clicked Gmail');
+    }
   },
 ];
 
@@ -53,7 +66,7 @@ class EditorSidebar extends React.PureComponent {
         <div className={css.sidebar}>
           <span className={css.sidebar_title}>Add / Remove Features</span>
           {items.map(item => (
-            <SidebarItem key={item.title} title={item.title} />
+            <SidebarItem onClick={item.onClick} key={item.title} title={item.title} />
           ))}
         </div>
       </div>
