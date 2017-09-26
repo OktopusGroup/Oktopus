@@ -37,7 +37,7 @@
     margin-right: .25em;
     border: .15em solid #eee;
     transition: border-color 150ms;
-    
+
     .checkbox:hover &,
     .checkbox_input:focus + & {
         border-color: #ddd;
