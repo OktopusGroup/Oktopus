@@ -30,8 +30,8 @@
 }
 
 .checkbox_svg {
-    height: 1.2em;
-    width: 1.2em;
+    height: 1.7em;
+    width: 1.7em;
     background: #eee;
     border-radius: 20px;
     margin-right: .25em;
@@ -39,7 +39,7 @@
     transition: border-color 150ms;
     
     .checkbox:hover &,
-    .checkbox_input:focus + & {
+    .checkbox_input:hover + & {
         border-color: #ddd;
     }
 }
