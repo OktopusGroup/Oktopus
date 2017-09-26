@@ -8,7 +8,8 @@ import cn from 'classnames';
 import Helmet from 'react-helmet';
 import HeaderLoggedIn from 'components/header/loggedIn';
 import EditorButtonBar from 'components/editor/buttonBar';
-import EditorCheckBox from '../form/button/checkbox';
+import EditorSidebar from '../../components/editor/sidebar';
+import Grid from '../test/grid';
 
 /* Local */
 
@@ -34,24 +35,19 @@ class EditorFrame extends React.PureComponent {
             content: 'Visual Editor',
           }]} />
 
-        <HeaderLoggedIn />
-        <EditorButtonBar />
-        <div className={css.wrapper_editor}>
-
-          <div className={css.sidebar}>
-            <span className={css.sidebar_title}>Add / Remove Features</span>
-
-            <div className={css.grey_box}><span className={css.list_item} href="/#">Sort By <div className={css.align_checkbox}><EditorCheckBox /></div></span></div>
-
-            <div className={css.grey_box}><span className={css.list_item} href="/#">Categories</span></div>
-            <EditorCheckBox />
-            <div className={css.grey_box}><span className={css.list_item} href="/#">another feature</span></div>
-            <EditorCheckBox />
-
-          </div>
+        <div className={css.header}>
+          <HeaderLoggedIn />
         </div>
 
+        <div className={css.buttonBar}>
+          <EditorButtonBar />
+        </div>
+
+        <div className={css.sideBar}>
+          <EditorSidebar />
+        </div>
       </div>
+
     );
   }
 }

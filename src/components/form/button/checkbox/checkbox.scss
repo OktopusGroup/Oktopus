@@ -2,15 +2,8 @@
     box-sizing: border-box;
 }
 
-.wrapper {
-    padding: 1rem;
-    text-align: center;
-}
-
 .checkbox {
     position: relative;
-    font-size: 1rem;
-    margin-bottom: .5em;
 }
 
 .checkbox_svg,
@@ -30,8 +23,8 @@
 }
 
 .checkbox_svg {
-    height: 1.2em;
-    width: 1.2em;
+    height: 2em;
+    width: 2em;
     background: #eee;
     border-radius: 20px;
     margin-right: .25em;
@@ -39,7 +32,7 @@
     transition: border-color 150ms;
 
     .checkbox:hover &,
-    .checkbox_input:focus + & {
+    .checkbox_input:hover + & {
         border-color: #ddd;
     }
 }

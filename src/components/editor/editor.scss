@@ -3,16 +3,29 @@
 @import '~components/form/form.scss';
 
 /* Top Editor Box for the 'Pages' page */
+.header {
+  grid-area: header;
+}
+
+.buttonBar {
+  grid-area: buttonBar;
+}
+
+.sideBar {
+  grid-area: sideBar;
+  height: 500px;
+
+}
 
 .wrapper_editor {
   width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-areas:
-    "sidebar"
-    "workspace_header"
-    "workspace"
-    "footer";
+    "header"
+    "buttonBar"
+    "sideBar"
+    "workspace";
 }
 
 .sidebar_title {
@@ -63,16 +76,15 @@
 .align_checkbox {
   position: relative;
   text-align: right;
-
 }
 
 @media (min-width: 1200px) {
   .wrapper {
     grid-template-columns: 2fr 4fr;
     grid-template-areas:
-     "workspace_header     workspace_header     sidebar"
-     "workspace             workspace           sidebar"
-     "footer                 footer              footer"
+     "header      header      header"
+     "buttonBar  buttonBar  buttonBar"
+     "workspace   workspace   sidebar"
    }
  }
 

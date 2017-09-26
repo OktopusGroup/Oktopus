@@ -30,11 +30,6 @@ class EditorCheckBox extends React.PureComponent {
     isChecked: false,
   }
 
-  submit = () => {
-    /* intentionally empty for now -- the future home of our submit function */
-  }
-
-
   render() {
     const { style, className, onChange, isChecked } = this.props;
     const classes = cn(css.wrapper, className);
