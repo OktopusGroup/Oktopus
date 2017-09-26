@@ -9,7 +9,7 @@ import cn from 'classnames';
 /* Local */
 
 // Styles
-import css from './header.scss';
+import css from './workspaceHeader.scss';
 
 // -----------------------------------------------------------------------------
 

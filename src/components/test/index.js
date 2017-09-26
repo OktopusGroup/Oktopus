@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 
 // Components to test
 import ArrowButton from 'components/form/button/arrow';
+import HeaderLoggedIn from 'components/header/loggedIn';
 import Grid from './grid';
 
 // Styles
@@ -34,8 +35,10 @@ export default () => (
     <ArrowButton>Default</ArrowButton>
     <ArrowButton className={css.arrowStyles}>Styled</ArrowButton>
     <hr />
+    
     <h2>Grid</h2>
     <Grid
+
       A={props => <Cell area={props.area} color="red" />}
       B={props => <Cell area={props.area} color="blue" />}
       C={props => <Cell area={props.area} color="orange" />}
