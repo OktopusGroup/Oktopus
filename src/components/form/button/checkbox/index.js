@@ -17,6 +17,8 @@ import css from './checkbox.scss';
 
 class EditorCheckBox extends React.PureComponent {
   static propTypes = {
+    name: PropTypes.string,
+    label: PropTypes.string,
     className: PropTypes.string,
     style: PropTypes.object,
     onChange: PropTypes.func,
@@ -24,6 +26,8 @@ class EditorCheckBox extends React.PureComponent {
   };
 
   static defaultProps = {
+    name: null,
+    label: null,
     className: null,
     style: null,
     onChange: null,
@@ -31,15 +35,22 @@ class EditorCheckBox extends React.PureComponent {
   }
 
   render() {
-    const { style, className, onChange, isChecked } = this.props;
+    const { name, label, style, className, onChange, isChecked } = this.props;
     const classes = cn(css.checkbox, className);
     return (
       <div className={classes} style={style}>
         <input
-          className={css.checkbox_input}
           type="checkbox"
+          name={name}
+          className={css.checkbox_input}
           checked={isChecked}
           onChange={onChange} />
+        {/* Show the label if we have one */}
+        { label && (
+          <label
+            htmlFor={name}
+            className={css.checkbox_label}>{label}</label>
+        )}
         <svg className={css.checkbox_svg} viewBox="0 0 100 100">
           <polyline className={css.checkbox_polyline} points="83.1,31.5 39,75.5 16.9,53.5" />
         </svg>

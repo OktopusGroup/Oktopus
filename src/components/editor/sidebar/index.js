@@ -1,3 +1,5 @@
+/* eslint-disable no-alert */
+
 // -----------------------------------------------------------------------------
 // IMPORTS
 
@@ -16,41 +18,48 @@ import css from './sidebar.scss';
 // Sidebar item.
 const SidebarItem = props => (
   <div className={css.grey_box}>
-    <CheckBox onChange={props.onClick} />
-    <span className={css.list_item}>{props.title}</span>
+    <CheckBox
+      onChange={props.onClick}
+      name={props.name}
+      label={props.label} />
   </div>
 );
 
 SidebarItem.propTypes = {
-  title: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
 };
 
 // Items
 const items = [
   {
-    title: 'Facebook',
+    label: 'Facebook',
+    name: 'facebook',
     onClick() {
       alert('Clicked Facebook');
-    }
+    },
   },
   {
-    title: 'LinkedIn',
+    label: 'LinkedIn',
+    name: 'linkedIn',
     onClick() {
       alert('Clicked LinkedIn');
-    }
+    },
   },
   {
-    title: 'Twitter',
+    label: 'Twitter',
+    name: 'twitter',
     onClick() {
       alert('Clicked Twitter');
-    }
+    },
   },
   {
-    title: 'Gmail',
+    label: 'Gmail',
+    name: 'gmail',
     onClick() {
       alert('Clicked Gmail');
-    }
+    },
   },
 ];
 
@@ -66,7 +75,11 @@ class EditorSidebar extends React.PureComponent {
         <div className={css.sidebar}>
           <span className={css.sidebar_title}>Add / Remove Features</span>
           {items.map(item => (
-            <SidebarItem onClick={item.onClick} key={item.title} title={item.title} />
+            <SidebarItem
+              key={item.name}
+              name={item.name}
+              label={item.label}
+              onClick={item.onClick} />
           ))}
         </div>
       </div>

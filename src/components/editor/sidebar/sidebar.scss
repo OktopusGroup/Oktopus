@@ -28,11 +28,12 @@
   }
   
   .grey_box {
+    border-radius: 8px;
     width: 270px;
     height: 45px;
     background-color: $offwhite;
     margin: 10px auto;
-    padding: 8px 0 0 15px;
+    padding: 8px 0 10px 15px;
     text-align: left;
   }
   
@@ -40,14 +41,9 @@
     font-weight: bold;
     font-size: 18px;
     color: $greyd3;
-    text-align: right;
+    padding-left: 15px;
   }
   
-  .align_checkbox {
-    position: absolute;
-    text-align: right;
-  }
-
   @media (min-width: 1200px) {
   
     .sidebar {
