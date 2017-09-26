@@ -40,6 +40,7 @@ class EditorCheckBox extends React.PureComponent {
           type="checkbox"
           checked={isChecked}
           onChange={onChange} />
+        <label htmlFor="fieldName" className={css.checkbox_label}>"TITLE GOES HERE"</label>
         <svg className={css.checkbox_svg} viewBox="0 0 100 100">
           <polyline className={css.checkbox_polyline} points="83.1,31.5 39,75.5 16.9,53.5" />
         </svg>

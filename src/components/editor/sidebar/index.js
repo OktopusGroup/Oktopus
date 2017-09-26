@@ -16,7 +16,7 @@ import css from './sidebar.scss';
 // Sidebar item.
 const SidebarItem = props => (
   <div className={css.grey_box}>
-    <CheckBox key={props.title} />
+    <CheckBox />
     <span className={css.list_item}>{props.title}</span>
   </div>
 );
