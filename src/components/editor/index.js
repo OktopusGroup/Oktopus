@@ -3,13 +3,10 @@
 
 /* NPM */
 import React from 'react';
-import { Link } from 'react-router-dom';
-import cn from 'classnames';
 import Helmet from 'react-helmet';
 import HeaderLoggedIn from 'components/header/loggedIn';
 import EditorButtonBar from 'components/editor/buttonBar';
 import EditorSidebar from '../../components/editor/sidebar';
-import Grid from '../test/grid';
 
 /* Local */
 

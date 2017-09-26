@@ -27,24 +27,22 @@ class EditorCheckBox extends React.PureComponent {
     className: null,
     style: null,
     onChange: null,
-    isChecked: false,
+    isChecked: null,
   }
 
   render() {
     const { style, className, onChange, isChecked } = this.props;
-    const classes = cn(css.wrapper, className);
+    const classes = cn(css.checkbox, className);
     return (
-      <div className={classes} style={style} >
-        <div className={css.checkbox}>
-          <input
-            className={css.checkbox_input}
-            type="checkbox"
-            checked={isChecked}
-            onChange={onChange} />
-          <svg className={css.checkbox_svg} viewBox="0 0 100 100">
-            <polyline className={css.checkbox_polyline} points="83.1,31.5 39,75.5 16.9,53.5" />
-          </svg>
-        </div>
+      <div className={classes} style={style}>
+        <input
+          className={css.checkbox_input}
+          type="checkbox"
+          checked={isChecked}
+          onChange={onChange} />
+        <svg className={css.checkbox_svg} viewBox="0 0 100 100">
+          <polyline className={css.checkbox_polyline} points="83.1,31.5 39,75.5 16.9,53.5" />
+        </svg>
       </div>
     );
   }

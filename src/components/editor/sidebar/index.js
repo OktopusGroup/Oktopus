@@ -3,9 +3,8 @@
 
 /* NPM */
 import React from 'react';
-import { Link } from 'react-router-dom';
-import cn from 'classnames';
-import CheckBox from '../../form/button/checkbox';
+import PropTypes from 'prop-types';
+import CheckBox from 'components/form/button/checkbox';
 
 /* Local */
 
@@ -14,8 +13,35 @@ import css from './sidebar.scss';
 
 // -----------------------------------------------------------------------------
 
-// Create component for button
+// Sidebar item.
+const SidebarItem = props => (
+  <div className={css.grey_box}>
+    <CheckBox key={props.title} />
+    <span className={css.list_item}>{props.title}</span>
+  </div>
+);
 
+SidebarItem.propTypes = {
+  title: PropTypes.string.isRequired,
+};
+
+// Items
+const items = [
+  {
+    title: 'Facebook',
+  },
+  {
+    title: 'LinkedIn',
+  },
+  {
+    title: 'Twitter',
+  },
+  {
+    title: 'Gmail',
+  },
+];
+
+// Full side-bar
 class EditorSidebar extends React.PureComponent {
   submit = () => {
     /* intentionally empty for now -- the future home of our submit function */
@@ -26,23 +52,9 @@ class EditorSidebar extends React.PureComponent {
       <div className={css.wrapper}>
         <div className={css.sidebar}>
           <span className={css.sidebar_title}>Add / Remove Features</span>
-          <div className={css.grey_box}>
-            <span className={css.list_item} href="/#">Facebook</span>
-            
-            <div className={css.align_checkbox}><CheckBox /></div>
-          </div>
-          <div className={css.grey_box}>
-            <span className={css.list_item} href="/#">LinkedIn<div className={css.align_checkbox}><CheckBox /></div></span>
-
-          </div>
-          <div className={css.grey_box}>
-            <span className={css.list_item} href="/#">Twitter</span>
-            <div className={css.align_checkbox}><CheckBox /></div>
-          </div>
-          <div className={css.grey_box}>
-            <span className={css.list_item} href="/#">Gmail</span>
-            <div className={css.align_checkbox}><CheckBox /></div>
-          </div>
+          {items.map(item => (
+            <SidebarItem key={item.title} title={item.title} />
+          ))}
         </div>
       </div>
     );
