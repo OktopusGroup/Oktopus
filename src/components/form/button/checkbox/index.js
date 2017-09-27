@@ -46,12 +46,7 @@ class Checkbox extends React.PureComponent {
     const classes = cn(css.checkbox, className);
     return (
       <div className={classes} style={style}>
-        {/* Show the label if we have one */}
-        { label && (
-          <label
-            htmlFor={name}
-            className={css.checkbox_label}>{label}</label>
-        )}
+
         {/* The checkbox */}
         <input
           type="checkbox"
@@ -62,6 +57,12 @@ class Checkbox extends React.PureComponent {
         <svg className={css.checkbox_svg} viewBox="0 0 100 100">
           <polyline className={css.checkbox_polyline} points="83.1,31.5 39,75.5 16.9,53.5" />
         </svg>
+        {/* Show the label if we have one */}
+        { label && (
+          <label
+            htmlFor={name}
+            className={css.checkbox_label}>{label}</label>
+        )}
       </div>
     );
   }

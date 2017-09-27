@@ -57,3 +57,10 @@ input:required {
 input:invalid {
   box-shadow: 0;
 }
+
+@media (max-width: 800px) {
+  body {
+    cursor: pointer;
+  }
+
+}

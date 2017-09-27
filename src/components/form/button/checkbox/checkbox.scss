@@ -1,4 +1,7 @@
+@import '~variables.scss';
+
 .checkbox {
+  padding-bottom: 5px;
   display: inline-block;
   position: relative;
   * {
@@ -25,15 +28,19 @@
 .checkbox_svg {
   height: 2em;
   width: 2em;
-  background: #eee;
+  background: $offwhite;
   border-radius: 20px;
   margin-right: .25em;
-  border: .15em solid #eee;
+  border: .15em solid $offwhite;
   transition: border-color 150ms;
 
   .checkbox:hover &,
   .checkbox_input:hover + & {
-    border-color: #ddd;
+    border-color: $green;
+  }
+  .checkbox:active &,
+  .checkbox_input:active + & {
+    background-color: $offwhite;
   }
 }
 
@@ -55,9 +62,9 @@
 }
 
 .checkbox_label {
-  padding-top: .1em;
+  padding-left: 20px;
   line-height: 1;
   font-weight: bold;
-  font-family: OpenSans;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-size: 18px;
 }
