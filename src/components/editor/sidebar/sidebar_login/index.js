@@ -14,7 +14,7 @@ import cn from 'classnames';
 import CheckBox from 'components/form/button/checkbox';
 
 // Styles
-import css from './sidebar_login.scss';
+import css from './login.scss';
 
 // -----------------------------------------------------------------------------
 

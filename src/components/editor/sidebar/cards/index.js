@@ -14,7 +14,7 @@ import cn from 'classnames';
 import CheckBox from 'components/form/button/checkbox';
 
 // Styles
-import css from './sidebar_header.scss';
+import css from './cards.scss';
 
 // -----------------------------------------------------------------------------
 
@@ -72,17 +72,29 @@ class SidebarItem extends React.PureComponent {
 // Items
 const items = [
   {
-    label: 'Sort By',
-    name: 'sort_by',
+    label: 'Card Title',
+    name: 'card_title',
   },
   {
-    label: 'Categories',
-    name: 'categories',
+    label: 'Short Description',
+    name: 'short_description',
+  },
+  {
+    label: 'Download Button',
+    name: 'download_button',
+  },
+  {
+    label: 'Favorite Button',
+    name: 'favorite_button',
+  },
+  {
+    label: 'Popularity Stats',
+    name: 'popularity_stats',
   },
 ];
 
 // Full side-bar
-class EditorSidebarHeader extends React.PureComponent {
+class EditorSidebarCards extends React.PureComponent {
   submit = () => {
     /* intentionally empty for now -- the future home of our submit function */
   }
@@ -100,11 +112,10 @@ class EditorSidebarHeader extends React.PureComponent {
               onChange={item.onChange} />
 
           ))}
-          <btn className={css.btn_blue}>Choose Categories</btn>
         </div>
       </div>
     );
   }
 }
 
-export default EditorSidebarHeader;
+export default EditorSidebarCards;
