@@ -49,6 +49,7 @@
   display: grid;
   background-color: $white;
   border-bottom: solid 1px $offwhite;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
   "style   color   font";
 }

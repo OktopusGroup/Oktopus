@@ -14,7 +14,7 @@ import cn from 'classnames';
 import CheckBox from 'components/form/button/checkbox';
 
 // Styles
-import css from './sidebar.scss';
+import css from './sidebar_login.scss';
 
 // -----------------------------------------------------------------------------
 
@@ -72,25 +72,25 @@ class SidebarItem extends React.PureComponent {
 // Items
 const items = [
   {
-    label: 'Facebook',
+    label: 'Facebook login',
     name: 'facebook',
   },
   {
-    label: 'LinkedIn',
+    label: 'LinkedIn login',
     name: 'linkedIn',
     onChange() {
       alert('Clicked LinkedIn');
     },
   },
   {
-    label: 'Twitter',
+    label: 'Twitter login',
     name: 'twitter',
     onChange() {
       alert('Clicked Twitter');
     },
   },
   {
-    label: 'Gmail',
+    label: 'Gmail login',
     name: 'gmail',
     // onChange() {
     //   alert('Clicked Gmail');
@@ -99,7 +99,7 @@ const items = [
 ];
 
 // Full side-bar
-class EditorSidebar extends React.PureComponent {
+class EditorSidebarLogin extends React.PureComponent {
   submit = () => {
     /* intentionally empty for now -- the future home of our submit function */
   }
@@ -122,4 +122,4 @@ class EditorSidebar extends React.PureComponent {
   }
 }
 
-export default EditorSidebar;
+export default EditorSidebarLogin;

@@ -34,7 +34,11 @@ import Pages from 'components/dash/pages';
 import EditorFrame from 'components/editor';
 import EditorButtonBar from 'components/editor/buttonBar';
 import WorkspaceHeader from 'components/editor/workspaceHeader';
-import EditorSidebar from 'components/editor/sidebar';
+import EditorSidebarLogin from 'components/editor/sidebar/sidebar_login';
+import EditorSidebarHeader from 'components/editor/sidebar/sidebar_header';
+import EditorSidebarProfile from 'components/editor/sidebar/sidebar_profile';
+import EditorSidebarCards from 'components/editor/sidebar/sidebar_cards';
+import EditorSidebarDetail from 'components/editor/sidebar/sidebar_detailPage';
 import EditorLogin from 'components/editor/login';
 import Test from 'components/test';
 
@@ -57,7 +61,11 @@ const routes = [
   ['/test/dash/account/dropdown', AccountDropdown],
   ['/test/editor/buttonBar', EditorButtonBar],
   ['/test/editor/header', WorkspaceHeader],
-  ['/test/editor/header', EditorSidebar],
+  ['/test/editor/sidebar_login', EditorSidebarLogin],
+  ['/test/editor/sidebar_header', EditorSidebarHeader],
+  ['/test/editor/sidebar_profile', EditorSidebarProfile],
+  ['/test/editor/sidebar_cards', EditorSidebarCards],
+  ['/test/editor/sidebar_detailPage', EditorSidebarDetail],
   ['/test/editor/login', EditorLogin],
   ['/test/editor', EditorFrame],
 

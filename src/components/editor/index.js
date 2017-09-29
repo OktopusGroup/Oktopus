@@ -6,7 +6,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import HeaderLoggedIn from 'components/header/loggedIn';
 import EditorButtonBar from 'components/editor/buttonBar';
-import EditorSidebar from '../../components/editor/sidebar';
+import EditorSidebar from '../../components/editor/sidebar/sidebar_login';
 
 /* Local */
 
