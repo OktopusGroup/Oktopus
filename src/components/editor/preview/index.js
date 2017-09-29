@@ -9,13 +9,13 @@ import cn from 'classnames';
 /* Local */
 
 // Styles
-import css from './workspaceHeader.scss';
+import css from './preview.scss';
 
 // -----------------------------------------------------------------------------
 
 // Create component for button
 
-class EditorHeader extends React.PureComponent {
+class EditorPreviewBar extends React.PureComponent {
   submit = () => {
     /* intentionally empty for now -- the future home of our submit function */
   }
@@ -29,4 +29,4 @@ class EditorHeader extends React.PureComponent {
   }
 }
 
-export default EditorHeader;
+export default EditorPreviewBar;

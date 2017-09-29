@@ -33,8 +33,8 @@ import AccountDropdown from 'components/dash/account/dropdown';
 import Pages from 'components/dash/pages';
 import EditorFrame from 'components/editor';
 import EditorButtonBar from 'components/editor/buttonBar';
-import WorkspaceHeader from 'components/editor/workspaceHeader';
-import EditorSidebarLogin from 'components/editor/sidebar/sidebar_login';
+import EditorPreviewBar from 'components/editor/preview';
+import EditorSidebarLogin from 'components/editor/sidebar/login';
 import EditorSidebarHeader from 'components/editor/sidebar/header';
 import EditorSidebarProfile from 'components/editor/sidebar/profile';
 import EditorSidebarCards from 'components/editor/sidebar/cards';
@@ -60,7 +60,7 @@ const routes = [
   ['/test/header/loggedOut', HeaderLoggedOut],
   ['/test/dash/account/dropdown', AccountDropdown],
   ['/test/editor/buttonBar', EditorButtonBar],
-  ['/test/editor/header', WorkspaceHeader],
+  ['/test/editor/preview', EditorPreviewBar],
   ['/test/editor/login', EditorSidebarLogin],
   ['/test/editor/header', EditorSidebarHeader],
   ['/test/editor/profile', EditorSidebarProfile],
