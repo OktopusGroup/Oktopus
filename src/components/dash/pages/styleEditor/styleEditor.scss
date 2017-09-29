@@ -23,20 +23,20 @@
 
 .editor_button__container {
   display: grid;
-  padding: 0 28px;
-  margin: 0 auto;
   grid-template-areas:
-  "btn_left btn_right";
+  "btn_left  btn_right";
 }
 
 .btn_left {
-  justify-self: start;
+  position: absolute;
+  left: 28px;
   grid-area: btn_left;
   margin: 15px 0;
 }
 /* Hide editor_box below when onclick of .btn_right */
 .btn_right {
-  justify-self: end;
+  position: absolute;
+  right: 28px;
   grid-area: btn_right;
   margin: 15px 0;
 }
@@ -46,7 +46,6 @@
   max-width: 1200px;
   padding: 10px 28px;
   height: 310px;
-  width: 100%;
   display: grid;
   background-color: $white;
   border-bottom: solid 1px $offwhite;
@@ -72,7 +71,6 @@
 .category_title {
   width: 100%;
   margin: 15px auto 35px auto;
-  position: relative;
   text-align: center;
   font-size: 18px;
 	font-weight: 400;
@@ -85,7 +83,7 @@
   margin: 0 auto;
   display: grid;
   grid-template-areas:
-  "   color_main         color_sub   "
+  "color_main               color_sub"
   "buttons_subtitle  accents_subtitle"
 }
 

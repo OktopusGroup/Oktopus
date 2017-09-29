@@ -8,10 +8,10 @@
 .arrowStyles {
   &:hover {
     g {
-      stroke: yellow !important;
+      stroke: $white;
     }
   }
   g {
-    stroke: red !important;
+    stroke: $sky-blue;
   }
 }

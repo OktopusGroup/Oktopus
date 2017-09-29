@@ -10,7 +10,7 @@ import cn from 'classnames';
 
 // Styles
 import css from './styleEditor.scss';
-import ArrowButton from '../../../form/button/arrow';
+import '../../../form/button/button.scss';
 
 // -----------------------------------------------------------------------------
 
@@ -27,19 +27,19 @@ class PageStyleEditor extends React.PureComponent {
       <div className={css.wrapper}>
         <div className={css.editor_button_bar}>
           <div className={css.editor_button__container}>
-            <Link to="/dash/sites"><ArrowButton direction="left" className={cn(css.btn_blue_small, css.btn_right)}>Sites</ArrowButton></Link>
+            <div>
+              <Link to="/back"><btn direction="left" className={cn(css.btn_blue_small, css.btn_left)}><i class="fa fa-angle-left" aria-hidden="true" /> Sites</btn></Link>
+            </div>
             {/* Change to "Show Editor" state when closed */}
-            <ArrowButton direction="up" className={cn(css.btn_blue_small, css.btn_right)}>Hide Editor</ArrowButton>
+            <div>
+              <Link to="/todo"><btn direction="up" className={cn(css.btn_blue_small, css.btn_right)}><i class="fa fa-angle-up" aria-hidden="true" /> Hide Editor</btn></Link>
+            </div>
           </div>
         </div>
         <div className={css.editor_box}>
-
-
           <div className={css.style_box}>
             <p className={css.category_title}>Overall Style</p>
           </div>
-
-
           <div className={css.color_box}>
             <p className={css.category_title}>Color Theme</p>
             <div className={css.colors}>
@@ -49,8 +49,6 @@ class PageStyleEditor extends React.PureComponent {
               <p className={css.accents_subtitle}>Accents</p>
             </div>
           </div>
-
-
           <div className={css.font_box}>
             <p className={css.category_title}>Text & Fonts</p>
           </div>

@@ -18,9 +18,6 @@
   position: relative;
   height: 60px;
   border-bottom: solid 1px $greyd1;
-}
-
-.editor_button__container {
   display: grid;
   padding: 0 28px;
   margin: 0 auto;
@@ -29,19 +26,21 @@
 }
 
 .btn_left {
-  justify-self: start;
+  position: absolute;
+  left: 0px;
   grid-area: btn_left;
   margin: 15px 0;
 }
 
 .btn_right {
-  justify-self: end;
+  position: absolute;
+  right: 0px;
   grid-area: btn_right;
   margin: 15px 0;
 }
 
 @media (min-width: 1200px) {
 .btn_right {
-    margin-right: 65px;
+    margin-right: 80px;
   }
 }

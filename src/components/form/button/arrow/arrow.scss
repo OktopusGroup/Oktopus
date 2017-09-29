@@ -5,11 +5,12 @@
     text-decoration: none;
     text-align: center;
     outline: 0;
-    margin: 0 auto;
     border: solid 1px $sky-blue;
     font-size: 14px;
     font-weight: bold;
-    width: 110px;
+    width: auto;
+    min-width: 120px;
+    padding: 0 15px;
     height: 30px;
     color: $sky-blue;
     background-color: $white;
@@ -36,14 +37,14 @@
     }
   }
 
-.align_arrow {
-  margin: 4px 10xp 0 10px;
-  &:hover {
-      background-color: $white;
+  .arrow_styles {
+    &:hover {
+      g {
+        stroke: $white;
+      }
+    }
+    g {
+      stroke: $sky-blue;
+    }
   }
-}
-
-.align_text {
-  margin-left: 5px;
-  line-height: 5px;
-}
+  

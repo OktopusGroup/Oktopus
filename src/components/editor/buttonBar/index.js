@@ -10,6 +10,7 @@ import cn from 'classnames';
 
 // Styles
 import css from './buttonBar.scss';
+import ArrowButton from '../../form/button/arrow';
 
 // -----------------------------------------------------------------------------
 
@@ -25,11 +26,11 @@ class EditorButtonBar extends React.PureComponent {
 
       <div className={css.wrapper}>
         <div className={css.editor_button_bar}>
-          <div className={css.editor_button__container}>
-            <div>
-              <Link to="/dash/pages" className={cn(css.btn_blue_small, css.btn_left)}>Pages</Link>
-            </div>
-            <Link to="/todo" className={cn(css.btn_blue_small, css.btn_right)}>Settings</Link>
+          <div>
+            <Link to="/back"><btn className={cn(css.btn_blue_small, css.btn_left)} direction="up"><i class="fa fa-angle-left" aria-hidden="true" /> Pages</btn></Link>
+          </div>
+          <div>
+            <Link to="/todo"><btn className={cn(css.btn_blue_small, css.btn_right)} direction="up">Settings</btn></Link>
           </div>
         </div>
       </div>

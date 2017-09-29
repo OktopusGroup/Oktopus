@@ -18,8 +18,8 @@ const ArrowButton = props => {
   const styles = cn(css.arrow_button, props.className);
   return (
     <button className={styles}>
-      <Arrow direction={props.direction} />
-      <span className={css.align_text}>{props.children}</span>
+      <Arrow direction={cn(css.align_arrow, props.direction)} />
+      <span className={css.arrow_styles}>{props.children}</span>
     </button>
   );
 };
