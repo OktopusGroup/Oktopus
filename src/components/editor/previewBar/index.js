@@ -9,7 +9,7 @@ import cn from 'classnames';
 /* Local */
 
 // Styles
-import css from './preview.scss';
+import css from './previewBar.scss';
 
 // -----------------------------------------------------------------------------
 
@@ -23,8 +23,13 @@ class EditorPreviewBar extends React.PureComponent {
   render() {
     return (
 
-      <div className="undefined">undefined</div>
+      <div className={css.editor_previewBar}>
 
+        <div>
+          <Link to="/preview"><btn className={cn(css.btn_default_small, css.btn_middle)}>Preview</btn></Link>
+        </div>
+
+      </div>
     );
   }
 }

@@ -89,20 +89,19 @@ class EditorSidebarHeader extends React.PureComponent {
 
   render() {
     return (
-      <div className={css.wrapper}>
-        <div className={css.sidebar}>
-          <span className={css.sidebar_title}>Add / Remove Features</span>
-          {items.map(item => (
-            <SidebarItem
-              key={item.name}
-              name={item.name}
-              label={item.label}
-              onChange={item.onChange} />
 
-          ))}
-          <btn className={css.btn_blue}>Choose Categories</btn>
-        </div>
+      <div className={css.sidebar}>
+        <span className={css.sidebar_title}>Add / Remove Features</span>
+        {items.map(item => (
+          <SidebarItem
+            key={item.name}
+            name={item.name}
+            label={item.label}
+            onChange={item.onChange} />
+        ))}
+        <btn className={css.btn_blue}>Choose Categories</btn>
       </div>
+
     );
   }
 }

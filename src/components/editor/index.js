@@ -6,7 +6,8 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import HeaderLoggedIn from 'components/header/loggedIn';
 import EditorButtonBar from 'components/editor/buttonBar';
-import EditorSidebar from '../../components/editor/sidebar/sidebar_login';
+import EditorPreviewBar from '../../components/editor/previewBar';
+import EditorSidebarLogin from '../../components/editor/sidebar/login';
 
 /* Local */
 
@@ -32,16 +33,12 @@ class EditorFrame extends React.PureComponent {
             content: 'Visual Editor',
           }]} />
 
-        <div className={css.header}>
-          <HeaderLoggedIn />
-        </div>
-
-        <div className={css.buttonBar}>
-          <EditorButtonBar />
-        </div>
-
-        <div className={css.sideBar}>
-          <EditorSidebar />
+        <HeaderLoggedIn className={css.header} />
+        <EditorButtonBar className={css.buttonBar} />
+        <div className={css.wrapper}>
+          <EditorSidebarLogin className={css.sidebar} />
+          <EditorPreviewBar className={css.previewBar} />
+          <div className={css.workspace}>WORKSPACE</div>
         </div>
       </div>
 

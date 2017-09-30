@@ -1,95 +1,48 @@
 @import '~variables.scss';
 @import '~components/form/button/button.scss';
-@import '~components/form/form.scss';
 
 /* Top Editor Box for the 'Pages' page */
+
 .header {
   grid-area: header;
+  height: 60px;
+  min-width: 100vw;
 }
 
 .buttonBar {
   grid-area: buttonBar;
+  height: 60px;
+  width: 100vw;
 }
 
-.sideBar {
-  grid-area: sideBar;
-  height: 500px;
-
+.previewBar {
+  grid-area: previewBar;
+  height: 60px;
 }
 
-.wrapper_editor {
-  width: 100%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-areas:
-    "header"
-    "buttonBar"
-    "sideBar"
-    "workspace";
-}
-
-.sidebar_title {
-  margin-bottom: 30px;
-  font-size: 18px;
-  font-weight: bold;
-  border-bottom: 1px solid $greyd2;
-  padding-bottom: 2px;
-
+.sidebar {
+  grid-area: sidebar;
+  min-height: 100vh;
 }
 
 .workspace {
   grid-area: workspace;
-  min-height: 100vh;
+  background-color: lightsalmon; 
+  grid-area: previewBar;
 }
 
 .sidebar {
-  list-style-type: none;
   grid-area: sidebar;
-  position: absolute;
-  right: 0;  
-  height: auto;
-  width: 100%;
-  z-index: 5;
-  background-color: $white;
-  border-left: 1px solid $greyd1;
-  text-align: center;
-  float: right;
-  max-height: 200px;
-}
-
-.grey_box {
-  width: 270px;
-  height: 45px;
-  background-color: $offwhite;
-  margin: 35px auto;
-  padding: 8px 0 0 15px;
-  text-align: left;
-}
-
-.list_item {
-  font-weight: bold;
-  font-size: 18px;
-  color: $greyd3;
-  text-align: right;
-}
-
-.align_checkbox {
-  position: relative;
-  text-align: right;
 }
 
 @media (min-width: 1200px) {
   .wrapper {
-    grid-template-columns: 2fr 4fr;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr 330px;
     grid-template-areas:
-     "header      header      header"
-     "buttonBar  buttonBar  buttonBar"
-     "workspace   workspace   sidebar"
-   }
- }
-
-  .sidebar {
-   min-height: 100%;
-   width: 330px;
+    "previewBar  sidebar"
+    "workspace   sidebar";
   }
-
+ }
