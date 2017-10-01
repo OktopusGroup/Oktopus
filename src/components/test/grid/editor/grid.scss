@@ -34,11 +34,15 @@
 
 @media (min-width: 1200px) {
   .grid {
-    grid-gap: 0px;
+    grid-template-columns: 1fr 330px;
     grid-template-areas:
     "a a"
     "b b"
     "c d"
     "e d";
   }
+  .a {
+    grid-column-end: span 2;
+  }
+  
 }
