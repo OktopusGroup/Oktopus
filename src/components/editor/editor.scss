@@ -31,10 +31,6 @@
   grid-area: previewBar;
 }
 
-.sidebar {
-  grid-area: sidebar;
-}
-
 @media (min-width: 1200px) {
   .wrapper {
     display: grid;

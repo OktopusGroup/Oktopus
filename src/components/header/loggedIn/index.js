@@ -4,7 +4,6 @@
 /* NPM */
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 import { connect } from 'react-redux';
 
 /* Local */
@@ -16,7 +15,7 @@ import AccountDropDown from 'components/dash/account/dropdown';
 import logo from 'images/logo.svg';
 
 // Styles
-import css from './LoggedIn.scss';
+import css from './loggedIn.scss';
 
 // -----------------------------------------------------------------------------
 

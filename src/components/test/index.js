@@ -9,6 +9,7 @@ import HeaderLoggedIn from 'components/header/loggedIn';
 import EditorButtonBar from 'components/editor/buttonBar';
 import EditorSidebarLogin from 'components/editor/sidebar/login';
 import EditorPreviewBar from 'components/editor/previewBar';
+import EditorWorkspace from 'components/editor/workspace';
 
 import Grid from './grid/editor';
 
@@ -22,7 +23,6 @@ const Cell = props => (
 
 Cell.propTypes = {
   area: PropTypes.string.isRequired,
-  color: PropTypes.string.isRequired,
 };
 
 export default () => (
@@ -34,19 +34,9 @@ export default () => (
       A={props => <Cell area={props.area}><HeaderLoggedIn /></Cell>}
       B={props => <Cell area={props.area}><EditorButtonBar /></Cell>}
       C={props => <Cell area={props.area}><EditorPreviewBar /></Cell>}
-      D={props => <Cell area={props.area}><EditorSidebarLogin /></Cell>} />
-
-      <hr />
-
-      <h2>Grid without grid component</h2>
-
-      <div className={css.grid}>
-
-        <div className={css.a}><HeaderLoggedIn /></div>
-        <div className={css.b}><EditorButtonBar /></div>
-        <div className={css.c}><EditorPreviewBar /></div>
-        <div className={css.d}><EditorSidebarLogin /></div>
-        </div>
-
+      D={props => <Cell area={props.area}><EditorSidebarLogin /></Cell>}
+      E={props => <Cell area={props.area}><EditorWorkspace /></Cell>} />
+  
   </div>
+
 );

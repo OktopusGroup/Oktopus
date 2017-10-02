@@ -1,7 +1,6 @@
 // --------------------
 // IMPORTS
 
-
 /* NPM */
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
@@ -39,6 +38,8 @@ import EditorSidebarHeader from 'components/editor/sidebar/header';
 import EditorSidebarProfile from 'components/editor/sidebar/profile';
 import EditorSidebarCards from 'components/editor/sidebar/cards';
 import EditorSidebarDetail from 'components/editor/sidebar/detailPage';
+import EditorWorkspace from 'components/editor/workspace';
+import PlatformLogin1 from 'components/platform/login1';
 import Test from 'components/test';
 
 
@@ -65,6 +66,8 @@ const routes = [
   ['/test/editor/profile', EditorSidebarProfile],
   ['/test/editor/cards', EditorSidebarCards],
   ['/test/editor/detailPage', EditorSidebarDetail],
+  ['/test/editor/workspace', EditorWorkspace],
+  ['/test/editor/login1', PlatformLogin1],
   ['/test/editor', EditorFrame],
 
 

@@ -59,9 +59,37 @@ input:invalid {
   box-shadow: 0;
 }
 
+.uploadcare--widget__button, .uploadcare--widget__button:hover, .uploadcare--widget__button:focus  {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  color: rgba(28, 150, 251, 0.75);;
+  outline: 0;
+  margin: 10px auto 20px auto;
+  width: 230px;
+  height: 60px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: 2px dashed rgba(28, 150, 251, 0.75);
+  transition: all 0.3s ease;
+}
+
+.uploadcare--widget__button:hover {
+  background-color: #1c96fb;
+  color: white;
+}
+
+.uploadcare--widget__button:focus {
+  background-color: rgba(28, 150, 251, 0.75);
+  color: white;
+}
+
 @media (max-width: 800px) {
   body {
     cursor: pointer;
   }
+
+  
 
 }

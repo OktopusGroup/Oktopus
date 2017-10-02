@@ -1,5 +1,58 @@
 @import '~variables.scss';
 
+.btn_circle {
+  text-decoration: none;
+  margin: 0 auto;
+  outline: 0;
+  border: 0;
+  width: 50px;
+  height: 50px;
+  line-height: 5px;
+  padding: auto;
+  background-color: $greyd1;
+  border-radius: 100%;
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: $greyd2;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 6px 0 rgba(25, 74, 179, 0.15);
+    -webkit-transition: all 0.5s ease 0s, transform 400ms;
+    transition: all 0.5s ease 0s, transform 400ms;
+  &:active {
+    background-color: $greyd3;
+    -webkit-transition: all 0s linear 0.4s, transform 40ms;
+    transition: all 0s linear 0.4s, transform 40ms;
+    transform: translateY(-1px);
+    transition: box-shadow 0s linear 0s;
+    box-shadow: 0 0 0 0 rgba(25, 74, 179, 0.5);
+    }
+}
+}
+
+/* Wrap .arrow_direction in div with .btn_circle */
+.btn_arrow_left {
+  width: 0;
+  height: 0;
+  margin: 2px 0 0 6px;
+  border-style: solid;
+  border-width: 13px 19.1px 13px 0;
+  border-color: transparent #ffffff transparent transparent;
+  line-height: 0px;
+  _border-color: #000000 #ffffff #000000 #000000;
+  _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+}
+
+.btn_arrow_right {
+  width: 0;
+  height: 0;
+  margin: 2px 0 0 11px;
+  border-style: solid;
+  border-width: 13px 0 13px 19.1px;
+  border-color: transparent transparent transparent #ffffff;
+  line-height: 0px;
+  _border-color: #000000 #000000 #000000 #ffffff;
+  _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+}
 
 .btn_default {
   text-decoration: none;
@@ -200,7 +253,6 @@ transition: all 0.5s ease;
 }
 
 .closeX {
-  position: relative;
   margin: 0 0 0 92%;
   padding: 3px 25px;
   bottom: 15px;

@@ -8,5 +8,6 @@ export default props => (
     <props.B area={css.b} />
     <props.C area={css.c} />
     <props.D area={css.d} />
+    <props.E area={css.e} />
   </div>
 );

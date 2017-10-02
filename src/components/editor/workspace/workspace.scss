@@ -1,0 +1,41 @@
+@import '~variables.scss';
+@import '~components/form/button/button.scss';
+
+
+.workspace_wrapper {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "left middle right";
+}
+
+.left_side {
+  grid-area: left;
+  justify-self: center;
+  align-self: center;
+}
+
+.middle{
+  width: auto;
+  max-width: 950px;
+  grid-area: middle;
+  align-self: start;
+  margin: 0 auto;
+}
+
+.right_side {
+  grid-area: right;
+  justify-self: center;
+  align-self: center;
+}
+
+@media (max-width: 600px) {
+  .left_side {
+    display: none;
+  }
+  
+  .right_side {
+    display: none;
+  }
+}

@@ -1,49 +1,8 @@
 @import '~variables.scss';
+@import '../form/button/button.scss';
 
 .container {
   margin: 0 auto;
+  padding-bottom: 25px;
   width: 95%;
-}
-
-.grid {
-  display: grid;
-  height: 100%;
-  grid-template-areas:
-    "a"
-    "b"
-    "d"
-    "c"
-    "e";
-}
-
-.a {
-  grid-area: a;
-}
-
-.b {
-  grid-area: b;
-}
-
-.c {
-  grid-area: c;
-}
-
-.d {
-  grid-area: d;
-}
-
-.e {
-  grid-area: e;
-}
-
-
-@media (min-width: 1200px) {
-  .grid {
-    grid-template-columns: 1fr 330px;
-    grid-template-areas:
-    "a a"
-    "b b"
-    "c d"
-    "e d";
-  }
 }
