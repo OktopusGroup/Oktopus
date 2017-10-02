@@ -24,7 +24,6 @@
 
 .d {
   grid-area: d;
-  height: 450px;
 }
 
 .e {
@@ -41,8 +40,4 @@
     "c d"
     "e d";
   }
-  .a {
-    grid-column-end: span 2;
-  }
-  
 }

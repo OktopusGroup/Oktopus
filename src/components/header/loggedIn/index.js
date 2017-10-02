@@ -48,7 +48,7 @@ class HeaderLoggedIn extends React.PureComponent {
   render() {
     return (
       <div className={css.wrapper}>
-        <div>
+        <div className={css.align_logo}>
           <Link to="/"><img src={logo} className={css.logo_header} alt="Oktopus" /></Link>
         </div>
         <div

@@ -35,5 +35,18 @@ export default () => (
       B={props => <Cell area={props.area}><EditorButtonBar /></Cell>}
       C={props => <Cell area={props.area}><EditorPreviewBar /></Cell>}
       D={props => <Cell area={props.area}><EditorSidebarLogin /></Cell>} />
+
+      <hr />
+
+      <h2>Grid without grid component</h2>
+
+      <div className={css.grid}>
+
+        <div className={css.a}><HeaderLoggedIn /></div> 
+        <div className={css.b}><EditorButtonBar /></div>
+        <div className={css.c}><EditorPreviewBar /></div> 
+        <div className={css.d}><EditorSidebarLogin /></div> 
+        </div>
+
   </div>
 );
