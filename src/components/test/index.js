@@ -17,7 +17,7 @@ import css from './test.scss';
 
 // Grid cell
 const Cell = props => (
-  <div>{props.children}</div>
+  <div className={props.area}>{props.children}</div>
 );
 
 Cell.propTypes = {
@@ -27,7 +27,7 @@ Cell.propTypes = {
 
 export default () => (
   <div className={css.container}>
-    
+
     <h2>Grid</h2>
     <Grid
 
@@ -42,10 +42,10 @@ export default () => (
 
       <div className={css.grid}>
 
-        <div className={css.a}><HeaderLoggedIn /></div> 
+        <div className={css.a}><HeaderLoggedIn /></div>
         <div className={css.b}><EditorButtonBar /></div>
-        <div className={css.c}><EditorPreviewBar /></div> 
-        <div className={css.d}><EditorSidebarLogin /></div> 
+        <div className={css.c}><EditorPreviewBar /></div>
+        <div className={css.d}><EditorSidebarLogin /></div>
         </div>
 
   </div>
