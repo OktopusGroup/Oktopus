@@ -73,11 +73,13 @@
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   &:hover {
+    color: $white;
     transform: translateY(-5px);
     box-shadow: 0 5px 6px 0 rgba(25, 74, 179, 0.15);
     -webkit-transition: all 0.5s ease 0s, transform 400ms;
     transition: all 0.5s ease 0s, transform 400ms;
   &:active {
+    color: $white;
     -webkit-transition: all 0s linear 0.4s, transform 40ms;
     transition: all 0s linear 0.4s, transform 40ms;
     transform: translateY(-3px);
@@ -107,11 +109,13 @@ box-shadow: 0 2px 2px 0 $greyd1;
 -webkit-transition: all 0.5s ease;
 transition: all 0.5s ease;
 &:hover {
+  color: $white;
   transform: translateY(-5px);
   box-shadow: 0 5px 6px 0 rgba(25, 74, 179, 0.15);
   -webkit-transition: all 0.5s ease 0s, transform 400ms;
   transition: all 0.5s ease 0s, transform 400ms;
 &:active {
+  color: $white;
   -webkit-transition: all 0s linear 0.4s, transform 40ms;
   transition: all 0s linear 0.4s, transform 40ms;
   transform: translateY(-3px);

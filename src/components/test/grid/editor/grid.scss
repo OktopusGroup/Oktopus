@@ -1,6 +1,7 @@
 
 .grid {
   display: grid;
+  grid-template-rows: auto auto auto 100px auto;
   grid-template-areas:
     "a"
     "b"
@@ -27,12 +28,14 @@
 
 .e {
   grid-area: e;
+  align-self: start;
 }
 
 
 @media (min-width: 1200px) {
   .grid {
     grid-template-columns: 1fr 330px;
+    grid-template-rows: 60px 60px 160px 1fr;
     grid-template-areas:
     "a a"
     "b b"

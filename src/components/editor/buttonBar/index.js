@@ -24,10 +24,10 @@ class EditorButtonBar extends React.PureComponent {
 
       <div className={css.editor_button_bar}>
         <div>
-          <Link to="/back"><btn className={cn(css.btn_blue_small, css.btn_left)} direction="up"><i class="fa fa-angle-left" aria-hidden="true" /> Pages</btn></Link>
+          <Link to="/back" className={cn(css.btn_blue_small, css.btn_left)}><i class="fa fa-angle-left" aria-hidden="true" /> Pages</Link>
         </div>
         <div>
-          <Link to="/todo"><btn className={cn(css.btn_blue_small, css.btn_right)} direction="up">Settings</btn></Link>
+          <Link to="/todo" className={cn(css.btn_blue_small, css.btn_right)}>Settings</Link>
         </div>
       </div>
     );
