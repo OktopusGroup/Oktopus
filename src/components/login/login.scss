@@ -23,6 +23,7 @@
 /* Login Box */
 
 .login_box .login_form {
+  justify-items: auto;
   display: block;
   grid-area: login_box;
   height: auto;
@@ -33,7 +34,6 @@
 }
 
 .login_form {
-  display: block;
   background-color: #ffffff;
   border: solid 1px #f6f8fc;
   height: 0;
@@ -159,6 +159,7 @@ input:valid+.label {
     width: 200px;
   }
   .login_box .login_form {
+    position: relative;
     max-width: 330px;
     margin: auto;
     box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.05);
@@ -171,9 +172,7 @@ input:valid+.label {
     left: 180px;
     text-decoration: none;
   }
-.btn {
-    margin-bottom: 44px;
-  }
+
   .login_subtext {
     margin: 30px auto;
   }

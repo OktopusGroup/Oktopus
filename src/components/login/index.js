@@ -57,7 +57,7 @@ class Login extends React.PureComponent {
                   <label htmlFor="fieldPassword" className={css.label}>Password</label>
                   <span><Link to="/login/reset" className={css.forgot}>Forgot?</Link></span>
                 </div>
-                <button className={css.btn_default}>Login</button>
+                <Link to="/todo" className={css.btn_default}>Login</Link>
               </div>
             </Animated>
             <Animated animationIn="bounceInUp" animationInDelay={0.2}>

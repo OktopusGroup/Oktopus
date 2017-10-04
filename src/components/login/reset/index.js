@@ -53,7 +53,7 @@ class ResetPW extends React.PureComponent {
                     <input type="text" id="fieldEmail" className={css.input} required />
                     <label htmlFor="fieldEmail" className={css.label}>Input email</label>
                   </div>
-                  <button className={css.btn_default}>Send Reset</button>
+                  <Link to="/todo" className={css.btn_default}>Send Reset</Link>
                 </div>
               </div>
             </Animated>

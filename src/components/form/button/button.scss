@@ -1,5 +1,7 @@
 @import '~variables.scss';
 
+
+/* CIRCLE WRAPPER FOR EDITOR ARROW BUTTONS */
 .btn_circle {
   text-decoration: none;
   margin: 0 auto;
@@ -28,7 +30,6 @@
     }
 }
 }
-
 /* Wrap .arrow_direction in div with .btn_circle */
 .btn_arrow_left {
   width: 0;
@@ -55,16 +56,17 @@
 }
 
 .btn_default {
+  text-align: center;
   text-decoration: none;
   margin: 0 auto;
   outline: 0;
   display: block;
   border: 0;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
   height: 3.5rem;
   width: 16rem;
-  line-height: 1.7rem;
+  line-height: 52px;
   color: $white;
   background-image: $peach-gradient;
   border-radius: 100px;
@@ -257,9 +259,9 @@ transition: all 0.5s ease;
 }
 
 .closeX {
-  margin: 0 0 0 92%;
-  padding: 3px 25px;
-  bottom: 15px;
+  float: right;
+  width: 25px;
+  height: 25px;
   outline: 0;
   z-index: 2000;
   background-image: url(images/closeX.svg);
@@ -286,6 +288,8 @@ transition: all 0.5s ease;
     margin-left: 0px;
   }
   .btn_default {
+    font-size: 18px;
+    line-height: 37px;
     width: 180px;
     height: 40px;
     display: block;

@@ -52,7 +52,7 @@ class ConfirmSignup extends React.PureComponent {
                   </div>
                   <span className={css.login_subtext}>Complete sign up by
                    clicking<br />the link in your email.</span>
-                  <button className={css.btn_default}>Okay</button>
+                  <Link to="/todo" className={css.btn_default}>Okay</Link>
                 </div>
               </div>
             </Animated>

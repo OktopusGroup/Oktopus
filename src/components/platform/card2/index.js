@@ -4,6 +4,7 @@
 /* NPM */
 import React from 'react';
 import { Link } from 'react-router-dom';
+import cn from 'classnames';
 
 /* Local */
 // Components
@@ -19,21 +20,21 @@ import 'images/favorite_hover.svg';
 
 // Create component for button
 
-class PlatformCard1 extends React.PureComponent {
+class PlatformCard2 extends React.PureComponent {
   submit = () => {
     /* intentionally empty for now -- the future home of our submit function */
   }
 
   render() {
     return (
-
       <div className={css.card}>
         <Link to="/todo"><div className={css.card__preview} /></Link>
 
         <div className={css.wrapper}>
           <Link to="/todo"><p className={css.card__title}>Project Name</p></Link>
-
-          <Link to="/todo"><div className={css.btn_download}>DOWNLOAD</div></Link>
+          <div className={css.card__description}>Keytar McSweeney's Williamsburg, 
+          readymade leggings try-hard 90's street art letterpress hoodie occupy 
+          Wes Anderson Banky.</div>
 
           <div className={css.popularity}>
             <div className={css.left}><i className="fa fa-heart fa-lg" /></div>
@@ -46,10 +47,9 @@ class PlatformCard1 extends React.PureComponent {
             <div className={css.date}>2 mths ago</div>
             <Link to="/favorites" className={css.btn_favorite} alt="favorite icon" />
           </div>
-
         </div>
       </div>
     );
   }
 }
-export default PlatformCard1;
+export default PlatformCard2;

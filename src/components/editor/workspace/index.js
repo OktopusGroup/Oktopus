@@ -4,9 +4,7 @@
 /* NPM */
 import React from 'react';
 import { Link } from 'react-router-dom';
-import cn from 'classnames';
-import PlatformLogin1 from 'components/platform/login1';
-import PlatformCard1 from 'components/platform/card1';
+import PlatformCard2 from 'components/platform/card2';
 
 /* Local */
 
@@ -33,7 +31,7 @@ class EditorWorkspace extends React.PureComponent {
 
         {/* Component to be edited goes here */}
         <div className={css.middle}>
-          <PlatformCard1 />
+          <PlatformCard2 />
         </div>
 
         {/* Arrow button Left */}

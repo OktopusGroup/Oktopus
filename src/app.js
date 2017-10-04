@@ -41,6 +41,7 @@ import EditorSidebarDetail from 'components/editor/sidebar/detailPage';
 import EditorWorkspace from 'components/editor/workspace';
 import PlatformLogin1 from 'components/platform/login1';
 import PlatformCard1 from 'components/platform/card1';
+import PlatformCard2 from 'components/platform/card2';
 import Test from 'components/test';
 
 
@@ -69,7 +70,8 @@ const routes = [
   ['/test/editor/detailPage', EditorSidebarDetail],
   ['/test/editor/workspace', EditorWorkspace],
   ['/test/editor/login1', PlatformLogin1],
-  ['/test/editor/login1', PlatformCard1],
+  ['/test/editor/card1', PlatformCard1],
+  ['/test/editor/card2', PlatformCard2],
   ['/test/editor', EditorFrame],
 
 

@@ -84,10 +84,6 @@ const items = [
     name: 'download_button',
   },
   {
-    label: 'Favorite Button',
-    name: 'favorite_button',
-  },
-  {
     label: 'Popularity Stats',
     name: 'popularity_stats',
   },

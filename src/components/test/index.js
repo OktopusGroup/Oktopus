@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 // Components to test
 import HeaderLoggedIn from 'components/header/loggedIn';
 import EditorButtonBar from 'components/editor/buttonBar';
-import EditorSidebarLogin from 'components/editor/sidebar/login';
+import EditorSidebarCards from 'components/editor/sidebar/cards';
 import EditorPreviewBar from 'components/editor/previewBar';
 import EditorWorkspace from 'components/editor/workspace';
 
@@ -34,7 +34,7 @@ export default () => (
       A={props => <Cell area={props.area}><HeaderLoggedIn /></Cell>}
       B={props => <Cell area={props.area}><EditorButtonBar /></Cell>}
       C={props => <Cell area={props.area}><EditorPreviewBar /></Cell>}
-      D={props => <Cell area={props.area}><EditorSidebarLogin /></Cell>}
+      D={props => <Cell area={props.area}><EditorSidebarCards /></Cell>}
       E={props => <Cell area={props.area}><EditorWorkspace /></Cell>} />
   
   </div>
