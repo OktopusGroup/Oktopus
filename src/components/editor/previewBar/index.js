@@ -25,7 +25,7 @@ class EditorPreviewBar extends React.PureComponent {
 
       <div className={css.editor_previewBar}>
 
-          <Link to="/preview" className={cn(css.btn_default_small, css.btn_middle)}>Preview</Link>
+        <Link to="/preview" className={cn(css.btn_default_small, css.btn_middle)}>Preview</Link>
 
       </div>
     );

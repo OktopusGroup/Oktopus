@@ -40,6 +40,7 @@ import EditorSidebarCards from 'components/editor/sidebar/cards';
 import EditorSidebarDetail from 'components/editor/sidebar/detailPage';
 import EditorWorkspace from 'components/editor/workspace';
 import PlatformLogin1 from 'components/platform/login1';
+import PlatformCard1 from 'components/platform/card1';
 import Test from 'components/test';
 
 
@@ -68,6 +69,7 @@ const routes = [
   ['/test/editor/detailPage', EditorSidebarDetail],
   ['/test/editor/workspace', EditorWorkspace],
   ['/test/editor/login1', PlatformLogin1],
+  ['/test/editor/login1', PlatformCard1],
   ['/test/editor', EditorFrame],
 
 
