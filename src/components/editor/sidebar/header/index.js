@@ -99,7 +99,9 @@ class EditorSidebarHeader extends React.PureComponent {
             label={item.label}
             onChange={item.onChange} />
         ))}
-        <btn className={css.btn_blue}>Choose Categories</btn>
+        <div className={css.choose_btn}>
+          <button className={css.btn_blue_large}>Choose Categories</button>
+        </div>
       </div>
 
     );

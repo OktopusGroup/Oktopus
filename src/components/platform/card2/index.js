@@ -7,7 +7,9 @@ import { Link } from 'react-router-dom';
 import cn from 'classnames';
 
 /* Local */
+
 // Components
+import Popularity from 'components/platform/components/popularity';
 
 // Styles
 import css from './card.scss';
@@ -36,11 +38,7 @@ class PlatformCard2 extends React.PureComponent {
           readymade leggings try-hard 90's street art letterpress hoodie occupy 
           Wes Anderson Banky.</div>
 
-          <div className={css.popularity}>
-            <div className={css.left}><i className="fa fa-heart fa-lg" /></div>
-            <div className={css.middle}><i className="fa fa-download fa-lg" /></div>
-            <div className={css.right}><i className="fa fa-comments-o fa-lg" /></div>
-          </div>
+          <Popularity />
 
           <div className={css.card__footer}>
             <Link to="/usernameProfile"><div className={css.username}>Username</div></Link>

@@ -46,7 +46,7 @@ class PlatformLogin1 extends React.PureComponent {
                 <span className={css.forgot}>Forgot?</span>
               </div>
               {/* BUTTON COLOR SHOULD ADHERE TO THE BUTTON COLORS SET ON THE /PAGES page */}
-              <button className={css.btn_login}>Login</button>
+              <Link to="/disabled" className={css.btn_login}>Login</Link>
             </div>
           </Animated>
           <Animated animationIn="bounceInUp" animationInDelay={0.2}>

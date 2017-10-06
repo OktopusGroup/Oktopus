@@ -30,7 +30,7 @@ import MySites from 'components/dash/sites';
 import AccountSettings from 'components/dash/account/settings';
 import AccountDropdown from 'components/dash/account/dropdown';
 import Pages from 'components/dash/pages';
-import EditorFrame from 'components/editor';
+import Editor from 'components/editor';
 import EditorButtonBar from 'components/editor/buttonBar';
 import EditorPreviewBar from 'components/editor/previewBar';
 import EditorSidebarLogin from 'components/editor/sidebar/login';
@@ -42,6 +42,7 @@ import EditorWorkspace from 'components/editor/workspace';
 import PlatformLogin1 from 'components/platform/login1';
 import PlatformCard1 from 'components/platform/card1';
 import PlatformCard2 from 'components/platform/card2';
+import PlatformHeader1 from 'components/platform/header1';
 import Test from 'components/test';
 
 
@@ -72,7 +73,8 @@ const routes = [
   ['/test/editor/login1', PlatformLogin1],
   ['/test/editor/card1', PlatformCard1],
   ['/test/editor/card2', PlatformCard2],
-  ['/test/editor', EditorFrame],
+  ['/test/editor/header1', PlatformHeader1],
+  ['/editor', Editor],
 
 
   /* Real routes */
@@ -89,6 +91,7 @@ const routes = [
   ['/dash/site/new/inputTitle', ModalInputTitle],
   ['/dash/pages', Pages],
   ['/dash/pages/styleEditor', PageStyleEditor],
+  ['/editor', Editor],
 ];
 
 export default () => (

@@ -5,7 +5,7 @@
 /* HeaderEditor Component */
 
 .sidebar {
-  height: auto;
+  height: 100%;
   padding: 20px 0;
   list-style-type: none;
   grid-area: sidebar;
@@ -42,6 +42,10 @@
   font-size: 18px;
   color: $greyd3;
   padding-left: 15px;
+}
+
+.choose_btn {
+  padding: 0 auto;
 }
 
 @media (min-width: 1200px) {

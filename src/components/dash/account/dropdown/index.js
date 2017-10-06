@@ -83,7 +83,7 @@ class AccountDropdown extends React.PureComponent {
             <Link to="/dash/sites"><div className={css.dropdown_box__item}>My Sites</div></Link>
             <Link to="/dash/account/settings"><div className={css.dropdown_box__item}>Account Settings</div></Link>
             <Link to="/billing"><div className={css.dropdown_box__item}>Billing</div></Link>
-            <Link to="/logout"><button className={cn(css.btn_default_small, css.button_align)}>Logout</button></Link>
+            <Link to="/logout" className={cn(css.btn_default_small, css.btn_align)}>Logout</Link>
           </div>
         </div>
       </Animated>

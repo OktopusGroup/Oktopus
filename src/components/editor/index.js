@@ -1,48 +1,40 @@
-// -----------------------------------------------------------------------------
-// IMPORTS
+/* eslint-disable */
 
-/* NPM */
 import React from 'react';
-import Helmet from 'react-helmet';
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+
+// Components to test
 import HeaderLoggedIn from 'components/header/loggedIn';
 import EditorButtonBar from 'components/editor/buttonBar';
-import EditorPreviewBar from '../../components/editor/previewBar';
-import EditorSidebarLogin from '../../components/editor/sidebar/login';
+import EditorSidebarHeader from 'components/editor/sidebar/header';
+import EditorPreviewBar from 'components/editor/previewBar';
+import EditorWorkspace from 'components/editor/workspace';
 
-/* Local */
+import Grid from 'components/grid/editor';
 
 // Styles
 import css from './editor.scss';
 
-// -----------------------------------------------------------------------------
+// Grid cell
+const Cell = props => (
+  <div className={props.area}>{props.children}</div>
+);
 
-// Create component for button
+Cell.propTypes = {
+  area: PropTypes.string.isRequired,
+};
 
-class EditorFrame extends React.PureComponent {
-  submit = () => {
-    /* intentionally empty for now -- the future home of our submit function */
-  }
+export default () => (
+  <div className={css.container}>
 
-  render() {
-    return (
-      <div>
-        <Helmet
-          title="Oktopus"
-          meta={[{
-            name: 'Oktopus',
-            content: 'Visual Editor',
-          }]} />
+    <Grid
+      A={props => <Cell area={props.area}><HeaderLoggedIn /></Cell>}
+      B={props => <Cell area={props.area}><EditorButtonBar /></Cell>}
+      C={props => <Cell area={props.area}><EditorPreviewBar /></Cell>}
+      D={props => <Cell area={props.area}><EditorSidebarHeader /></Cell>}
+      E={props => <Cell area={props.area}><EditorWorkspace /></Cell>} />
+  
+  </div>
 
-        <HeaderLoggedIn className={css.header} />
-        <EditorButtonBar className={css.buttonBar} />
-        <div className={css.wrapper}>
-          <EditorSidebarLogin className={css.sidebar} />
-          <EditorPreviewBar className={css.previewBar} />
-          <div className={css.workspace}>WORKSPACE</div>
-        </div>
-      </div>
-
-    );
-  }
-}
-export default EditorFrame;
+);
