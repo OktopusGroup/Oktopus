@@ -3,12 +3,13 @@
 
 /* NPM */
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 /* Local */
 // Components
 
 // Styles
-import css from './popularity.scss';
+import css from './profilecard.scss';
 
 // Images
 
@@ -16,7 +17,7 @@ import css from './popularity.scss';
 
 // Create component for button
 
-class ProfileCard extends React.PureComponent {
+class CardPopularity extends React.PureComponent {
   submit = () => {
     /* intentionally empty for now -- the future home of our submit function */
   }
@@ -24,12 +25,11 @@ class ProfileCard extends React.PureComponent {
   render() {
     return (
 
-      <div className={css.popularity}>
-        <div className={css.left}><i className="fa fa-heart fa-lg" /></div>
-        <div className={css.middle}><i className="fa fa-download fa-lg" /></div>
-        <div className={css.right}><i className="fa fa-comments fa-lg" /></div>
+      <div className={css.card}>
+        <Link to="/todo"><div className={css.preview} /></Link>
+        <Link to="/todo"><div className={css.title}>Upload Title</div></Link>
       </div>
     );
   }
 }
-export default ProfileCard;
+export default CardPopularity;
