@@ -18,11 +18,13 @@
 }
 
 .middle{
+  height: auto;
   width: 100%;
   max-width: 1200px;
   grid-area: middle;
   align-self: start;
   margin: 0 auto;
+  box-shadow: 0 2px 8px 0 $greyd1;
 }
 
 .right_side {

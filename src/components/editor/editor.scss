@@ -1,8 +1,6 @@
 @import '~variables.scss';
 @import '~components/form/button/button.scss';
 
-/* Top Editor Box for the 'Pages' page */
-
 .header {
   grid-area: header;
   height: 60px;
@@ -18,11 +16,6 @@
 .previewBar {
   grid-area: previewBar;
   height: 60px;
-}
-
-.sidebar {
-  grid-area: sidebar;
-  min-height: 100vh;
 }
 
 .workspace {

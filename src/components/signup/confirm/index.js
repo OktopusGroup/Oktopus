@@ -43,7 +43,9 @@ class ConfirmSignup extends React.PureComponent {
           <div className={css.login_box}>
             <Animated animationIn="bounceInDown">
               <div className={css.login_form}>
-                <Link to="/todo" className={css.closeX} />
+                <div className={css.close_btn}>
+                  <Link to="/todo" className={css.closeX} />
+                </div>
                 <span className={css.box_title}>Confirm Email</span>
                 <div className={css.login_fields}>
                   <div className={css.field}>

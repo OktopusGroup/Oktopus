@@ -1,15 +1,11 @@
 @import '~variables.scss';
 
-html {
-    background-color: $white;
-}
-
 .wrapper {
     background-color: $white;
-    padding: 60px 28px 0 28px;
+    padding: 60px 28px 60px 28px;
     max-width: 900px;
     margin: 0 auto;
-    height: 100%;
+    height: auto;
 }
 
 .profile_header {
@@ -78,6 +74,6 @@ html {
 
 @media (min-width: 550px) {
     .wrapper {
-        padding-top: 100px;
+        padding: 100px 28px 0 28px;
     }
 }

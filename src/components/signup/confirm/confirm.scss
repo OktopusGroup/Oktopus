@@ -24,10 +24,17 @@
 
 /* Login Box */
 
+.close_btn {
+  display: inline-block;
+  text-align: right;
+  width: 100%;
+  height: auto;
+}
+
 .login_box .login_form {
   display: block;
   grid-area: login_box;
-  height: 341px;
+  height: auto;
   background-color: $white;
   box-shadow: none;
   margin: 2rem 0;
@@ -54,7 +61,6 @@
 }
 
 .box_title {
-  padding-left: 25px;
   position:relative;
   font-size: 35px;
   font-weight: bold;

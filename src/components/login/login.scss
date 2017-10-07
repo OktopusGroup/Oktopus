@@ -22,6 +22,13 @@
 
 /* Login Box */
 
+.close_btn {
+  display: inline-block;
+  text-align: right;
+  width: 100%;
+  height: auto;
+}
+
 .login_box .login_form {
   justify-items: auto;
   display: block;
@@ -47,7 +54,6 @@
   font-weight: bold;
 	color: $purple;
   text-align: center;
-  padding-left: 25px;
   margin: 0 0 20px;
   display: block;
 }
