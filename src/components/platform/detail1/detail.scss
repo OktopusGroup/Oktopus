@@ -7,15 +7,16 @@
     margin: 0 auto;
     height: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 20px;
+    grid-template-columns: 1fr;
     grid-template-areas:
-    "upload_title upload_title"
-    "carousel upload_info"
-    "bottom_section bottom_section";
+    "upload_title"
+    "carousel"
+    "upload_info"
+    "bottom_section";
 }
 
 .carousel {
+    margin: 0 auto;
     grid-area: carousel;
     width: 405px;
     height: 340px;
@@ -111,8 +112,19 @@
     grid-gap: 40px;
 }
 
-@media (min-width: 550px) {
+@media (min-width: 850px) {
     .wrapper {
-        padding: 100px 28px 0 28px;
+        background-color: $white;
+        padding: 100px 28px 60px 28px;
+        max-width: 900px;
+        margin: 0 auto;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+        grid-template-areas:
+        "upload_title upload_title"
+        "carousel upload_info"
+        "bottom_section bottom_section";
     }
 }
