@@ -16,9 +16,26 @@ import Popularity from 'components/platform/components/popularity';
 // Images
 
 // Styles
+import './carousel.global.css';
 import css from './detail.scss';
 
 // -----------------------------------------------------------------------------
+
+const sliders = [
+  {
+    src: 'https://media.giphy.com/media/pa37AAGzKXoek/giphy.gif',
+    legend: 'fresh1',
+  },
+  {
+    src: 'https://media.giphy.com/media/9N8ThBNjc3GCs/giphy.gif',
+    legend: 'fresh2',
+  },
+  {
+    src: 'https://media.giphy.com/media/EHZ91qYnPtpSw/giphy.gif',
+    legend: 'fresh3',
+  },
+];
+
 class PlatformDetail1 extends React.PureComponent {
   submit = () => {
     /* intentionally empty for now */
@@ -29,45 +46,14 @@ class PlatformDetail1 extends React.PureComponent {
       <div className={css.wrapper}>
         <div className={css.upload_title}>Upload Title</div>
         <div className={css.carousel}>
-{/*}
           <Carousel showStatus={false} showIndicators={false}>
-            <div>
-              <img src="/assets/1.jpeg" />
-              <p className="legend">
-              Legend 
-              function String() { [native code] }
-              </p>
-            </div>
-            <div>
-              <img src="/assets/2.jpeg" />
-              <p className="legend">
-              Legend 
-              function String() { [native code] }
-              </p>
-            </div>
-            <div>
-              <img src="/assets/3.jpeg" />
-              <p className="legend">
-              Legend 
-              function String() { [native code] }
-              </p>
-            </div>
-            <div>
-              <img src="/assets/4.jpeg" />
-              <p className="legend">
-              Legend 
-              function String() { [native code] }
-              </p>
-            </div>
-            <div>
-              <img src="/assets/5.jpeg" />
-              <p className="legend">
-              Legend 
-              function String() { [native code] }
-              </p>
-            </div>
+            {sliders.map(slider => (
+              <div key={slider.legend}>
+                <img src={slider.src} alt={slider.legend} />
+                <p>{slider.legend}</p>
+              </div>
+            ))}
           </Carousel>
-    */}
         </div>
 
         <div className={css.upload_info}>
