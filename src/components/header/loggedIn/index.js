@@ -9,7 +9,7 @@ import { connect } from 'react-redux';
 /* Local */
 
 // Components
-import AccountDropDown from 'components/dash/account/dropdown';
+import AccountDropdown from 'components/dash/account/dropdown';
 
 // Images
 import logo from 'images/logo.svg';
@@ -58,7 +58,7 @@ class HeaderLoggedIn extends React.PureComponent {
           to="/accountPage"
           className={css.profile_img}
           onMouseEnter={this.showAccountDropdown} /> */}
-        <AccountDropDown />
+        <AccountDropdown />
       </div>
     );
   }

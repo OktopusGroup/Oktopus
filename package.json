@@ -100,6 +100,7 @@
     "react-hot-loader": "^3.0.0-beta.6",
     "react-modal": "^2.3.2",
     "react-redux": "^5.0.6",
+    "react-responsive-carousel": "^3.1.27",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "redux": "^3.7.2",

@@ -47,21 +47,13 @@
     }
 }
 
-.center {
-    text-align: center;
-    margin: 0 auto;
-}
-
-
-
-
 .login_box .login_form {
   display: block;
   grid-area: login_box;
   height: auto;
   background-color: $white;
   box-shadow: none;
-  margin: 2rem 0;
+  margin: auto 0;
 	border: solid 1px $offwhite;
 }
 

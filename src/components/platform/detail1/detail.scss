@@ -1,3 +1,118 @@
 @import '~variables.scss';
-@import '~components/form/button/button.scss';
 
+.wrapper {
+    background-color: $white;
+    padding: 60px 28px 60px 28px;
+    max-width: 900px;
+    margin: 0 auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-template-areas:
+    "upload_title upload_title"
+    "carousel upload_info"
+    "bottom_section bottom_section";
+}
+
+.carousel {
+    grid-area: carousel;
+    width: 405px;
+    height: 340px;
+    background-color: grey;
+}
+
+.upload_info {
+    display: grid;
+    grid-template-areas:
+    "download"
+    "popularity"
+    "description";
+    margin: 0 auto;
+}
+
+.btn_download {
+    grid-area: download;
+    color: $button;
+    border: solid 1px $button;
+    width: 200px;
+    height: 40px;
+    padding: 5px 20px;
+    outline: 0;
+    margin: 20px auto;
+    justify-self: center;
+      border-radius: 5px;
+      background-color: #ffffff;
+    text-align: center;
+    line-height: 28px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: $button;
+      color: #ffffff;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 6px 0 rgba(25, 74, 179, 0.15);
+      transition: all 0.3s ease 0s, transform 400ms;
+    &:active {
+      border-color: $white;
+      background-color: lighten($button, 10%);
+      transition: all 0s linear 0.3s, transform 40ms;
+      transform: translateY(-1px);
+      transition: box-shadow 0s linear 0s;
+      box-shadow: 0 0 0 0 rgba(25, 74, 179, 0.5);
+    }
+  }
+  }
+
+.popularity {
+      grid-area: popularity;
+  }
+
+.description {
+      grid-area: description;
+  }
+
+.upload_title {
+    grid-area: upload_title;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid $greyd1;
+    margin-bottom: 30px;
+}
+
+.section_title {
+    color: $greyd3;
+    margin: 50px 0 25px 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.bottom_section {
+    grid-area: bottom_section;
+}
+
+.divider {
+    width: auto;
+    border-bottom: solid 1px $greyd1;
+    height: 1px;
+    margin: 20px 28px 20px 28px;
+}
+
+.card_wrapper {
+    background-color: $white;
+    margin: 0 auto 0 auto;
+    max-width: 950px;
+    display: grid;
+    padding: 30px 0;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 250px));
+    grid-auto-rows: minmax(150px, auto);
+    grid-gap: 40px;
+}
+
+@media (min-width: 550px) {
+    .wrapper {
+        padding: 100px 28px 0 28px;
+    }
+}

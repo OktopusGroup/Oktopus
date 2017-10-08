@@ -11,7 +11,6 @@
     "dropdown";
 }
 
-
 .header {
     display: grid;
     grid-area: header;
@@ -57,10 +56,17 @@
     background-size: cover;
   }
 
+
+  .sub_wrapper {
+    width: 100%;
+    margin: 0 auto; 
+    background-color: $white;
+}
+
 .tagBar {
     width: 100%;
     height: auto;
-    padding: 0px 28px;
+    padding: 0px 28px 15px 28px;
     grid-area: tagBar;
     background-color: $white;
 }
@@ -68,7 +74,6 @@
 .tags {
     margin-top: 10px;
 }
-
 
 .reset{
     outline: 0;

@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 import PlatformCard2 from 'components/platform/card2';
 import PlatformHeader1 from 'components/platform/header1';
 import PlatformProfile1 from 'components/platform/profile1';
+import PlatformLogin1 from 'components/platform/login1';
 
 /* Local */
 
@@ -33,7 +34,7 @@ class EditorWorkspace extends React.PureComponent {
 
         {/* Component to be edited goes here */}
         <div className={css.middle}>
-          <PlatformProfile1 />
+          <PlatformHeader1/>
         </div>
 
         {/* Arrow button Left */}

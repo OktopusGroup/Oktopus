@@ -44,6 +44,8 @@ import PlatformCard1 from 'components/platform/card1';
 import PlatformCard2 from 'components/platform/card2';
 import PlatformHeader1 from 'components/platform/header1';
 import PlatformProfile1 from 'components/platform/profile1';
+import PlatformDropdown from 'components/platform/dash/account/dropdown';
+import PlatformDetail1 from 'components/platform/detail1';
 import Test from 'components/test';
 
 
@@ -77,7 +79,6 @@ const routes = [
   ['/test/editor/header1', PlatformHeader1],
 
 
-
   /* Real routes */
   ['/login', Login],
   ['/login/reset', ResetPW],
@@ -94,6 +95,8 @@ const routes = [
   ['/dash/pages/styleEditor', PageStyleEditor],
   ['/editor', Editor],
   ['/platform/profile', PlatformProfile1],
+  ['/platform/dropdown', PlatformDropdown],
+  ['/platform/detail', PlatformDetail1],
 ];
 
 export default () => (

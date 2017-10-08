@@ -50,7 +50,7 @@ class PlatformLogin1 extends React.PureComponent {
             </div>
           </Animated>
           <Animated animationIn="bounceInUp" animationInDelay={0.2}>
-            <span className={css.login_subtext}>Don&rsquo;t have an account yet?<Link to="/todo"> Sign Up</Link></span>
+            <span className={css.login_subtext}>Don&rsquo;t have an account yet?<Link to=""> Sign Up</Link></span>
           </Animated>
         </div>
       </div>
