@@ -1,5 +1,9 @@
 @import '~variables.scss';
 
+body {
+    width: auto;
+}
+
 .wrapper {
     background-color: $white;
     padding: 60px 28px 60px 28px;
@@ -15,12 +19,20 @@
     "bottom_section";
 }
 
+.upload_title {
+    grid-area: upload_title;
+    margin: 0 auto 50px auto;
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid $greyd1;
+}
+
+
 .carousel {
     margin: 0 auto;
     grid-area: carousel;
-    width: 405px;
-    height: 340px;
-    background-color: grey;
+    width: auto;
 }
 
 .upload_info {
@@ -40,7 +52,7 @@
     height: 40px;
     padding: 5px 20px;
     outline: 0;
-    margin: 20px auto;
+    margin: 20px auto 5px auto;
     justify-self: center;
       border-radius: 5px;
       background-color: #ffffff;
@@ -66,26 +78,28 @@
   }
 
 .popularity {
-      grid-area: popularity;
+    grid-area: popularity;
   }
 
 .description {
-      grid-area: description;
+    grid-area: description;
   }
 
-.upload_title {
-    grid-area: upload_title;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 25px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid $greyd1;
-    margin-bottom: 30px;
+.description_text {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.description_title {
+    color: $greyd3;
+    margin: 20px 0 15px 0;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .section_title {
     color: $greyd3;
-    margin: 50px 0 25px 0;
+    margin: 20px 0 15px 0;
     font-size: 14px;
     font-weight: bold;
 }
@@ -98,8 +112,63 @@
     width: auto;
     border-bottom: solid 1px $greyd1;
     height: 1px;
-    margin: 20px 28px 20px 28px;
+    margin: 20px 28px;
 }
+
+.upload_details {
+    margin: 0 0 25px 0;
+    display: grid;
+    align-self: end;
+    width: auto;
+    font-weight: 400;
+    color: $greyd2;
+    font-size: 12px;
+    align-self: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "username date favorite";
+  }
+.username {
+      padding: 4px;
+      width: auto;
+      grid-area: username;
+      justify-self: start;
+      color: $greyd2;
+      &:hover {
+        color: $button;
+      &:active {
+        color: lighten($button, 10%);
+      }
+    }
+}
+
+.date {
+    padding: 4px;
+    grid-area: date;
+    margin: 0 auto;
+}
+  
+.btn_favorite {
+    justify-self: end;
+    grid-area: favorite;
+    background:url(favorite.svg);
+    background-repeat: no-repeat;
+    width:28px;
+    height:26px;
+    border: 0;
+    transition: all 0.5s ease;
+    &:hover {
+      background-image: url(favorite_hover.svg);
+      transform: translateY(-3px);
+      transition: all 0.5s ease 0s, transform 400ms;
+    }
+    &:active {
+      transition: all 0s linear 0.4s, transform 40ms;
+      transform: translateY(-1px);
+      transition: box-shadow 0s linear 0s;
+    }
+}
+
 
 .card_wrapper {
     background-color: $white;
@@ -109,13 +178,14 @@
     padding: 30px 0;
     grid-template-columns: repeat(auto-fill, minmax(250px, 250px));
     grid-auto-rows: minmax(150px, auto);
-    grid-gap: 40px;
+    grid-column-gap: 40px;
+    grid-row-gap: 20px;
 }
 
 @media (min-width: 850px) {
     .wrapper {
         background-color: $white;
-        padding: 100px 28px 60px 28px;
+        padding: 40px 28px 60px 28px;
         max-width: 900px;
         margin: 0 auto;
         height: auto;
@@ -126,5 +196,24 @@
         "upload_title upload_title"
         "carousel upload_info"
         "bottom_section bottom_section";
+    }
+    .carousel {
+        margin: 0 auto;
+        grid-area: carousel;
+        width: 400px;
+    }
+    .description_text {
+        display: block;
+        font-size: 14px;
+        margin: 0 28px;
+    }
+    .upload_details {
+        margin: 0 28px;
+    }
+    .description_title {
+        margin-left: 28px;
+    }
+    .divider {
+        margin: 0 28px;
     }
 }

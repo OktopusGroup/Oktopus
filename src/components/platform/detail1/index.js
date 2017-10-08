@@ -24,15 +24,21 @@ import css from './detail.scss';
 const sliders = [
   {
     src: 'https://media.giphy.com/media/pa37AAGzKXoek/giphy.gif',
-    legend: 'fresh1',
   },
   {
     src: 'https://media.giphy.com/media/9N8ThBNjc3GCs/giphy.gif',
-    legend: 'fresh2',
   },
   {
     src: 'https://media.giphy.com/media/EHZ91qYnPtpSw/giphy.gif',
-    legend: 'fresh3',
+  },
+  {
+    src: 'https://media.giphy.com/media/pa37AAGzKXoek/giphy.gif',
+  },
+  {
+    src: 'https://media.giphy.com/media/9N8ThBNjc3GCs/giphy.gif',
+  },
+  {
+    src: 'https://media.giphy.com/media/EHZ91qYnPtpSw/giphy.gif',
   },
 ];
 
@@ -63,13 +69,20 @@ class PlatformDetail1 extends React.PureComponent {
             <Popularity />
           </div>
           <div className={css.description}>
-            <div className={css.section_title}>Description</div>
+            <div className={css.description_title}>Description</div>
             <span className={css.description_text}>Keytar McSweeney Williamsburg, readymade
           leggings try-hard 90s street art letterpress hoodie occupy Wes Anderson Banksy.
           Keytar McSweeney Williamsburg, readymade leggings try-hard 90s street art
           letterpress hoodie occupy Wes Anderson Banksy.</span>
           </div>
           <div className={css.divider} />
+
+          <div className={css.upload_details}>
+            <Link to="/usernameProfile"><div className={css.username}>Username</div></Link>
+            <div className={css.date}>2 mths ago</div>
+            <Link to="/favorites" className={css.btn_favorite} alt="favorite icon" />
+          </div>
+
         </div>
 
         <div className={css.bottom_section}>

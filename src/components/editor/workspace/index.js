@@ -4,10 +4,12 @@
 /* NPM */
 import React from 'react';
 import { Link } from 'react-router-dom';
-import PlatformCard2 from 'components/platform/card2';
-import PlatformHeader1 from 'components/platform/header1';
-import PlatformProfile1 from 'components/platform/profile1';
-import PlatformLogin1 from 'components/platform/login1';
+// import PlatformCard2 from 'components/platform/card2';
+// import PlatformHeader1 from 'components/platform/header1';
+// import PlatformProfile1 from 'components/platform/profile1';
+// import PlatformLogin1 from 'components/platform/login1';
+import PlatformDetail1 from 'components/platform/detail1';
+
 
 /* Local */
 
@@ -34,7 +36,7 @@ class EditorWorkspace extends React.PureComponent {
 
         {/* Component to be edited goes here */}
         <div className={css.middle}>
-          <PlatformHeader1/>
+          <PlatformDetail1/>
         </div>
 
         {/* Arrow button Left */}

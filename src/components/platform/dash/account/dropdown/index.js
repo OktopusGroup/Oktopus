@@ -79,10 +79,9 @@ class PlatformDropdown extends React.PureComponent {
           onMouseLeave={this.hide}>
           <img src={dropdownBox} className={css.dropdown_svg} alt="Oktopus" />
           <div className={css.dropdown_box}>
-            <Link to="/dash"><div className={css.dropdown_box__item}>Dashboard</div></Link>
-            <Link to="/dash/sites"><div className={css.dropdown_box__item}>My Sites</div></Link>
-            <Link to="/dash/account/settings"><div className={css.dropdown_box__item}>Account Settings</div></Link>
-            <Link to="/billing"><div className={css.dropdown_box__item}>Billing</div></Link>
+            <Link to="/dash"><div className={css.dropdown_box__item}>Profile & Uploads</div></Link>
+            <Link to="/dash/sites"><div className={css.dropdown_box__item}>Account</div></Link>
+            <Link to="/dash/account/settings"><div className={css.dropdown_box__item}>Favorites</div></Link>
             <Link to="/logout" className={cn(css.btn_logout, css.btn_align)}>Logout</Link>
           </div>
         </div>
