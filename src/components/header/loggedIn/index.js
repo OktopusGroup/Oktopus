@@ -10,6 +10,7 @@ import { connect } from 'react-redux';
 
 // Components
 import AccountDropdown from 'components/dash/account/dropdown';
+// import PlatformDropdown from 'components/platform/dash/account/dropdown';
 
 // Images
 import logo from 'images/logo.svg';

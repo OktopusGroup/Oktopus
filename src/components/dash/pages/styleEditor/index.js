@@ -39,18 +39,39 @@ class PageStyleEditor extends React.PureComponent {
         <div className={css.editor_box}>
           <div className={css.style_box}>
             <p className={css.category_title}>Overall Style</p>
+
+            <div className={css.dropdownBar}>
+              <div className={css.dropdown_header}>Style</div>
+              <Link to="/" onclick="myFunction()" className={css.dropbtn}>Minimal & Modern<div className={css.triangle} /></Link>
+            </div>
+
+            <div className={css.dropdownBar}>
+              <div className={css.dropdown_header}>Animations</div>
+              <Link to="/" onclick="myFunction()" className={css.dropbtn}>Simple<div className={css.triangle} /></Link>
+            </div>
+
           </div>
           <div className={css.color_box}>
             <p className={css.category_title}>Color Theme</p>
             <div className={css.colors}>
-              <div className={css.color_main} />
+              <div className={css.color_button} />
               <p className={css.buttons_subtitle}>Buttons</p>
-              <div className={css.color_sub} />
+              <div className={css.color_accent} />
               <p className={css.accents_subtitle}>Accents</p>
             </div>
           </div>
           <div className={css.font_box}>
             <p className={css.category_title}>Text & Fonts</p>
+
+            <div className={css.dropdownBar}>
+              <div className={css.dropdown_header}>Font</div>
+              <Link to="/" onclick="myFunction()" className={css.dropbtn}>Open Sans<div className={css.triangle} /></Link>
+            </div>
+
+            <div className={css.dropdownBar}>
+              <div className={css.dropdown_header}>Size</div>
+              <Link to="/" onclick="myFunction()" className={css.dropbtn}>Medium<div className={css.triangle} /></Link>
+            </div>
           </div>
 
 

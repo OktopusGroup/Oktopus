@@ -14,7 +14,7 @@ import cn from 'classnames';
 import CheckBox from 'components/form/button/checkbox';
 
 // Styles
-import css from './detailPage.scss';
+import css from './detail.scss';
 
 // -----------------------------------------------------------------------------
 

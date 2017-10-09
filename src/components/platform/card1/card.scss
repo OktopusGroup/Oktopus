@@ -80,7 +80,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
   "username date favorite";
-
+}
   .username {
     padding: 4px;
     width: auto;
@@ -119,7 +119,6 @@
       transform: translateY(-1px);
       transition: box-shadow 0s linear 0s;
     }
-  }
 }
 
 .popularity {

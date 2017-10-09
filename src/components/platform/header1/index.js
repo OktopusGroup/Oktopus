@@ -78,18 +78,15 @@ class PlatformHeader1 extends React.PureComponent {
                 https://codepen.io/synapse709/pen/JrMRdv     
             */}
 
-            <div id={css.myDropdown} className={css.dropdown_content}>
-
-            </div>
-
-            <Link to="/" onclick="myFunction()" className={css.dropbtn}>Sort<div className={css.triangle} /></Link>
-            <div id={css.myDropdown} className={css.dropdown_content}>
-
-
-            </div>
+            <div className={css.dropdown_content} />
 
           </div>
+
+          <Link to="/" onclick="myFunction()" className={css.dropbtn}>Sort<div className={css.triangle} /></Link>
+          <div className={css.dropdown_content} />
+
         </div>
+
       </div>
     );
   }

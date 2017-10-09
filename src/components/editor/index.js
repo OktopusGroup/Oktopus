@@ -11,6 +11,7 @@ import EditorSidebarProfile from 'components/editor/sidebar/profile';
 import EditorSidebarHeader from 'components/editor/sidebar/header';
 import EditorPreviewBar from 'components/editor/previewBar';
 import EditorWorkspace from 'components/editor/workspace';
+import EditorSidebarDetail from 'components/editor/sidebar/detail';
 
 import Grid from 'components/grid/editor';
 
@@ -33,7 +34,7 @@ export default () => (
       A={props => <Cell area={props.area}><HeaderLoggedIn /></Cell>}
       B={props => <Cell area={props.area}><EditorButtonBar /></Cell>}
       C={props => <Cell area={props.area}><EditorPreviewBar /></Cell>}
-      D={props => <Cell area={props.area}><EditorSidebarHeader /></Cell>}
+      D={props => <Cell area={props.area}><EditorSidebarDetail /></Cell>}
       E={props => <Cell area={props.area}><EditorWorkspace /></Cell>} />
   
   </div>
