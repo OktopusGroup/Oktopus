@@ -2,19 +2,16 @@
 @import '~components/form/button/button.scss';
 
 /* Container */
-.title_wrapper {
-}
+
 
 .title {
     text-align: center;
-    margin: 40px auto 40px;
+    margin: 50px auto 20px auto;
     font-weight: bold;
     font-size: 20px;
     color: $greyd1;
     font-weight: bold;
-    padding: 0 0 10px 0;
-    border-bottom: 1px solid $greyd1;
-    width: 230px;
+    padding: 0 0 20px 0;
 }
 
 .wrapper {
@@ -46,7 +43,7 @@
 }
 
 .menu_item_Active {
-    margin: 0 30px;
+    margin: 30px 30px;
     text-align: center;
     color: $sky-blue;
     font-weight: bold;
@@ -62,17 +59,12 @@
     height: 20px;
 }
 
-.new_site {
-    width: auto;
-    margin: 35px 0 90px 0;
-}
-
 .card_wrapper {
     margin: 30px auto;
     max-width: 1200px;
     display: grid;
     padding: 30px 28px;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 340px));
+    grid-template-columns: repeat(auto-fill, minmax(auto, 340px));
     grid-auto-rows: minmax(150px, auto);
     grid-gap: 60px;
 }
