@@ -3,6 +3,7 @@
 
 
 .wrapper {
+  position: relative;
   text-align: center;
   background-color: $white;
   height: 60px;
@@ -35,8 +36,19 @@
   font-weight: 400;
 }
 
+.notification_icon {
+  position: absolute;
+  top: 16px; 
+  right: 80px;
+  color: $greyd1;
+  font-size: 20px;
+  transition: all 0.3s ease;
+  &:hover {
+    color: $greyd3;
+  }
+}
+
 .profile_img {
-  cursor: pointer;
   grid-area: profile_img;
   justify-self: end;
   margin: 12px 28px 0 0;

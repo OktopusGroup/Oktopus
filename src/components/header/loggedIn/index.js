@@ -51,6 +51,8 @@ class HeaderLoggedIn extends React.PureComponent {
         <div className={css.align_logo}>
           <Link to="/"><img src={logo} className={css.logo_header} alt="Oktopus" /></Link>
         </div>
+        <Link to="/notificationsDropdown" className={css.notification_icon}><i class="fa fa-bell" aria-hidden="true"></i>
+        </Link>
         <div
           className={css.profile_img}
           onMouseEnter={this.showAccountDropdown}

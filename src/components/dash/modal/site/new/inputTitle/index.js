@@ -24,23 +24,21 @@ class ModalInputTitle extends React.PureComponent {
 
   render() {
     return (
-      <div className={css.background}>
-        <Animated animationIn="bounceInDown">
-          <div className={css.modal_box}>
-            <div className={css.wrapper}>
-              <Link to="/todo" className={css.closeX} />
-              <p className={css.title}>Add a New Site</p>
-              <p className={css.subtitle}>Choose a title for your community</p>
+      <Animated animationIn="bounceInDown">
+        <div className={css.modal_box}>
+          <div className={css.wrapper}>
+            <Link to="/todo" className={css.closeX} />
+            <p className={css.title}>Add a New Site</p>
+            <p className={css.subtitle}>Choose a title for your community</p>
 
-              <div className={css.field}>
-                <input type="text" id="fieldUrl" className={css.input} required />
-                <label htmlFor="fieldUrl" className={css.label}>new site name</label>
-              </div>
-              <button className={css.btn_blue_large}>Add</button>
+            <div className={css.field}>
+              <input type="text" id="fieldUrl" className={css.input} required />
+              <label htmlFor="fieldUrl" className={css.label}>new site name</label>
             </div>
+            <button className={css.btn_blue_large}>Add</button>
           </div>
-        </Animated>
-      </div>
+        </div>
+      </Animated>
     );
   }
 }

@@ -51,9 +51,9 @@
   border-bottom: solid 1px $offwhite;
   grid-template-columns: 1fr;
   grid-template-areas:
+  "color"
   "style"   
-  "font"
-  "color";
+  "font";
 }
 
 
@@ -111,6 +111,7 @@
   cursor: pointer;
   &:hover {
       color: $black;
+      border-color: $greyd3;
   }
 }
 
