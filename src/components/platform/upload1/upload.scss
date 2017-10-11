@@ -2,6 +2,16 @@
 @import '~components/form/form.scss';
 @import '~components/form/button/button.scss';
 
+.img {
+    width: 100%;
+    border: 2px dashed $greyd1;
+    border-radius: $platform-radius;
+    transition: all 0.3s ease;
+    &:hover {
+        border: 2px dashed $accent;
+    }
+}
+
 .wrapper {
     position: relative;
     background-color: $white;
@@ -13,9 +23,10 @@
     grid-template-columns: 1fr;
     grid-template-areas:
     "upload_title"
-    "carousel"
-    "upload_info"
-    "bottom_section";
+    "media"
+    "downloads"
+    "description"
+    "tags";
 }
 
 .closeX {
@@ -26,7 +37,8 @@
     height: 25px;
   }
 
-.input {
+.input_title {
+    color: $black !important;
     height: 100%;
     padding: 10px;
     min-width: 350px !important;
@@ -40,29 +52,12 @@
     color: $greyd3;
 }
 
-
 .upload_title {
     width: auto;
     grid-area: upload_title;
     margin: 0 auto 50px auto;
     text-align: center;
     font-size: 25px;
-}
-
-.carousel {
-    margin: 0 auto;
-    grid-area: carousel;
-    width: 80vw;
-}
-
-.upload_info {
-    display: grid;
-    grid-template-areas:
-    "download"
-    "popularity"
-    "description";
-    margin: 0 auto;
-    width: 100%;
 }
 
 .btn_download {
@@ -75,7 +70,7 @@
     outline: 0;
     margin: 20px auto 5px auto;
     justify-self: center;
-      border-radius: 5px;
+      border-radius: $platform-button-radius;
       background-color: #ffffff;
     text-align: center;
     line-height: 28px;
@@ -98,9 +93,21 @@
   }
 }
 
-.popularity {
-    grid-area: popularity;
-  }
+.files {
+    grid-area: files;
+    font-size: 12px;
+    border: 1px solid $greyd1;
+    padding: 10px 10px 5px 10px;
+    margin: 15px 0;
+    min-height: 50px;
+    width: auto;
+    border-radius: $platform-radius;
+}
+
+.file_list {
+    display: block;
+}
+
 
 .description {
     grid-area: description;
@@ -112,18 +119,39 @@
     margin-bottom: 20px;
 }
 
-.description_title {
-    color: $greyd3;
-    margin: 0 0 15px 0;
-    font-size: 14px;
-    font-weight: bold;
+.tags {
+    grid-area: tags;
+}
+
+.add_tag {
+    display: block;
+    box-sizing: border-box;
+    width: auto;
+    font-size: 100%;
+    border: 0;
+    background-color: transparent;
+    height: 2rem;
+    line-height: 2rem;
+    border-bottom: 1px solid #eee;
+    color: $purple;
+    transition: all 0.2s ease-in;
+    border-radius: 0;
+    margin-bottom: 15px;
+    &:focus {
+      outline: 0;
+      border-color: $sky-blue;
+    }
+}
+
+.categories {
+    grid-area: categories;
 }
 
 .section_title {
     color: $greyd3;
     margin: 20px 0 15px 0;
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .bottom_section {
@@ -216,8 +244,9 @@
         grid-column-gap: 20px;
         grid-template-areas:
         "upload_title upload_title"
-        "carousel upload_info"
-        "bottom_section bottom_section";
+        "media      downloads"
+        "description tags"
+        "description categories";
     }
     .carousel {
         margin: 0 auto;

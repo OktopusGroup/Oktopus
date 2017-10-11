@@ -11,8 +11,11 @@ import cn from 'classnames';
 /* Local */
 
 // Components
+import Tag from 'components/platform/components/tag';
 
 // Images
+import Media from 'images/uploadmedia.png';
+import Files from 'images/uploadfiles.png';
 
 // Styles
 import './carousel.global.css';
@@ -20,31 +23,9 @@ import css from './upload.scss';
 
 // -----------------------------------------------------------------------------
 
-// NOTES
-
-// UPLOADS SHOULD SHOW UPLOAD PROGRESS BAR AND PREVIEW/REMOVE AS IS SHOWN IN THE API DOCS BELOW
-// https://uploadcare.com/cookbook/widget_visual/#uploaded-image-preview
-
 
 const sliders = [
-  {
-    src: 'https://media.giphy.com/media/pa37AAGzKXoek/giphy.gif',
-  },
-  {
-    src: 'https://media.giphy.com/media/9N8ThBNjc3GCs/giphy.gif',
-  },
-  {
-    src: 'https://media.giphy.com/media/EHZ91qYnPtpSw/giphy.gif',
-  },
-  {
-    src: 'https://media.giphy.com/media/pa37AAGzKXoek/giphy.gif',
-  },
-  {
-    src: 'https://media.giphy.com/media/9N8ThBNjc3GCs/giphy.gif',
-  },
-  {
-    src: 'https://media.giphy.com/media/EHZ91qYnPtpSw/giphy.gif',
-  },
+
 ];
 
 class PlatformUpload1 extends React.PureComponent {
@@ -60,27 +41,50 @@ class PlatformUpload1 extends React.PureComponent {
           <input className={cn(css.input, css.center_text)} type="text" name="" placeholder="Add Upload Title" />
         </div>
 
-        <div className={css.carousel}>
-          <Carousel showStatus={false} showIndicators={false}>
-            {sliders.map(slider => (
-              <div key={slider.legend}>
-                <img src={slider.src} alt={slider.legend} />
-                <p>{slider.legend}</p>
-              </div>
-            ))}
-          </Carousel>
+        <div className={css.media}>
+          <div className={css.section_title}>Media</div>
+          {/* ADD -> https://uploadcare.com/tutorials/widget_customization/#panel in place of img */}
+          <img className={css.img} src={Media} alt="upload" />
         </div>
 
-        <div className={css.upload_info}>
-
-          <div className={css.description}>
-            <div className={css.description_title}>Description</div>
-            <textarea className={css.text_area} type="text" name="" placeholder="Add a description (max 250 character)" />
+        <div className={css.downloads}>
+          <div className={css.section_title}>Files</div>
+          {/* ADD ->  https://uploadcare.com/tutorials/widget_customization/#panel in place of img */}
+          <div className={css.uploader}>
+            <img className={css.img} src={Files} alt="upload" />
           </div>
-
+          <div className={css.files}>
+            {/* UPLOADS SHOULD SHOW UPLOAD PROGRESS BAR AND PREVIEW/REMOVE AS IS SHOWN IN THE API DOCS BELOW
+            https://uploadcare.com/cookbook/widget_visual/#uploaded-image-preview */}
+            <div className="file_list">
+              <div>filename.zip</div>
+              <div>filename.zip</div>
+              <div>filename.zip</div>
+            </div>
+          </div>
         </div>
+
+        <div className={css.description}>
+          <div className={css.section_title}>Description</div>
+          <textarea className={css.text_area} type="text" name="" placeholder="Add a description (max 250 character)" />
+        </div>
+
+        <div className={css.tags}>
+          <div className={css.section_title}>Tags 0/5</div>
+          <input className={css.add_tag} type="text" placeholder="Add tag" />
+          <Tag />
+
+          <div className={css.section_title}>Categories 0/3</div>
+          <Tag />
+          <Tag />
+          <Tag />
+          <Tag />
+          <Tag />
+        </div>
+
       </div>
     );
   }
 }
 export default PlatformUpload1;
+
