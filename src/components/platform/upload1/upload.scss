@@ -1,9 +1,6 @@
 @import '~variables.scss';
+@import '~components/form/form.scss';
 @import '~components/form/button/button.scss';
-
-body {
-    width: auto;
-}
 
 .wrapper {
     position: relative;
@@ -13,7 +10,7 @@ body {
     margin: 0 auto;
     height: auto;
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 1fr;
     grid-template-areas:
     "upload_title"
     "carousel"
@@ -27,31 +24,45 @@ body {
     right: 25px !important;
     width: 25px;
     height: 25px;
+  }
+
+.input {
+    height: 100%;
+    padding: 10px;
+    min-width: 350px !important;
+    width: auto !important;
+    border-bottom: 1px solid $greyd1;
+}
+
+.center_text {
+    text-align: center;
+    font-weight: 400;
+    color: $greyd3;
 }
 
 
 .upload_title {
+    width: auto;
     grid-area: upload_title;
     margin: 0 auto 50px auto;
     text-align: center;
     font-size: 25px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid $greyd1;
 }
 
 .carousel {
-    max-width: 80vw;
+    margin: 0 auto;
     grid-area: carousel;
+    width: 80vw;
 }
 
 .upload_info {
-    width: 100%;
-    margin: 0 auto;
     display: grid;
     grid-template-areas:
     "download"
-    "files"
-    "popularity";
+    "popularity"
+    "description";
+    margin: 0 auto;
+    width: 100%;
 }
 
 .btn_download {
@@ -87,30 +98,47 @@ body {
   }
 }
 
-.files {
-    grid-area: files;
-    font-size: 12px;
-    border: 1px solid $greyd1;
-    padding: 10px 10px 5px 10px;
-    margin: 15px 28px;
-    min-height: 50px;
-    width: auto;
-    border-radius: 4px;
-}
-
-.file_list {
-    display: block;
-}
-
 .popularity {
-    margin-top: 15px;
     grid-area: popularity;
-    align-self: end;
+  }
+
+.description {
+    grid-area: description;
+    width: 100%;
+  }
+
+.description_text {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.description_title {
+    color: $greyd3;
+    margin: 0 0 15px 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.section_title {
+    color: $greyd3;
+    margin: 20px 0 15px 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.bottom_section {
+    grid-area: bottom_section;
+}
+
+.divider {
+    width: auto;
+    border-bottom: solid 1px $greyd1;
+    height: 1px;
+    margin: 20px 28px;
 }
 
 .upload_details {
-    align-self: end;
-    margin: 20px 0 25px 0;
+    margin: 0 0 25px 0;
     display: grid;
     align-self: end;
     width: auto;
@@ -141,7 +169,7 @@ body {
     grid-area: date;
     margin: 0 auto;
 }
-
+  
 .btn_favorite {
     justify-self: end;
     grid-area: favorite;
@@ -162,54 +190,7 @@ body {
       transition: box-shadow 0s linear 0s;
     }
 }
-  
-.tags {
-    grid-area: tags;
-    display: inline-block;
-    margin: 0 15px 20px 0;
-}
 
-.categories {
-    display: inline-block;
-    margin: 0 10px 20px 0;
-}
-
-.description {
-    grid-area: description;
-    margin-right: 28px;
-  }
-
-.description_text {
-    overflow-wrap: normal;
-    display: block;
-    margin-bottom: 20px;
-}
-
-.description_title {
-    color: $greyd2;
-    margin: 20px 0 15px 0;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.section_title {
-    color: $greyd3;
-    margin: 20px 0 15px 0;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.bottom_section {
-    grid-area: bottom_section;
-}
-
-.divider {
-    align-self: end;
-    width: auto;
-    border-bottom: solid 1px $greyd1;
-    height: 1px;
-    margin: 20px 0;
-}
 
 .card_wrapper {
     background-color: $white;
@@ -231,7 +212,7 @@ body {
         margin: 0 auto;
         height: auto;
         display: grid;
-        grid-template-columns: 55% 45%;
+        grid-template-columns: 1fr 1fr;
         grid-column-gap: 20px;
         grid-template-areas:
         "upload_title upload_title"
@@ -239,24 +220,17 @@ body {
         "bottom_section bottom_section";
     }
     .carousel {
-        display: inline-block;
         margin: 0 auto;
-        max-width: 100%;
     }
     .description_text {
         display: block;
         font-size: 14px;
+        margin: 0 28px;
     }
     .upload_details {
-        margin: 15px auto;
-        width: 100%;
-        padding: 0 28px;
+        margin: 0 28px;
     }
     .divider {
-        margin: inherit 28px;
+        margin: 0 28px;
     }
-    files {
-        margin: 0px 28px;
-    }
-
 }

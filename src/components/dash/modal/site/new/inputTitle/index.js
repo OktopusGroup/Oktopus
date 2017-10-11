@@ -35,7 +35,7 @@ class ModalInputTitle extends React.PureComponent {
               <input type="text" id="fieldUrl" className={css.input} required />
               <label htmlFor="fieldUrl" className={css.label}>new site name</label>
             </div>
-            <button className={css.btn_blue_large}>Add</button>
+            <button className={css.btn_blue_large}>Okay</button>
           </div>
         </div>
       </Animated>

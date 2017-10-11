@@ -46,6 +46,7 @@ import PlatformHeader1 from 'components/platform/header1';
 import PlatformProfile1 from 'components/platform/profile1';
 import PlatformDropdown from 'components/platform/dash/account/dropdown';
 import PlatformDetail1 from 'components/platform/detail1';
+import PlatformUpload1 from 'components/platform/upload1';
 import Test from 'components/test';
 
 
@@ -77,6 +78,7 @@ const routes = [
   ['/test/editor/card1', PlatformCard1],
   ['/test/editor/card2', PlatformCard2],
   ['/test/editor/header1', PlatformHeader1],
+  ['/test/editor/upload1', PlatformUpload1],
 
 
   /* Real routes */

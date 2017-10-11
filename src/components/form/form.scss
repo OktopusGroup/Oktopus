@@ -1,6 +1,8 @@
 
 /* Form */
-
+::-webkit-input-placeholder {
+  color: $greyd1;
+}
 
 .fields {
   grid-area: fields;
@@ -166,4 +168,16 @@ input:valid+.label {
 
 .checkbox_custom:focus + .checkbox_custom_label, .radio_custom:focus + .radio_custom_label {
   outline: none;
+}
+
+.text_area {
+  font-family: $font-family;
+  font-size: 14px;
+  border: 1px solid $greyd1;
+  resize: none;
+  outline: none;
+  width: 100%;
+  height: auto;
+  min-height: 105px;
+  padding: 10px 10px;
 }

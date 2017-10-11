@@ -37,15 +37,13 @@ class AccountSettings extends React.PureComponent {
             <span className={css.menu_item_Active}>Account Settings</span>
             <div className={css.menu_item_Active__underline} />
             <div className={css.menu_line} />
-            <div className={css.edit_button}>
-              <Link to="/todo" className={css.btn_blue}>Edit</Link>
-            </div>
           </div>
 
           {/* Page contents */}
           <div className={css.content_container}>
 
-            <div className={css.profile_img} />
+            <div className={css.profile_img}>Add Image</div>
+
             <div className={css.section__account_info}>
               <div className={css.section_wrapper}>
 

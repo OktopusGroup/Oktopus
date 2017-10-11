@@ -1,11 +1,13 @@
 /* Variables */
 
+
+/* OKTOPUS EDITOR VARIABLES */
 $white: #FFFFFF;
-$offwhite: #F6F8FC;
-$greyd1: #D7DADE;
+$offwhite: #F9F8FB;
+$greyd1: #EEEBF3;
 $greyd2: #AAA9AA;
 $greyd3: #8D95A3;
-$black: #202022;
+$black: #1C1D2F;
 $sky-blue: #1C96FB;
 $red: #F93C57;
 $purple: #450073;
@@ -14,8 +16,18 @@ $green: #35C0B7;
 $peach: #f56868;
 $peach-gradient: linear-gradient(119deg, #f8a36f, #f17762 41%, #ee615c 63%, #ee5e5b 65%, #f0615f 76%, #f56868);
 $blue-gradient: linear-gradient(116deg, #01c3ff, #51225e);
+$font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+//
+$editor-shadow: 0 5px 6px 0 rgba(25, 74, 179, 0.15);
+$editor-radius: 4px;
+$editor-font:'Open Sans', Arial, Helvetica, sans-serif;
 
 
-/* TEMPLATES */
+/* PLATFORM VARIABLES */
 $accent: #1D75FF;
 $button: #17C76F;
+//
+$platform-shadow: 0 5px 6px 0 rgba(25, 74, 179, 0.15);
+$platform-radius: 4px;
+$platform-button-radius: 5px;
+$platform-font:'Open Sans', Arial, Helvetica, sans-serif;

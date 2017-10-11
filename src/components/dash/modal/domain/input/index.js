@@ -24,23 +24,21 @@ class ModalInputDomain extends React.PureComponent {
 
   render() {
     return (
-      <div className={css.background}>
-        <Animated animationIn="bounceInDown">
-          <div className={css.modal_box}>
-            <div className={css.wrapper}>
-              <Link to="/todo" className={css.closeX} />
-              <p className={css.title}>Input your custom domain</p>
-              <p className={css.subtitle}>(you must already own the domain)</p>
+      <Animated animationIn="bounceInDown">
+        <div className={css.modal_box}>
+          <div className={css.wrapper}>
+            <Link to="/todo" className={css.closeX} />
+            <p className={css.title}>Input your custom domain</p>
+            <p className={css.subtitle}>(you must already own the domain)</p>
 
-              <div className={css.field}>
-                <input type="text" id="fieldUrl" className={css.input} required />
-                <label htmlFor="fieldUrl" className={css.label}>http://</label>
-              </div>
-              <button className={css.btn_blue_large}>Connect</button>
+            <div className={css.field}>
+              <input type="text" id="fieldUrl" className={css.input} required />
+              <label htmlFor="fieldUrl" className={css.label}>http://</label>
             </div>
+            <button className={css.btn_blue_large}>Connect</button>
           </div>
-        </Animated>
-      </div>
+        </div>
+      </Animated>
     );
   }
 }
