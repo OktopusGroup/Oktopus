@@ -46,9 +46,6 @@ class ResetPW extends React.PureComponent {
           <div className={css.login_box}>
             <Animated animationIn="bounceInDown">
               <div className={css.login_form}>
-                <div className={css.close_btn}>
-                  <Link to="/todo" className={css.closeX} />
-                </div>
                 <span className={css.box_title}>Reset Password</span>
                 <div className={css.login_fields}>
                   <div className={css.field}>

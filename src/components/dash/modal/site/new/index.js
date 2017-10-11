@@ -28,7 +28,6 @@ class ModalNewSite extends React.PureComponent {
     return (
 
       <div className={css.modal_box}>
-        <Link to="/todo" className={css.closeX} />
         <p className={css.title}>Add a custom domain</p>
         <div className={css.subtitle}>Create a...</div>
 

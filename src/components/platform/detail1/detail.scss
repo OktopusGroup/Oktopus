@@ -123,10 +123,10 @@ body {
     "username date favorite";
   }
 .username {
+      text-align: center;
+      grid-area: username;
       padding: 4px;
       width: auto;
-      grid-area: username;
-      justify-self: start;
       color: $greyd2;
       &:hover {
         color: $button;
@@ -137,13 +137,13 @@ body {
 }
 
 .date {
-    padding: 4px;
+    padding-top: 4px;
     grid-area: date;
     margin: 0 auto;
 }
 
 .btn_favorite {
-    justify-self: end;
+    justify-self: center;
     grid-area: favorite;
     background:url(favorite.svg);
     background-repeat: no-repeat;
@@ -243,13 +243,20 @@ body {
     .upload_details {
         margin: 15px auto;
         width: 100%;
-        padding: 0 28px;
     }
     .divider {
+        justify-self: center;
         margin: inherit 28px;
+        width: 85%;
     }
     files {
         margin: 0px 28px;
     }
-
+    .username {
+        justify-self: start;
+    }
+    .btn_favorite {
+        justify-self: end;
+        margin-right: 28px;
+    }
 }

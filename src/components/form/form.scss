@@ -51,6 +51,7 @@
 
 .input {
   padding-bottom: 5px;
+  padding-left: 10px;
   box-sizing: border-box;
   width: 100%;
   font-size: 100%;
@@ -63,7 +64,7 @@
   border-radius: 0;
   &:focus {
     outline: 0;
-    border-color: $sky-blue;
+    border-color: $accent;
   }
 }
 

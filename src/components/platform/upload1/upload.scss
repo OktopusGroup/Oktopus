@@ -46,10 +46,16 @@
     border-bottom: 1px solid $greyd1;
 }
 
+.input {
+    &:focus {
+        background-color: $offwhite !important;
+    }
+}
+
 .center_text {
     text-align: center;
     font-weight: 400;
-    color: $greyd3;
+    color: $black;
 }
 
 .upload_title {
@@ -130,22 +136,22 @@
 }
 
 .add_tag {
+    background-color: $offwhite !important;
+    padding-left: 15px;
     display: block;
     box-sizing: border-box;
     width: auto;
-    font-size: 100%;
+    font-size: 12px;
     border: 0;
     background-color: transparent;
     height: 2rem;
     line-height: 2rem;
-    border-bottom: 1px solid #eee;
     color: $black;
     transition: all 0.2s ease-in;
-    border-radius: 0;
     margin-bottom: 15px;
     &:focus {
       outline: 0;
-      border-color: $sky-blue;
+      border-bottom: 1px solid $accent;
     }
 }
 
@@ -238,7 +244,7 @@
     grid-row-gap: 20px;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 700px) {
     .wrapper {
         background-color: $white;
         padding: 40px 28px 60px 28px;

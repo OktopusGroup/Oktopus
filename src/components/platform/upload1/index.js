@@ -36,7 +36,6 @@ class PlatformUpload1 extends React.PureComponent {
   render() {
     return (
       <div className={css.wrapper}>
-        <Link to="/todo" className={css.closeX} />
         <div className={css.upload_title}>
           <input className={cn(css.input, css.center_text)} type="text" name="" placeholder="Add Upload Title" />
         </div>
@@ -76,7 +75,7 @@ class PlatformUpload1 extends React.PureComponent {
         {/* Need different hover state on Tag to remove it (Red, White X) separate component? */}
         <div className={css.tags}>
           <div className={css.section_title}>Tags 0/5</div>
-          <input className={css.add_tag} type="text" placeholder="Add tag" />
+          <input className={css.add_tag} type="text" placeholder="Add tag + enter" />
           <Tag />
 
           <div className={css.section_title}>Categories 0/3</div>

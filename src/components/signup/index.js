@@ -46,9 +46,6 @@ class Signup extends React.PureComponent {
           <div className={css.login_box}>
             <Animated animationIn="bounceInDown">
               <div className={css.login_form}>
-                <div className={css.close_btn}>
-                  <Link to="/back" className={css.closeX} />
-                </div>
                 <span className={css.box_title}>Sign Up</span>
                 <div className={css.field}>
                   <input type="text" id="fieldEmail" className={css.input} required />

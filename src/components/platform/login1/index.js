@@ -5,8 +5,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import Animated from 'components/helpers/animated';
 import uploadcare from 'uploadcare-widget';
+
+// Helper Components
+import Animated from 'components/helpers/animated';
 
 /* Local */
 

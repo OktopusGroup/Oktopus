@@ -3,7 +3,6 @@
 // -----------------------------------------------------------------------------
 // IMPORTS
 import { Link } from 'react-router-dom';
-import Helmet from 'react-helmet';
 
 /* NPM */
 import React from 'react';
@@ -30,12 +29,6 @@ class Login extends React.PureComponent {
   render() {
     return (
       <div>
-        <Helmet
-          title="Oktopus"
-          meta={[{
-            name: 'Creative sharing networks',
-            content: 'Login to Oktopus',
-          }]} />
 
         <HeaderLoggedOut />
 
@@ -46,9 +39,6 @@ class Login extends React.PureComponent {
           <div className={css.login_box}>
             <Animated animationIn="bounceInDown">
               <div className={css.login_form}>
-                <div className={css.close_btn}>
-                  <Link to="/todo" className={css.closeX} />
-                </div>
                 <span className={css.box_title}>Login</span>
                 <div className={css.field}>
                   <input type="text" id="fieldEmail" className={css.input} required />

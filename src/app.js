@@ -40,6 +40,7 @@ import EditorSidebarCards from 'components/editor/sidebar/cards';
 import EditorSidebarDetail from 'components/editor/sidebar/detail';
 import EditorWorkspace from 'components/editor/workspace';
 import PlatformLogin1 from 'components/platform/login1';
+import PlatformLogin2 from 'components/platform/login2';
 import PlatformCard1 from 'components/platform/card1';
 import PlatformCard2 from 'components/platform/card2';
 import PlatformHeader1 from 'components/platform/header1';
@@ -48,7 +49,6 @@ import PlatformDropdown from 'components/platform/dash/account/dropdown';
 import PlatformDetail1 from 'components/platform/detail1';
 import PlatformUpload1 from 'components/platform/upload1';
 import Test from 'components/test';
-
 
 // Global styles
 import './styles.global.css';
@@ -75,10 +75,13 @@ const routes = [
   ['/test/editor/detail', EditorSidebarDetail],
   ['/test/editor/workspace', EditorWorkspace],
   ['/test/editor/login1', PlatformLogin1],
+  ['/test/editor/login2', PlatformLogin2],
   ['/test/editor/card1', PlatformCard1],
   ['/test/editor/card2', PlatformCard2],
   ['/test/editor/header1', PlatformHeader1],
   ['/test/editor/upload1', PlatformUpload1],
+  ['/test/editor/profile', PlatformProfile1],
+  ['/test/editor/detail', PlatformDetail1],
 
 
   /* Real routes */
@@ -96,9 +99,8 @@ const routes = [
   ['/dash/pages', Pages],
   ['/dash/pages/styleEditor', PageStyleEditor],
   ['/editor', Editor],
-  ['/platform/profile', PlatformProfile1],
   ['/platform/dropdown', PlatformDropdown],
-  ['/platform/detail', PlatformDetail1],
+
 ];
 
 export default () => (
