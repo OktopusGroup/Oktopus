@@ -44,22 +44,27 @@ class PlatformUpload1 extends React.PureComponent {
         <div className={css.media}>
           <div className={css.section_title}>Media</div>
           {/* ADD -> https://uploadcare.com/tutorials/widget_customization/#panel in place of img */}
-          <img className={css.img} src={Media} alt="upload" />
+
+          {/* BELOW MEDIA SHOULD USE UPLOADCARE'S 'Uploaded Image Preview' to preview & remove files
+          https://uploadcare.com/cookbook/widget_visual/ */}
+          <img className={css.dragbox} src={Media} alt="upload" />
         </div>
 
         <div className={css.downloads}>
           <div className={css.section_title}>Files</div>
           {/* ADD ->  https://uploadcare.com/tutorials/widget_customization/#panel in place of img */}
           <div className={css.uploader}>
-            <img className={css.img} src={Files} alt="upload" />
+            <img className={css.dragbox} src={Files} alt="upload" />
           </div>
           <div className={css.files}>
             {/* UPLOADS SHOULD SHOW UPLOAD PROGRESS BAR AND PREVIEW/REMOVE AS IS SHOWN IN THE API DOCS BELOW
             https://uploadcare.com/cookbook/widget_visual/#uploaded-image-preview */}
             <div className="file_list">
-              <div>filename.zip</div>
-              <div>filename.zip</div>
-              <div>filename.zip</div>
+              {/* FILE LIST SHOULD USE UPLOADCARE'S 'Uploaded Image Preview' to preview & remove files
+          https://uploadcare.com/cookbook/widget_visual/ */}
+              <div className={css.file_item}>filename.zip</div>
+              <div className={css.file_item}>filename.zip</div>
+              <div className={css.file_item}>filename.zip</div>
             </div>
           </div>
         </div>
@@ -68,7 +73,7 @@ class PlatformUpload1 extends React.PureComponent {
           <div className={css.section_title}>Description</div>
           <textarea className={css.text_area} type="text" name="" placeholder="Add a description (max 250 character)" />
         </div>
-
+        {/* Need different hover state on Tag to remove it (Red, White X) separate component? */}
         <div className={css.tags}>
           <div className={css.section_title}>Tags 0/5</div>
           <input className={css.add_tag} type="text" placeholder="Add tag" />

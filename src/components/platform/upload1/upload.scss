@@ -2,7 +2,7 @@
 @import '~components/form/form.scss';
 @import '~components/form/button/button.scss';
 
-.img {
+.dragbox {
     width: 100%;
     border: 2px dashed $greyd1;
     border-radius: $platform-radius;
@@ -108,6 +108,12 @@
     display: block;
 }
 
+.file_item {
+    &:hover {
+        background-color: $red;
+        color: $white;
+    }
+}
 
 .description {
     grid-area: description;
@@ -133,7 +139,7 @@
     height: 2rem;
     line-height: 2rem;
     border-bottom: 1px solid #eee;
-    color: $purple;
+    color: $black;
     transition: all 0.2s ease-in;
     border-radius: 0;
     margin-bottom: 15px;
