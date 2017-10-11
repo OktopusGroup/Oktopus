@@ -6,6 +6,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import uploadcare from 'uploadcare-widget';
+import cn from 'classnames';
 
 // Helper Components
 import Animated from 'components/helpers/animated';
@@ -47,8 +48,21 @@ class PlatformLogin1 extends React.PureComponent {
                 <label htmlFor="fieldPassword" className={css.label}>Password</label>
                 <span className={css.forgot}>Forgot?</span>
               </div>
-              {/* BUTTON COLOR SHOULD ADHERE TO THE BUTTON COLORS SET ON THE /PAGES page */}
+
               <Link to="/disabled" className={css.btn_login}>Login</Link>
+
+              <div className={css.social_buttons}>
+                <span className={css.social_title}>or use your social account</span>
+                <div className={cn(css.social, css.fb)}><i class="fa fa-facebook" aria-hidden="true"></i>
+                </div>
+                <div className={cn(css.social, css.li)}><i class="fa fa-linkedin" aria-hidden="true"></i>
+                </div>
+                <div className={cn(css.social, css.google)}><i class="fa fa-google" aria-hidden="true"></i>
+                </div>
+                <div className={cn(css.social, css.tw)}><i class="fa fa-twitter" aria-hidden="true"></i>
+                </div>
+              </div>
+
             </div>
           </Animated>
           <Animated animationIn="bounceInUp" animationInDelay={0.2}>

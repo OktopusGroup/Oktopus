@@ -1,60 +1,42 @@
 @import '~variables.scss';
-@import '~components/form/form.scss';
+@import '~components/form/button/button.scss';
+@import '../../helpercss/platformbuttons.scss';
 
+/* Container */
 .wrapper {
   width: 100%;
   display: grid;
   grid-template-areas:
+  "logo_onpage"
   "login_box"
   "login_subtext";
 }
 
 /* Logo Title */
 
-.btn_login{
-    text-decoration: none;
-    text-align: center;
-    margin: 0 auto;
-    outline: 0;
-    display: block;
-    border: 0;
-    font-size: 18px;
-    font-weight: bold;
-    height: 40px;
-    width: 200px;
-    line-height: 35px;
-    color: $white;
-    background-color: lighten($button, 15%);
-    border-radius: 100px;
-    transition: background 0.2s;
-    box-shadow: 0 2px 2px 0 $greyd1;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    &:hover {
-      color: $white;
-      background-color: $button;
-      transform: translateY(-3px);
-      box-shadow: 0 5px 6px 0 rgba(25, 74, 179, 0.15);
-      -webkit-transition: all 0.5s ease 0s, transform 400ms;
-      transition: all 0.5s ease 0s, transform 400ms;
-    &:active {
-      -webkit-transition: all 0s linear 0.4s, transform 40ms;
-      transition: all 0s linear 0.4s, transform 40ms;
-      transform: translateY(-1px);
-      transition: box-shadow 0s linear 0s;
-      box-shadow: 0 0 0 0 rgba(25, 74, 179, 0.5);
-      }
-    }
+.logo_onpage {
+  display: block;
+  grid-area: logo_onpage;
+  width: 14em;
+  margin: 2em auto 0 auto;
+}
+
+/* Login Box */
+
+.close_btn {
+  display: inline-block;
+  text-align: right;
+  width: 100%;
+  height: auto;
 }
 
 .login_box .login_form {
   display: block;
-  text-align: center;
   grid-area: login_box;
   height: auto;
   background-color: $white;
   box-shadow: none;
-  margin: auto 0;
+  margin: 2rem 0;
 	border: solid 1px $offwhite;
 }
 
@@ -62,18 +44,18 @@
   display: block;
   background-color: #ffffff;
   border: solid 1px #f6f8fc;
-  height: 0;
   padding: 2.5em 3em 2.5em;
   border-radius: 8px;
   box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.05);
 }
 
 .box_title {
-  font-size: 35px;
+  width: 100%;
+  font-size: 25px;
   font-weight: bold;
-  color: $greyd3;
+	color: $purple;
   text-align: center;
-  margin: 0 auto 20px;
+  margin: 20px auto 10px auto;
   display: block;
 }
 
@@ -98,7 +80,7 @@
   z-index: 5;
   position: absolute;
   height: 2rem;
-  width: 80%;
+  width: 85%;
   line-height: 2rem;
   bottom: 0;
   color: $greyd2;
@@ -117,7 +99,7 @@
   text-decoration: none;
   color: $greyd2;
   &:hover {
-    color: $greyd3;
+    color: $purple;
     text-decoration: underline;
     font-weight: bold;
   &:active {
@@ -128,6 +110,7 @@
 }
 
 .input {
+  margin-top: 20px;
   width: 100%;
   font-size: 100%;
   border: 0;
@@ -135,7 +118,7 @@
   height: 2rem;
   line-height: 2rem;
   border-bottom: 1px solid #eee;
-  color: $greyd3;
+  color: $purple;
   transition: all 0.2s ease-in;
   border-radius: 0;
   &:focus {
@@ -155,7 +138,7 @@
   height: 2rem;
   line-height: 2rem;
   border-bottom: 1px solid #eee;
-  color: $greyd3;
+  color: $purple;
   border-radius: 0;
   &:focus {
   outline: 0;
@@ -188,14 +171,6 @@ input:valid+.label {
     max-width: 330px;
     margin: auto;
     box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.05);
-  }
-  .box_title {
-    font-size: 30px;
-  }
-  .forgot {
-    position: absolute;
-    left: 180px;
-    text-decoration: none;
   }
   .login_subtext {
     margin: 30px auto;

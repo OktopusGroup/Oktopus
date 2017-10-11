@@ -1,23 +1,41 @@
 @import '~variables.scss';
-@import '~components/form/form.scss';
 @import '../helpercss/platformbuttons.scss';
 
+/* Container */
 .wrapper {
   width: 100%;
   display: grid;
   grid-template-areas:
+  "logo_onpage"
   "login_box"
   "login_subtext";
 }
 
+/* Logo Title */
+
+.logo_onpage {
+  display: block;
+  grid-area: logo_onpage;
+  width: 14em;
+  margin: 2em auto 0 auto;
+}
+
+/* Login Box */
+
+.close_btn {
+  display: inline-block;
+  text-align: right;
+  width: 100%;
+  height: auto;
+}
+
 .login_box .login_form {
   display: block;
-  text-align: center;
   grid-area: login_box;
   height: auto;
   background-color: $white;
   box-shadow: none;
-  margin: auto 0;
+  margin: 2rem 0;
 	border: solid 1px $offwhite;
 }
 
@@ -34,14 +52,13 @@
 .box_title {
   font-size: 35px;
   font-weight: bold;
-  color: $greyd3;
+	color: $purple;
   text-align: center;
   margin: 0 auto 20px;
   display: block;
 }
 
 .login_subtext {
-  z-index: -1000;
   grid-area: login_subtext;
   display: block;
   margin: 20px auto;
@@ -61,12 +78,13 @@
   z-index: 5;
   position: absolute;
   height: 2rem;
-  width: 80%;
+  width: 100%;
   line-height: 2rem;
   bottom: 0;
   color: $greyd2;
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   padding-right: 100px;
+  vertical-align: top;
 }
 
 .forgot {
@@ -79,7 +97,7 @@
   text-decoration: none;
   color: $greyd2;
   &:hover {
-    color: $greyd3;
+    color: $purple;
     text-decoration: underline;
     font-weight: bold;
   &:active {
@@ -97,7 +115,7 @@
   height: 2rem;
   line-height: 2rem;
   border-bottom: 1px solid #eee;
-  color: $greyd3;
+  color: $purple;
   transition: all 0.2s ease-in;
   border-radius: 0;
   &:focus {
@@ -117,14 +135,13 @@
   height: 2rem;
   line-height: 2rem;
   border-bottom: 1px solid #eee;
-  color: $greyd3;
+  color: $purple;
   border-radius: 0;
   &:focus {
   outline: 0;
   border-color: $red;
   }
 }
-
 
 /* Using a faux pattern to see if input has text from http://stackoverflow.com/questions/16952526/detect-if-an-input-has-text-in-it-using-css */
 .input:focus+.label,
@@ -158,7 +175,6 @@ input:valid+.label {
   .forgot {
     position: absolute;
     left: 180px;
-    text-decoration: none;
   }
   .login_subtext {
     margin: 30px auto;

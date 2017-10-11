@@ -40,7 +40,9 @@ import EditorSidebarCards from 'components/editor/sidebar/cards';
 import EditorSidebarDetail from 'components/editor/sidebar/detail';
 import EditorWorkspace from 'components/editor/workspace';
 import PlatformLogin1 from 'components/platform/login1';
-import PlatformLogin2 from 'components/platform/login2';
+import PlatformResetPW from 'components/platform/login1/reset';
+import PlatformSignup1 from 'components/platform/signup1';
+import PlatformConfirmSignup1 from 'components/platform/signup1/confirm1';
 import PlatformCard1 from 'components/platform/card1';
 import PlatformCard2 from 'components/platform/card2';
 import PlatformHeader1 from 'components/platform/header1';
@@ -75,7 +77,9 @@ const routes = [
   ['/test/editor/detail', EditorSidebarDetail],
   ['/test/editor/workspace', EditorWorkspace],
   ['/test/editor/login1', PlatformLogin1],
-  ['/test/editor/login2', PlatformLogin2],
+  ['/test/editor/resetpw', PlatformResetPW],
+  ['/test/editor/signup1', PlatformSignup1],
+  ['/test/editor/confirmsignup1', PlatformConfirmSignup1],
   ['/test/editor/card1', PlatformCard1],
   ['/test/editor/card2', PlatformCard2],
   ['/test/editor/header1', PlatformHeader1],
