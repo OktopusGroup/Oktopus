@@ -1,0 +1,72 @@
+@import '~variables.scss';
+@import '~components/form/button/button.scss';
+
+
+.wrapper {
+  position: relative;
+  text-align: center;
+  background-color: $white;
+  height: 60px;
+  width: 100%;
+  display: grid;
+  box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.15);
+  border-bottom: solid 1px $greyd1;
+  grid-template-areas:
+  "logo_header   header_links   profile_img";
+}
+
+.logo_header {
+  grid-area: logo_header;
+  margin: 15px auto;
+  height: 30px;
+}
+
+.back_button {
+  margin: 0 auto;
+  padding-top: 17px;
+  font-size: 16px;
+  font-weight: bold;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.header_item {
+  padding: 0 10px;
+  color: $greyd3;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.profile_img {
+  grid-area: profile_img;
+  justify-self: end;
+  margin: 12px 28px 0 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid $greyd2;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+@media (min-width: 550px) {
+  .header_links {
+    visibility: visible;
+  }
+
+  .header_item {
+    padding: 0 12px;
+  }
+  .align_logo {
+    justify-self: start;
+    margin-left: 28px;
+  }
+}
+@media (min-width: 600px) {
+  .header_item {
+    padding: 0 20px;
+  }
+
+}

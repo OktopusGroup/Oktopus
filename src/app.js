@@ -21,6 +21,7 @@ import ResetPW from 'components/login/reset';
 import ConfirmSignup from 'components/signup/confirm';
 import HeaderLoggedIn from 'components/header/loggedIn';
 import HeaderLoggedOut from 'components/header/loggedOut';
+import HeaderPreview from 'components/header/previewMode';
 import ModalAddDomain from 'components/dash/modal/domain/add';
 import ModalInputDomain from 'components/dash/modal/domain/input';
 import ModalInputTitle from 'components/dash/modal/site/new/inputTitle';
@@ -115,6 +116,7 @@ const routes = [
   ['/dash/pages', Pages],
   ['/dash/pages/styleEditor', PageStyleEditor],
   ['/editor', Editor],
+  ['/editor/header/preview', HeaderPreview],
   ['/platform/dropdown', PlatformDropdown],
 
 ];
