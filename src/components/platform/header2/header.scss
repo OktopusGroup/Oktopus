@@ -62,12 +62,13 @@
 }
 
 .profile_img {
+    font-size: 12px;
     position: absolute;
     right: 28px;
     bottom: 6px;
     background-color: $greyd2;
     text-align: center;
-    padding-top: 2px;
+    padding-top: 5px;
     color: $white;
     width: 30px;
     height: 30px;
@@ -86,10 +87,10 @@
 }
 
 .tagBar {
+    grid-area: tagBar;
     width: 100%;
     height: auto;
     padding: 0px 28px 15px 28px;
-    grid-area: tagBar;
     background-color: $white;
 }
 
@@ -131,8 +132,6 @@
      display:block;
      width: 110px;
      overflow-x:hidden;
- }
- .reset span.sth, button span.sath{
  }
  .reset span.sth{
    display:inline-block; 

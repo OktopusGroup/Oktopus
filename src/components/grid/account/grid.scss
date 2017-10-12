@@ -1,0 +1,35 @@
+// MOBILE FIRST GRID NEEDS A HAMBURGER TO SHOW / HIDE THE SIDEBAR MENU
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "a"
+    "b"
+    "c";
+}
+
+.a {
+  grid-area: a;
+}
+
+.b {
+  grid-area: b;
+}
+
+.c {
+  grid-area: c;
+}
+
+@media (min-width: 1200px) {
+  .grid {
+    grid-template-columns: 240px 1fr;
+    grid-template-areas:
+    "a a"
+    "b c";
+  }
+  .b {
+    height: 100%;
+  }
+}
+
+

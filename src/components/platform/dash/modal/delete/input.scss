@@ -1,0 +1,55 @@
+@import '~variables.scss';
+@import '~components/form/button/button.scss';
+@import '~components/form/form.scss';
+
+/* Modal for adding a new site */
+
+
+.modal_box {
+  position: relative;
+  background-color: $white;
+  width: 100%;
+  height: auto;
+  margin: 150px auto;
+  max-width: 700px;
+  border-radius: $platform-radius;
+}
+
+.wrapper {
+  width: 100%;
+  padding: 50px 28px;
+  position: relative;
+}
+
+.closeX {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 25px;
+  height: 25px;
+}
+
+.title {
+  width: 100%;
+  font-weight: bold;
+  margin: 10px auto 5px;
+  position: relative;
+  text-align: center;
+  font-size: 25px;
+	font-weight: bold;
+	color: $black;
+}
+
+.subtitle {
+  display: block;
+  font-weight: 300px;
+  width: 100%;
+  margin: 0 auto 40px;
+  text-align: center;
+  font-size: 16px;
+	color: $greyd2;
+}
+
+.btn_red_large {
+  margin: 80px auto 0;
+}

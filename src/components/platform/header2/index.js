@@ -17,9 +17,15 @@ import Tag from 'components/platform/tag';
 // Styles
 import css from './header.scss';
 
+
+
+
+// NOTES
+// EVERYTHING BESIDES THE HEADER SHOULD DISAPPEAR UPON SCROLLING DOWN 
+
+
 // -----------------------------------------------------------------------------
 class PlatformHeader2 extends React.PureComponent {
-
   submit = () => {
     /* intentionally empty for now */
   }

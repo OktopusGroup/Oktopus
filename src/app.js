@@ -47,10 +47,15 @@ import PlatformCard1 from 'components/platform/card1';
 import PlatformCard2 from 'components/platform/card2';
 import PlatformHeader1 from 'components/platform/header1';
 import PlatformHeader2 from 'components/platform/header2';
-import PlatformProfile1 from 'components/platform/profile1';
+import PlatformProfile1 from 'components/platform/dash/account/profile1';
+import PlatformAccountSettings from 'components/platform/dash/account/settings';
+import ModalDeleteAccount from 'components/platform/dash/modal/delete';
 import PlatformDropdown from 'components/platform/dash/account/dropdown';
+import PlatformAccountSidebar from 'components/platform/dash/account/sidebar';
 import PlatformDetail1 from 'components/platform/detail1';
 import PlatformUpload1 from 'components/platform/upload1';
+import PlatformAccount from 'components/platform/dash/account';
+import PlatformAccountFavorites from 'components/platform/dash/account/favorites';
 import Test from 'components/test';
 
 // Global styles
@@ -71,11 +76,11 @@ const routes = [
   ['/test/dash/account/dropdown', AccountDropdown],
   ['/test/editor/buttonBar', EditorButtonBar],
   ['/test/editor/previewBar', EditorPreviewBar],
-  ['/test/editor/login', EditorSidebarLogin],
-  ['/test/editor/header', EditorSidebarHeader],
-  ['/test/editor/profile', EditorSidebarProfile],
-  ['/test/editor/cards', EditorSidebarCards],
-  ['/test/editor/detail', EditorSidebarDetail],
+  ['/test/editor/sidebar/login', EditorSidebarLogin],
+  ['/test/editor/sidebar/header', EditorSidebarHeader],
+  ['/test/editor/sidebar/profile', EditorSidebarProfile],
+  ['/test/editor/sidebar/cards', EditorSidebarCards],
+  ['/test/editor/sidebar/detail', EditorSidebarDetail],
   ['/test/editor/workspace', EditorWorkspace],
   ['/test/editor/login1', PlatformLogin1],
   ['/test/editor/resetpw', PlatformResetPW],
@@ -86,8 +91,13 @@ const routes = [
   ['/test/editor/header1', PlatformHeader1],
   ['/test/editor/header2', PlatformHeader2],
   ['/test/editor/upload1', PlatformUpload1],
-  ['/test/editor/profile', PlatformProfile1],
-  ['/test/editor/detail', PlatformDetail1],
+  ['/test/editor/account/profile1', PlatformProfile1],
+  ['/test/editor/account/settings', PlatformAccountSettings],
+  ['/test/editor/account/sidebar', PlatformAccountSidebar],
+  ['/test/editor/account/delete', ModalDeleteAccount],
+  ['/test/editor/detail1', PlatformDetail1],
+  ['/test/editor/account', PlatformAccount],
+  ['/test/editor/account/favorites', PlatformAccountFavorites],
 
 
   /* Real routes */
