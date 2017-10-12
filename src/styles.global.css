@@ -4,7 +4,6 @@
 
 /* Base styles */
 
-
 button::-moz-focus-inner { /* Gets rid of f'ing padding difference in firefox */
   border: 0;
   padding: 0;

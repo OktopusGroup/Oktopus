@@ -18,7 +18,7 @@ import Tag from 'components/platform/tag';
 import css from './header.scss';
 
 // -----------------------------------------------------------------------------
-class PlatformHeader1 extends React.PureComponent {
+class PlatformHeader2 extends React.PureComponent {
 
   submit = () => {
     /* intentionally empty for now */
@@ -28,13 +28,17 @@ class PlatformHeader1 extends React.PureComponent {
     return (
       <div className={css.wrapper}>
         <div className={css.header}>
-          <Link to="/"><img src={userlogo} className={css.userlogo} alt="Oktopus" /></Link>
-          <div className={css.header_links}>
-            <span />
-            <span />
+          <div className={css.align_logo}>
+            <Link to="/"><img src={userlogo} className={css.userlogo} alt="Oktopus" /></Link>
           </div>
-          <div
-            className={css.profile_img}>UN
+        </div>
+
+        <div className={css.links_bar}>
+          <div className={css.links}>
+            <Link to="/community" className={css.link}>Community</Link>
+            <Link to="/users" className={css.link}>Users</Link>
+          </div>
+          <div className={css.profile_img}>UN
             {/*
             onMouseEnter={this.showPlatformAccountDropdown}
             onMouseLeave={this.hidePlatformAccountDropdown} />
@@ -46,6 +50,7 @@ class PlatformHeader1 extends React.PureComponent {
             */}
           </div>
         </div>
+
         <div className={css.sub_wrapper}>
           <div className={css.tagBar}>
             <div className={css.tags}>
@@ -81,9 +86,8 @@ class PlatformHeader1 extends React.PureComponent {
 
           </div>
         </div>
-
       </div>
     );
   }
 }
-export default PlatformHeader1;
+export default PlatformHeader2;

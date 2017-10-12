@@ -6,50 +6,72 @@
     grid-template-columns: 1fr;
     grid-template-areas:
     "header"
+    "links_bar"
     "tagBar"
     "searchBar"
     "dropdown";
 }
 
+
 .header {
     display: grid;
     grid-area: header;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     background-color: $accent;
     padding: 0 28px;
     grid-template-areas:
-    "userlogo   header_links   profile";
-    height: 50px;
+    "userlogo";
+    height: 60px;
     color: $white;
     align-items: center;
 }
 
+.align_logo {
+    margin: 0 auto;
+}
+
 .userlogo {
-    margin-top: 4px;
-    justify-self: start;
+    margin-top: 6px;
     grid-area: userlogo;
     height: 30px;
     width: auto;
 }
 
-.header_links {
-    grid-area: header_links;
-    align-self: center;
+.links_bar {
+    padding: 0 28px;
+    position: relative;
+    height: 40px;
+    margin: 0 auto;
+    width: 100%;
     text-align: center;
-    display: inline;
-    font-size: 14px;
+}
+
+.links {
+    margin: 0 auto;
+}
+
+.link {
+    color: $greyd2;
+    font-weight: 400;
+    display: inline-block;
+    font-size: 16px;
+    margin: 6px 15px;
+    &:hover {
+        color: $accent;
+    }
 }
 
 .profile_img {
+    position: absolute;
+    right: 28px;
+    bottom: 6px;
     background-color: $greyd2;
-    cursor: pointer;
     text-align: center;
-    padding-top: 5px;
-    grid-area: profile;
-    justify-self: end;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
+    padding-top: 2px;
+    color: $white;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
     border: 1px solid $greyd2;
     background-repeat: no-repeat;
     background-position: center center;
@@ -57,7 +79,7 @@
   }
 
 
-  .sub_wrapper {
+.sub_wrapper {
     width: 100%;
     margin: 0 auto; 
     background-color: $white;
@@ -78,7 +100,7 @@
 .reset{
     outline: 0;
     margin-top: 1px;
-    padding: 0 0 2px 7.5px;
+    padding: 0 0 1px 7.5px;
     background-color: $greyd1;
     border: none;
     border-radius: 100px;
@@ -191,6 +213,8 @@
 .dropbtn {
     font-weight: 400;
     color: $greyd3;
+    float: left;
+    display: inline-block;
     grid-area: dropdown;
     padding-right: 30px;
     cursor: pointer;
