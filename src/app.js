@@ -49,8 +49,10 @@ import PlatformCard2 from 'components/platform/card2';
 import PlatformHeader1 from 'components/platform/header1';
 import PlatformHeader2 from 'components/platform/header2';
 import PlatformProfile1 from 'components/platform/dash/account/profile1';
+import PlatformMyProfile1 from 'components/platform/dash/account/myProfile1';
 import PlatformAccountSettings from 'components/platform/dash/account/settings';
 import ModalDeleteAccount from 'components/platform/dash/modal/delete';
+import ModalDeleteUpload from 'components/platform/dash/modal/deleteUpload';
 import PlatformDropdown from 'components/platform/dash/account/dropdown';
 import PlatformAccountSidebar from 'components/platform/dash/account/sidebar';
 import PlatformDetail1 from 'components/platform/detail1';
@@ -93,9 +95,11 @@ const routes = [
   ['/test/editor/header2', PlatformHeader2],
   ['/test/editor/upload1', PlatformUpload1],
   ['/test/editor/account/profile1', PlatformProfile1],
+  ['/test/editor/account/Myprofile1', PlatformMyProfile1],
   ['/test/editor/account/settings', PlatformAccountSettings],
   ['/test/editor/account/sidebar', PlatformAccountSidebar],
   ['/test/editor/account/delete', ModalDeleteAccount],
+  ['/test/editor/account/deleteUpload', ModalDeleteUpload],
   ['/test/editor/detail1', PlatformDetail1],
   ['/test/editor/account', PlatformAccount],
   ['/test/editor/account/favorites', PlatformAccountFavorites],

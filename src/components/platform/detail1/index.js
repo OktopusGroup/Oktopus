@@ -54,6 +54,10 @@ class PlatformDetail1 extends React.PureComponent {
         <Link to="/todo" className={css.closeX} />
         <div className={css.upload_title}>Upload Title</div>
 
+        {/* 
+        -> SHOULD USE THIS GALLERY INSTEAD OF THE EXISTING ONE <-
+        https://uploadcare.com/documentation/cdn/#gallery */}
+
         <div className={css.carousel}>
           <Carousel showStatus={false} showIndicators={false}>
             {sliders.map(slider => (
@@ -69,6 +73,10 @@ class PlatformDetail1 extends React.PureComponent {
 
           <Link to="/todo"><div className={css.btn_download}>DOWNLOAD</div></Link>
 
+          {/* BELOW MEDIA SHOULD USE UPLOADCARE'S 'Uploaded Image Preview' with the edit options removed, 
+            https://uploadcare.com/cookbook/widget_visual/ 
+            in the case that is not possible, the below UI will do fine for now.
+          */}
           <div className={css.files}>
             <div className="file_list">
               <div>filename.zip</div>
@@ -78,6 +86,7 @@ class PlatformDetail1 extends React.PureComponent {
           </div>
 
           <div className={css.popularity}>
+            {/*  SHOULD SHOW POPULARITY STATS AS EXPONENTS ABOVE THE ICONS */}
             <Popularity />
           </div>
 

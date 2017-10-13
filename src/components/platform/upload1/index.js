@@ -70,9 +70,9 @@ class PlatformUpload1 extends React.PureComponent {
 
         <div className={css.description}>
           <div className={css.section_title}>Description</div>
-          <textarea className={css.text_area} type="text" name="" placeholder="Add a description (max 250 character)" />
+          <textarea className={css.text_area} type="text" name="" placeholder="Add a description (max 250 characters)" />
         </div>
-        {/* Need different hover state on Tag to remove it (Red, White X) separate component? */}
+        {/* Need different hover state on Tag to remove it (Red with White X). Should this be a separate component or just another className? */}
         <div className={css.tags}>
           <div className={css.section_title}>Tags 0/5</div>
           <input className={css.add_tag} type="text" placeholder="Add tag + enter" />
