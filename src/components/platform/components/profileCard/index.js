@@ -27,10 +27,7 @@ class CardPopularity extends React.PureComponent {
 
       <div className={css.card}>
         <Link to="/todo"><div className={css.preview} /></Link>
-        <Link to="/upload#" className={css.edit_button}><i class="fa fa-pencil-square-o" aria-hidden="true"></i></Link>
-        <div className={css.delete_button}>
-          <Link to="/ModalDeleteUpload" className={css.closeX} />
-        </div>
+        {/* EDIT BUTTON SHOULD ONLY BE DISPLAYED ON A USER'S OWN PROFILE PAGE */}
         <Link to="/todo"><div className={css.title}>Upload Title</div></Link>
       </div>
     );
