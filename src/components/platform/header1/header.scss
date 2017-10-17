@@ -196,11 +196,12 @@
     cursor: pointer;
     &:hover {
         color: $black;
+        .triangle {
+            border-color: $sky-blue transparent transparent transparent;
+        }
     }
 }
 
-
-/* The triangle should switch to :hover state when the dropdown text is hovered over */
 .triangle {
     margin-left: 5px;
     display: inline-block;
@@ -208,8 +209,5 @@
     height: 0;
     border-style: solid;
     border-width: 10px 5px 0 5px;
-    border-color: lighten($accent, 20%) transparent transparent transparent;
-    &:hover {
-        border-color: $accent transparent transparent transparent;
-    }
+    border-color: lighten($sky-blue, 20%) transparent transparent transparent;
 }

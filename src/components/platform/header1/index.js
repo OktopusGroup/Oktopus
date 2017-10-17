@@ -63,7 +63,7 @@ class PlatformHeader1 extends React.PureComponent {
           <div className={css.searchBar}>
             <form className={css.search_form}>
               <div className={css.search_icon}>
-                <div class="fa fa-search" aria-hidden="true" /> 
+                <div class="fa fa-search" aria-hidden="true" />
               </div>
               <input type="search" id="searchBar" placeholder="Add search tags" className={css.search_input} />
 
@@ -76,8 +76,8 @@ class PlatformHeader1 extends React.PureComponent {
             {/* Would like to use a category add/remove system like this:  
                 https://codepen.io/synapse709/pen/JrMRdv     
             */}
-            <Link to="/" onclick="myFunction()" className={css.dropbtn}>Category<div className={css.triangle} /></Link>
-            <Link to="/" onclick="myFunction()" className={css.dropbtn}>Sort<div className={css.triangle} /></Link>
+            <button to="/" onClick="myFunction()" className={css.dropbtn}>Category<div className={css.triangle} /></button>
+            <button to="/" onClick="myFunction()" className={css.dropbtn}>Sort<div className={css.triangle} /></button>
 
           </div>
         </div>
